@@ -16,6 +16,18 @@ import pytrends # for google trends
 """
 
 
+def unpack_definitions(definition):
+    # remove the brackets and clean up the definitions
+    # with regex
+    definition = definition.replace("[","")
+    definition = definition.replace("]","")
+    definition = definition.replace("'","")
+    definition = definition.replace('"',"")
+    definition = definition.replace("(","")
+    definition = definition.replace(")","")
+    print(definition)
+    return definition
+
 
 
 # Function One: Card Creator for a random Person or Thing from Wikipedia
@@ -89,6 +101,7 @@ def check_for_badwords(definition):
         return True
     else:
         return False
+
 
 
 
