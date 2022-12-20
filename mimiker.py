@@ -4,6 +4,20 @@ import wikipedia # for wikipedia entries
 import random # for randomization
 import pytrends # for google trends
 
+
+"""
+    Example Card:
+        Title: Bro Bono
+        Description:
+            The act of providing free services to friends. Originated from the legal term "pro bono" meaning "for the public good" or "free".
+            Friend #1: "Hey man, I need a logo designed for my new company but I dont have a lot of money"
+            Friend #2: "no problem man, your my best friend, I'll do it Bro Bono"
+        Point Value: 2
+"""
+
+
+
+
 # Function One: Card Creator for a random Person or Thing from Wikipedia
 def create_ppn_card():
     # create a person/place/thing card
@@ -55,3 +69,36 @@ def is_person(wiki_entry_dict):
 
 
 # Function Two: Card Creator for a random Phrase from Urban Dictionary
+
+
+def check_for_religious_words(definition):
+    definition = definition.lower()
+    if any(re.search(r'\b' + word + r'\b', definition) for word in ['god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians']):
+        return True
+    else:
+        return False
+
+import re
+
+
+def check_for_badwords(definition):
+    definition = definition.lower()
+    bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*']
+    # if any of the buzzwords are found return true else false
+    if any(re.search(r'\b' + word + r'\b', definition) for word in bad_patterns):
+        return True
+    else:
+        return False
+
+
+
+def remove_undesireable_sentences(definition):
+    definition = definition.lower()
+    # removes any sentence that contains a regex match to any word in the buzzwords list leaving the other sentences intact.
+    # remove sentences that are not in English
+    definition = re.sub(r'[^\x00-\x7f]',r'', definition)
+    # example: "A woman with huge breasts" would be removed because of the mention of "breast"
+    buzzwords = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*']
+    # remove sentences that contain a regex match to any word in the buzzwords list
+    definition = re.sub(r'|'.join(map(re.escape, buzzwords)), '', definition)
+    return definition #
