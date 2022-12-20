@@ -14,6 +14,15 @@ import pytrends # for google trends
             Friend #2: "no problem man, your my best friend, I'll do it Bro Bono"
         Point Value: 2
 """
+def check_for_good_patterns(definition, title, good_patterns):
+    # check both title and definition for good patterns
+    good_patterns = [r'phobia','slang','acronymn','meme']
+    if any(re.match(r'\b' + word + r'\b', definition) for word in good_patterns):
+        return True
+    elif any(re.match(r'\b' + word + r'\b', title) for word in good_patterns):
+        return True
+    else:
+        return False
 
 
 def unpack_definitions(definition):
@@ -95,7 +104,7 @@ import re
 
 def check_for_badwords(definition):
     definition = definition.lower()
-    bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*']
+    bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']
     # if any of the buzzwords are found return true else false
     if any(re.search(r'\b' + word + r'\b', definition) for word in bad_patterns):
         return True
@@ -111,7 +120,66 @@ def remove_undesireable_sentences(definition):
     # remove sentences that are not in English
     definition = re.sub(r'[^\x00-\x7f]',r'', definition)
     # example: "A woman with huge breasts" would be removed because of the mention of "breast"
-    buzzwords = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*']
+    buzzwords = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']
     # remove sentences that contain a regex match to any word in the buzzwords list
     definition = re.sub(r'|'.join(map(re.escape, buzzwords)), '', definition)
     return definition #
+
+good_patterns = [r'phobia','slang','acronymn','meme']
+
+
+
+
+
+
+def main():
+
+    # example: usage example,
+    # upvotes: number of upvotes on Urban Dictionary,
+    # downvotes: number of downvotes on Urban Dictionary
+    import time
+    wikitest = False # set to true to test the wikipedia page length
+    # include a phrase if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary
+    rand_dict = {}
+    total_votes_thresh = 20
+    upvotes_thresh = 50 # min number of upvotes
+    downvotes_thresh = 10 # max number of downvotes
+    desired_number_of_cards = 15
+    rands = [] # the randoms
+
+    while len(rand_dict) < desired_number_of_cards:
+    time.sleep(1)
+    rand = ud.random() # returns a list of 5 random phrases and definitions from Urban Dictionary
+    # append these to a master list
+    rands.extend(rand) # rands is a list of all the random phrases and definitions from Urban Dictionary
+
+    # iterate over the elements in the rand object
+    for element in rand:
+        # extract the relevant data from the element
+        phrase = element.word
+        definition = element.definition
+        usage_example = element.example
+        upvotes = element.upvotes
+        downvotes = element.downvotes
+        # define a list of boolean values
+        values = [upvotes + downvotes >= total_votes_thresh,
+                upvotes >= upvotes_thresh and downvotes <= downvotes_thresh]
+
+        # check if any element in the list is True
+        if any(values) and not check_for_badwords(definition, bad_patterns) \
+        and not check_for_badwords(phrase, bad_patterns): # check if the phrase or definition contains any buzzwords
+        # include the element in the dictionary if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary
+        definition = remove_undesireable_sentences(definition, bad_patterns) # remove sentences that contain buzzwords, are not in English, etc.
+        definition = unpack_definitions(definition) # remove brackets and clean up the definitions with regex
+        if wikitest:
+            print('Testing phrase:', phrase, ' for popularity on Wikipedia...')
+            page_length = get_page_length(phrase) # get the length of the Wikipedia page for the phrase
+            print('Page length:', page_length)
+            if page_length < 1000: # if the page is too short, skip it
+            continue
+
+        print(f'Added {phrase}: {definition[0:100]}...')
+        rand_dict[phrase] = definition
+
+    # show the dictionary of random phrases and definitions as a pandas dataframe
+    pd.DataFrame(rand_dict, index=[0]).T
