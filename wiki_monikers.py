@@ -349,13 +349,8 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
     return card_deck
 
 
-english_words = words.words()
-# open the card deck file
-with open("ppn_deck.json", "r") as read_file:
-    card_deck = json.load(read_file)
-
-while len(card_deck) < 5000:
-    card_deck = create_ppn_deck(5000, card_deck)
+#^ refining functions
+def refine_cards(card_deck):
     sentence_count = 2
     card_deck = [
         {
@@ -425,8 +420,18 @@ while len(card_deck) < 5000:
         for card in card_deck
         if len(card["summary_short"]) > 1200
     ]
-    card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
 
+
+
+english_words = words.words()
+# open the card deck file
+with open("ppn_deck.json", "r") as read_file:
+    card_deck = json.load(read_file)
+
+while len(card_deck) < 5000:
+    card_deck = create_ppn_deck(5000, card_deck)
+    # card_deck = refine_cards(card_deck)
+    card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
     with open('ppn_deck.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
 print(f"I have created a deck of {len(card_deck)} cards")
