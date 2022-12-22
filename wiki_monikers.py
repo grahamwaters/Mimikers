@@ -119,6 +119,9 @@ categories = [
     "Sports and recreation"
 ]
 
+import random
+# shuffle categories to get a random selection
+random.shuffle(categories)
 for cat in enumerate(categories):
     URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
 
