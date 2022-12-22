@@ -346,7 +346,40 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
                 print(f'we have {len(card_deck)} cards so far')
                 with open('ppn_deck.json', 'w') as outfile:
                     json.dump(card_deck, outfile, indent=4)
+        if len(card_deck) % 20 == 0:
+            groupme_bot(f'I have {len(card_deck)} cards so far')
+            # show a random card by sampling the deck
+            random_card = random.sample(card_deck, 1)[0]
+            # print the card
+            groupme_bot(f'{random_card["title"]}: {random_card["summary"]}')
     return card_deck
+
+#^ bot functions for groupme
+
+import requests
+
+def groupme_bot(message_text="Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert."):
+    # Replace :bot_id with your bot's ID
+    # read bot_id from secrets.json
+    with open('./secrets.json') as json_file:
+        secrets = json.load(json_file)
+        bot_id = secrets['groupme_botid']
+
+    # Set the payload for the request
+    payload = {
+        "bot_id": bot_id,
+        "text": message_text
+    }
+
+    # Make the POST request to the GroupMe API
+    response = requests.post("https://api.groupme.com/v3/bots/post", json=payload)
+
+    # Check the status code of the response
+    if response.status_code != 202:
+        print(f"Failed to send message: {response.status_code} {response.text}")
+    else:
+        #print("Message sent successfully.")
+        pass
 
 
 #^ card generating functions
@@ -540,14 +573,14 @@ def refine_cards(card_deck):
         }
         for card in card_deck
     ]
-    card_deck = [
-        card
-        for card in card_deck
-        if not any(
-            word in card["title"]
-            for word in ["List", "Timeline of", "History of", "Wikipedia", "Category"]
-        )
-    ]
+    # card_deck = [
+    #     card
+    #     for card in card_deck
+    #     if not any(
+    #         word in card["title"]
+    #         for word in ["List", "Timeline of", "History of", "Wikipedia", "Category"]
+    #     )
+    # ]
     card_deck = [
         {
             **card,
@@ -561,70 +594,31 @@ def refine_cards(card_deck):
     ]
     print('shortened')
     # card_deck = [
-    #     card
+    #     {
+    #         **card,
+    #         **{
+    #             "summary_clean": unpack_definitions(
+    #                 card["title"], card["summary_clean"]
+    #             )
+    #         },
+    #     }
     #     for card in card_deck
-    #     if len(
-    #         word_tokenize(
-    #             [word for word in card["summary_clean"] if str(word) in english_words]
-    #         )
-    #     )
-    #     >= len(card["summary_short"]) / 4
     # ]
-    card_deck = [
-        {
-            **card,
-            **{
-                "summary_clean": unpack_definitions(
-                    card["title"], card["summary_clean"]
-                )
-            },
-        }
-        for card in card_deck
-    ]
-    print('cleaned')
-    card_deck = [
-        {
-            **card,
-            **{
-                "summary_short": str(card["summary_short"])[:1200][
-                    : str(card["summary_short"])[:1200].rfind(".") + 1
-                ]
-            },
-        }
-        for card in card_deck
-        if len(card["summary_short"]) > 1200
-    ]
-
-
-#^ bot functions for groupme
-
-import requests
-
-def groupme_bot():
-    # Replace :bot_id with your bot's ID
-    # read bot_id from secrets.json
-    with open('./secrets.json') as json_file:
-        secrets = json.load(json_file)
-        bot_id = secrets['groupme_botid']
-
-    # Set the text of the message you want to send
-    message_text = "Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert."
-
-    # Set the payload for the request
-    payload = {
-        "bot_id": bot_id,
-        "text": message_text
-    }
-
-    # Make the POST request to the GroupMe API
-    response = requests.post("https://api.groupme.com/v3/bots/post", json=payload)
-
-    # Check the status code of the response
-    if response.status_code != 202:
-        print(f"Failed to send message: {response.status_code} {response.text}")
-    else:
-        #print("Message sent successfully.")
-        pass
+    # print('cleaned')
+    # card_deck = [
+    #     {
+    #         **card,
+    #         **{
+    #             "summary_short": str(card["summary_short"])[:1200][
+    #                 : str(card["summary_short"])[:1200].rfind(".") + 1
+    #             ]
+    #         },
+    #     }
+    #     for card in card_deck
+    #     if len(card["summary_short"]) > 1200
+    # ]
+    groupme_bot('I have refined the deck, so far I have ' + str(len(card_deck)) + ' cards')
+    return card_deck
 
 
 #^ google forms functions
@@ -636,10 +630,16 @@ with open("ppn_deck.json", "r") as read_file:
     card_deck = json.load(read_file)
 
 while len(card_deck) < 5000:
-    card_deck = create_ppn_deck(5000, card_deck)
+    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'
+    # groupme_bot(stringval)
+    card_deck = create_ppn_deck(100, card_deck)
     # create a copy of the card deck file for safety
     with open('ppn_deck_copy.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
+    groupme_bot('I have created a copy of the deck for safety, so far I have ' + str(len(card_deck)) + ' cards')
+    # show an example card (random sample)
+    random_card = random.choice(card_deck)
+    groupme_bot('For example, here is a card: ' + str(random_card))
     card_deck = refine_cards(card_deck)
     card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
     with open('ppn_deck.json', 'w') as outfile:
