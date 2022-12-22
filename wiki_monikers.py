@@ -14,7 +14,7 @@ from ratelimit import limits, sleep_and_retry
 from tqdm import tqdm
 import json
 URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
-URL += f"category={urllib.parse.quote('famous fictional characters')}"
+URL += f"category={urllib.parse.quote('fictional characters')}"
 URL += f"&category2={urllib.parse.quote('historical figures')}"
 URL += f"&category3={urllib.parse.quote('slogans')}"
 URL += f"&category4={urllib.parse.quote('catchphrases')}"
@@ -24,7 +24,7 @@ URL += f"&category7={urllib.parse.quote('british authors')}"
 URL += f"&category8={urllib.parse.quote('american authors')}"
 URL += f"&category9={urllib.parse.quote('musicians')}"
 URL += f"&category10={urllib.parse.quote('songs')}"
-URL += f"&category11={urllib.parse.quote('books')}"
+URL += f"&category11={urllib.parse.quote('memes')}"
 URL += f"&category12={urllib.parse.quote('movies')}"
 URL += "&category{}={{urllib.parse.quote('{}')}}".format(13, "celebrities")
 URL += "&category{}={{urllib.parse.quote('{}')}}".format(14, "politicians")
