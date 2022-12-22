@@ -14,43 +14,115 @@ from ratelimit import limits, sleep_and_retry
 from tqdm import tqdm
 import json
 URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
-URL += f"category={urllib.parse.quote('fictional characters')}"
-URL += f"&category2={urllib.parse.quote('historical figures')}"
-URL += f"&category3={urllib.parse.quote('slogans')}"
-URL += f"&category4={urllib.parse.quote('catchphrases')}"
-URL += f"&category5={urllib.parse.quote('authors')}"
-URL += f"&category6={urllib.parse.quote('actors')}"
-URL += f"&category7={urllib.parse.quote('british authors')}"
-URL += f"&category8={urllib.parse.quote('american authors')}"
-URL += f"&category9={urllib.parse.quote('musicians')}"
-URL += f"&category10={urllib.parse.quote('songs')}"
-URL += f"&category11={urllib.parse.quote('memes')}"
-URL += f"&category12={urllib.parse.quote('movies')}"
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(13, "celebrities")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(14, "politicians")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(15, "sportspeople")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(16, "famous paintings")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(17, "historical events")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(18, "famous quotes")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(19, "famous poems")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(20, "memes")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(21, "hashtags")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(22, "United States Presidents")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(23, "United States Vice Presidents")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(24, "United States Senators")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(25, "World Leaders")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(26, "World War II Leaders")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(27, "World War I Leaders")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(28, "Viral Videos")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(29, "Viral Songs")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(30, "Viral Memes")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(31, "Viral Hashtags")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(32, "Terrible People")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(33, "Terrible Events")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(34, "Acronyms")
-URL += "&category{}={{urllib.parse.quote('{}')}}".format(35, "United States Cities")
-URL += "&server=en.wikipedia.org&cmnamespace=&cmtype=page&returntype="
 
+categories = [
+    "Fictional characters",
+    "People",
+    "Slogans",
+    "celebrities",
+    "Cities",
+    "Famous quotes",
+    "psychological disorders",
+    "Diseases",
+    "Medical conditions",
+    "famous court cases",
+    "Famous crimes",
+    "art movements",
+    "art techniques",
+    "art styles",
+    "laws of physics",
+    "well-known laws",
+    "well-known theorems",
+    "well-known equations",
+    "well-known formulas",
+    "well-known proofs",
+    "well-known conjectures",
+    "well-known people",
+    "Famous Criminals",
+    "paradoxes",
+    "Famous speeches",
+    "mythical creatures",
+    "Famous last words",
+    "epigrams",
+    "adages",
+    "Historical events",
+    "Mythological figures",
+    "Landmarks",
+    "Inventions",
+    "Scientists",
+    "Artists",
+    "Writers",
+    "Musicians",
+    "Athletes",
+    "memes",
+    "Political figures",
+    "TV shows",
+    "Movies",
+    "Video games",
+    "Animals",
+    "Chemical compounds",
+    "Astronomical objects",
+    "Geographical features",
+    "Countries",
+    "Languages",
+    "Cultures",
+    "Holidays",
+    "Words and phrases",
+    "Proverbs",
+    "Idioms",
+    "Slang terms",
+    "Jokes",
+    "Riddles",
+    "Events",
+    "Pop culture",
+    "Literature",
+    "Art",
+    "80s pop culture",
+    "90s pop culture",
+    "2000s pop culture",
+    "2010s pop culture",
+    "2020s pop culture",
+    "70s pop culture",
+    "60s pop culture",
+    "50s pop culture",
+    "popular music",
+    "popular movies",
+    "popular television",
+    "popular books",
+    "popular video games",
+    "tiktok trends",
+    "tiktok memes",
+    "tiktok dances",
+    "tiktok challenges",
+    "tiktok songs",
+    "vine trends",
+    "vine memes",
+    "vine dances",
+    "vine challenges",
+    "teen slang",
+    "teen memes",
+    "teen dances",
+    "millennial slang",
+    "millennial memes",
+    "millennial dances",
+    "millennial challenges",
+    "millennial songs",
+    "gen z slang",
+    "gen z memes",
+    "gen z dances",
+    "gen z challenges",
+    "gen z songs",
+    "gen z trends",
+    "Science and technology",
+    "Nature and the environment",
+    "Food and drink",
+    "Sports and recreation"
+]
+
+for cat in enumerate(categories):
+    URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
+
+URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
 replacements = {
     r"\bsex\b": "affection",
