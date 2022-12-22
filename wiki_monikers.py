@@ -354,15 +354,15 @@ english_words = words.words()
 with open("ppn_deck.json", "r") as read_file:
     card_deck = json.load(read_file)
 
-while len(card_deck) < 500:
-    card_deck = create_ppn_deck(500, card_deck)
+while len(card_deck) < 5000:
+    card_deck = create_ppn_deck(5000, card_deck)
     sentence_count = 2
     card_deck = [
         {
-            **card,
-            **{
-                "summary_short": "".join(
-                    str(sentence)
+            **card, # merge the card with the new summary
+            **{ # create a new key called summary_short
+                "summary_short": "".join( # join the sentences together
+                    str(sentence) # convert the sentence to a string
                     for sentence in summarize_text(
                         card["summary"][1], int(sentence_count)
                     )
