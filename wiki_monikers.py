@@ -309,7 +309,7 @@ def create_ppn_card():
         random_wiki_entry_summary = random_wiki_entry_dict["summary"]
         # get the title of the entry
         random_wiki_entry_title = random_wiki_entry_dict["title"]
-        # get the categories of the entry
+        # get the related pages of the entry
         random_wiki_entry_related = random_wiki_entry_dict["related"]
 
         # create a dictionary of the entry
@@ -347,6 +347,180 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
                 with open('ppn_deck.json', 'w') as outfile:
                     json.dump(card_deck, outfile, indent=4)
     return card_deck
+
+
+#^ card generating functions
+
+# function one - a modified version of the create_ppn_deck function that generates a deck of cards that are related to a specific card instead of from the requests of the random page url generator.
+def generate_related_deck(primary_card,number_of_cards_to_generate):
+    # generate a deck of cards that are related to the primary card
+    # get the title of the primary card
+    primary_card_title = primary_card['title']
+    # get the related pages of the primary card
+    primary_card_related = primary_card['related']
+    # create a list of the related pages
+    related_pages = [page for page in primary_card_related]
+    # shuffle the list of related pages
+    random.shuffle(related_pages)
+    # create a list of the related pages that are not already in the deck
+    related_pages = [page for page in related_pages if page not in [card['title'] for card in card_deck]]
+
+    # now we have a list of related pages that are not already in the deck, we can create a
+    # deck of cards from them
+    while len(card_deck) < number_of_cards_to_generate:
+        # get a random page from the list of related pages
+        random_page = random.choice(related_pages)
+
+        # using the wikipedia library we can get the summary of the page, the title of the page and the related pages of the page
+        page = wikipedia.page(random_page)
+        random_wiki_entry_summary = page.summary
+        random_wiki_entry_title = page.title
+        random_wiki_entry_related = page.links
+
+        # create a dictionary of the entry
+        random_wiki_entry_dict = {
+            "title": random_wiki_entry_title,
+            "summary": random_wiki_entry_summary,
+            "related": len(random_wiki_entry_related),
+        }
+        print(f'{primary_card_title} >> {random_wiki_entry_dict["title"]}')
+        # add the card to the deck if it it has not already been added (check the title)
+        if random_wiki_entry_dict['title'] not in [card['title'] for card in card_deck]:
+            card_deck.append(random_wiki_entry_dict)
+            print(f'we have {len(card_deck)} cards so far')
+            with open('sub_ppn_deck.json', 'w') as outfile:
+                json.dump(card_deck, outfile, indent=4)
+        else:
+            print("duplicate card")
+            print(f'we have {len(card_deck)} cards so far')
+            with open('sub_ppn_deck.json', 'w') as outfile:
+                json.dump(card_deck, outfile, indent=4)
+    return card_deck
+
+#~ creating related decks
+import random
+import wikipedia
+import json
+@sleep_and_retry
+def get_page_from_wiki(title):
+    return wikipedia.page(title)
+
+def page_is_person(page):
+    # people pages have the words "birth" "family" and potentially "death" in the article text (birth and death are not always present). We can use this to filter out people pages.
+    if "birth" in page.content.lower() and "family" in page.content.lower():
+        return True
+    else:
+        return False
+
+def page_is_location(page):
+    # location pages have the words "location" "country" and "city" in the article text. We can use this to filter out location pages.
+    if "location" in page.content.lower() and "country" in page.content.lower() and "city" in page.content.lower():
+        return True
+    elif page.coordinates is not None:
+        return True
+    else:
+        return False
+
+def page_is_organization(page):
+    # organization pages have the words "organization" "company" and "business" in the article text. We can use this to filter out organization pages.
+    if "organization" in page.content.lower() or "company" in page.content.lower() and "business" in page.content.lower():
+        # also cannot be a person or location
+        if not page_is_person(page) and not page_is_location(page):
+            return True
+        else:
+            return False
+    else:
+        return False
+
+def page_is_event(page):
+    # event pages have the words "event" "incident" and "disaster" in the article text. We can use this to filter out event pages.
+    if "event" in page.content.lower() and "date" in page.content.lower() and "history" in page.content.lower():
+        if not page_is_person(page) and not page_is_location(page) and not page_is_organization(page):
+            return True
+        else:
+            return False
+    else:
+        return False
+
+
+def generate_related_deck(primary_card, number_of_cards_to_generate, min_len=100, min_links=5, people=True,locations=True,organizations=True,events=True,other=False):
+    new_card_deck = []
+    primary_card_title = primary_card['title']
+    primary_card_related = wikipedia.page(primary_card_title).links
+    related_pages = [page for page in primary_card_related]
+    random.shuffle(related_pages)
+    related_pages = [page for page in related_pages if page not in [card['title'] for card in new_card_deck]]
+
+    # Loop through each related page
+    for random_page in related_pages:
+        try:
+            page = get_page_from_wiki(random_page)
+            random_wiki_entry_summary = page.summary
+            random_wiki_entry_title = page.title
+            random_wiki_entry_related = page.links
+            random_wiki_entry_dict = {
+                "title": random_wiki_entry_title,
+                "summary": random_wiki_entry_summary,
+                "related": len(random_wiki_entry_related),
+            }
+            if random_wiki_entry_dict['title'] not in [card['title'] for card in new_card_deck]:
+
+                # check for min length
+                if len(random_wiki_entry_dict['summary']) < min_len:
+                    continue
+                # check for min links
+                if random_wiki_entry_dict['related'] < min_links:
+                    continue
+
+                # check for people, locations, organizations, events, and other categories in the related pages. Follow the logic outlined by T/F in the function arguments. If people is true for example, then we will add the page if it is a person. Else we ignore people pages.
+                # people pages have the words "birth" "family" and potentially "death" in the article text (birth and death are not always present). We can use this to filter out people pages.
+                # locations have a page.coordinates attribute that is not None
+                # organizations - ?
+                # events - have a date in the article text (not always present)?
+
+                is_person = page_is_person(page)
+                is_location = page_is_location(page)
+                is_organization = page_is_organization(page)
+                is_event = page_is_event(page)
+                print(page.title)
+                print(f'-'*8)
+                print(f'is_person: {is_person}')
+                print(f'is_location: {is_location}')
+                print(f'is_organization: {is_organization}')
+                print(f'is_event: {is_event}')
+
+                if people and is_person:
+                    new_card_deck.append(random_wiki_entry_dict)
+                    print(f'Added {random_wiki_entry_dict["title"]} to the deck')
+                elif locations and is_location:
+                    new_card_deck.append(random_wiki_entry_dict)
+                    print(f'Added {random_wiki_entry_dict["title"]} to the deck')
+                elif organizations and is_organization:
+                    new_card_deck.append(random_wiki_entry_dict)
+                    print(f'Added {random_wiki_entry_dict["title"]} to the deck')
+                elif events and is_event:
+                    new_card_deck.append(random_wiki_entry_dict)
+                    print(f'Added {random_wiki_entry_dict["title"]} to the deck')
+                elif other and not is_person and not is_location and not is_organization and not is_event:
+                    new_card_deck.append(random_wiki_entry_dict)
+                    print(f'Added {random_wiki_entry_dict["title"]} to the deck')
+                else:
+                    print(f'Not adding {random_wiki_entry_dict["title"]} to the deck')
+                # new_card_deck.append(random_wiki_entry_dict)
+                # print(f'Added {random_wiki_entry_dict["title"]} to the deck')
+                print(f'{primary_card_title} >> {random_wiki_entry_dict["title"]}')
+            with open('./new_ppn_deck.json', 'w') as outfile:
+                json.dump(new_card_deck, outfile, indent=4)
+            # Break the loop if the number of cards in the deck reaches the desired number
+            #print(f'Number of cards in deck: {len(new_card_deck)}/{number_of_cards_to_generate}')
+            if len(new_card_deck) >= number_of_cards_to_generate:
+                #print("We have enough cards. Exiting loop.")
+                break
+        except Exception as e:
+            continue
+    return card_deck
+
+
 
 
 #^ refining functions
@@ -422,6 +596,39 @@ def refine_cards(card_deck):
     ]
 
 
+#^ bot functions for groupme
+
+import requests
+
+def groupme_bot():
+    # Replace :bot_id with your bot's ID
+    # read bot_id from secrets.json
+    with open('./secrets.json') as json_file:
+        secrets = json.load(json_file)
+        bot_id = secrets['groupme_botid']
+
+    # Set the text of the message you want to send
+    message_text = "Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert."
+
+    # Set the payload for the request
+    payload = {
+        "bot_id": bot_id,
+        "text": message_text
+    }
+
+    # Make the POST request to the GroupMe API
+    response = requests.post("https://api.groupme.com/v3/bots/post", json=payload)
+
+    # Check the status code of the response
+    if response.status_code != 202:
+        print(f"Failed to send message: {response.status_code} {response.text}")
+    else:
+        #print("Message sent successfully.")
+        pass
+
+
+#^ google forms functions
+
 
 english_words = words.words()
 # open the card deck file
@@ -430,7 +637,10 @@ with open("ppn_deck.json", "r") as read_file:
 
 while len(card_deck) < 5000:
     card_deck = create_ppn_deck(5000, card_deck)
-    # card_deck = refine_cards(card_deck)
+    # create a copy of the card deck file for safety
+    with open('ppn_deck_copy.json', 'w') as outfile:
+        json.dump(card_deck, outfile, indent=4)
+    card_deck = refine_cards(card_deck)
     card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
     with open('ppn_deck.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
