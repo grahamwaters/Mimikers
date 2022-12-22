@@ -278,6 +278,7 @@ def get_random_wiki_entry():
             # Using wikipedia library.
             page = wikipedia.page(title)  # This is a random page from the category.
             title = page.title
+            # groupme_bot(str("Found a page for " + title))
             print("Found a page for ", title)
             # print(f'Page URL: {req_url}')
             summary = page.summary
@@ -365,10 +366,14 @@ def groupme_bot(message_text="Welcome to the ever expanding world of Generative 
         secrets = json.load(json_file)
         bot_id = secrets['groupme_botid']
 
+    # if the message is not a single string, convert it to a string
+    if type(message_text) != str:
+        message_text = str(message_text)
+
     # Set the payload for the request
     payload = {
         "bot_id": bot_id,
-        "text": message_text
+        "text": message_text[0:1000]
     }
 
     # Make the POST request to the GroupMe API
@@ -592,7 +597,7 @@ def refine_cards(card_deck):
         }
         for card in card_deck
     ]
-    print('shortened')
+
     # card_deck = [
     #     {
     #         **card,
@@ -617,7 +622,8 @@ def refine_cards(card_deck):
     #     for card in card_deck
     #     if len(card["summary_short"]) > 1200
     # ]
-    groupme_bot('I have refined the deck, so far I have ' + str(len(card_deck)) + ' cards')
+    talk = 'I have refined the deck, so far I have ' + str(len(card_deck)) + ' cards'
+    # groupme_bot(talk)
     return card_deck
 
 
@@ -630,18 +636,24 @@ with open("ppn_deck.json", "r") as read_file:
     card_deck = json.load(read_file)
 
 while len(card_deck) < 5000:
+    print(len(card_deck))
     # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'
     # groupme_bot(stringval)
-    card_deck = create_ppn_deck(100, card_deck)
+    card_deck = create_ppn_deck(5000, card_deck)
     # create a copy of the card deck file for safety
     with open('ppn_deck_copy.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
-    groupme_bot('I have created a copy of the deck for safety, so far I have ' + str(len(card_deck)) + ' cards')
+    # groupme_bot('I have created a copy of the deck for safety, so far I have ' + str(len(card_deck)) + ' cards')
     # show an example card (random sample)
+    #* card_deck = refine_cards(card_deck)
+    #* card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
+    # summarize the cards summaries to 2 sentences in one line
+    card_deck = [{**card, **{"summary_short": "".join(str(sentence) for sentence in summarize_text(card["summary"], 2))}} for card in card_deck] # summarize the cards summaries to 2 sentences in one line
     random_card = random.choice(card_deck)
-    groupme_bot('For example, here is a card: ' + str(random_card))
-    card_deck = refine_cards(card_deck)
-    card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
+    # every 100 cards, show an example card
+    if len(card_deck) % 100 == 0:
+        stringval='For example, here is a card: ' + str(random_card['title']) + ' ' + str(random_card['summary_short'])
+        groupme_bot(stringval)
     with open('ppn_deck.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
 print(f"I have created a deck of {len(card_deck)} cards")
