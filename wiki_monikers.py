@@ -249,19 +249,35 @@ def create_ppn_card():
             "summary": "error",
             "related": "error",
         }
+    # only return if the entry is unique and not a duplicate (check the title)
     return random_wiki_entry_dict
+    # if random_wiki_entry_dict['title'] not in [card['title'] for card in card_deck]:
+    #     return random_wiki_entry_dict
+    # else:
+    #     return {}
 
 
-def create_ppn_deck(num_cards=500, card_deck=[]):
+def create_ppn_deck(num_cards=10, card_deck=[]):
     # create a deck of person/place/thing cards
 
     while len(card_deck) < num_cards:
-        card_deck.append(create_ppn_card())
+        temp = create_ppn_card()
+        if temp != {}:
+            # check if the card is unique
+            if temp["title"] not in [card["title"] for card in card_deck]:
+                card_deck.append(temp)
+            else:
+                print("duplicate card")
+                print(f'we have {len(card_deck)} cards so far')
+                with open('ppn_deck.json', 'w') as outfile:
+                    json.dump(card_deck, outfile, indent=4)
     return card_deck
 
 
 english_words = words.words()
-card_deck = []
+# open the card deck file
+with open("ppn_deck.json", "r") as read_file:
+    card_deck = json.load(read_file)
 
 while len(card_deck) < 500:
     card_deck = create_ppn_deck(500, card_deck)
