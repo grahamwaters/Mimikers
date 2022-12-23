@@ -17,16 +17,54 @@ URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
 
 hard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders']
 obscure_mode_categories = ["Fictional_inventors"]
+
+profanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)
+
+events_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']
+
+linguistic_categories = ['English_phrases']
+biblical_categories = ['Biblical_phrases']
 # categories = ["paradoxes","Slogans","English-language_books"]
-categories = ["Literary_characters","Literary_concepts",
-              "Historical_eras","Viral_videos","Internet_memes"
-              "Theorems","21st-century_male_actors","21st-century_female_actors","Fables",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']
+base_categories = ["Literary_characters","Literary_concepts","Historical_eras","Viral_videos","Internet_memes","Theorems","21st-century_male_actors","21st-century_female_actors","Fables",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']
+
+# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories
+meme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]
+year_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]
+# subcats_foryears = ['_in_television']
+
+# Television_characters_introduced_in_1980 through 2023
+charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]
+# Video Games for years 1950 through 2023
+VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]
+
+# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture
+pop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']
+
+categories = base_categories
+#* appending to categories
+categories.extend(meme_categories) # add meme categories to categories
+# add in events and culture
+categories.extend(events_and_culture) # adds some events and culture to categories
+# add pop_culture_creatures
+categories.extend(pop_culture_creatures) # adds some pop culture creatures to categories
+# add year categories
+categories.extend(year_categories) # adds some year categories to categories
+# add charactersTV
+categories.extend(charactersTV) # adds some charactersTV to categories
+# add VideoGames_Categories
+categories.extend(VideoGames_Categories) # adds some VideoGames_Categories to categories
+# add linguistic_categories
+categories.extend(linguistic_categories) # adds some linguistic_categories to categories
 
 # these pages have links to extract
-pages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena']
+pages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena','https://en.wikipedia.org/wiki/List_of_largest_cities','https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies']
+
+# these are links for current events
+pages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report']
 
 
 
+# categories_extra = [
 #     "Fictional characters",
 #     "People",
 #     "Slogans",
@@ -139,11 +177,13 @@ pages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena']
 
 
 
-
+original_categories = categories.copy()
 
 import random
 # shuffle categories to get a random selection
 random.shuffle(categories)
+# select 20 random categories
+categories = categories[:20]
 for cat in enumerate(categories):
     URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
 
@@ -205,11 +245,47 @@ def unpack_definitions(phrase, definition):
     return phrase, definition
 
 
+# get the links from the page Forbes_Celebrity_100 list on wikipedia and return them as a list
+# def get_links_from_page(page):
+#     # get the html of the page
+#     html = requests.get(page).text
+#     # create a BeautifulSoup object to parse the html
+#     soup = BeautifulSoup(html, "html.parser")
+#     # get the links from the page
+#     links = soup.find_all("a", href=True)
+#     # return the links that go to a wikipedia page
+#     return [link["href"] for link in links if link["href"].startswith("/wiki/")]
+import pandas as pd
+# peoplelinks = get_links_from_page("https://en.wikipedia.org/wiki/Forbes_Celebrity_100_list")
+urls_master = pd.read_csv('./peoplelinks.csv', error_bad_lines=False)
+# convert to list of urls urls_master.values[0][0]
+urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]
+# only include urls with wikipedia in them
+urls_master = [url for url in urls_master if "wikipedia" in url]
+
 @sleep_and_retry
 def get_random_wiki_entry():
     # Use a while loop to retry the request until a valid page is found.
     while True:
         try:
+            URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
+            # shuffle categories to get a random selection
+            random.shuffle(original_categories)
+            # select 10 random categories
+            categories = original_categories[:20]
+            for cat in enumerate(categories):
+                URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
+            URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
+
+            # either randomly use URL or one of the urls from the urls_master list above
+            if random.randint(0, 1) == 0:
+                try:
+                    URL = random.choice(urls_master)
+                except:
+                    pass
+            else:
+                  pass
+
             # Use requests to get the page, then pass the redirected page url to wikipedia library.
             req_url = requests.get(URL).url  # This is a random page from the category.
             req_html = requests.get(req_url).text
@@ -321,6 +397,9 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
             # check if the card is unique
             if temp["title"] not in [card["title"] for card in card_deck]:
 
+                # if the title has "List of" in it, skip it
+                if "List of" in temp["title"]:
+                    continue
                 # clean up the summary:
                 card_summary = temp['summary'][1] if isinstance(temp['summary'], list) else str(temp['summary'])
                 temp['summary'] = unpack_definitions(temp['title'], card_summary) # unpack the definitions
@@ -698,11 +777,11 @@ english_words = words.words()
 with open("ppn_deck.json", "r") as read_file:
     card_deck = json.load(read_file)
 
-while len(card_deck) < 5000:
+while len(card_deck) < 10000:
     print(len(card_deck))
     # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'
     # groupme_bot(stringval)
-    card_deck = create_ppn_deck(5000, card_deck)
+    card_deck = create_ppn_deck(10000, card_deck)
     # create a copy of the card deck file for safety
     with open('ppn_deck_copy.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
