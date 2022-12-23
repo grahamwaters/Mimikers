@@ -119,6 +119,17 @@ categories = [
     "Sports and recreation"
 ]
 
+
+
+
+
+
+
+
+
+
+
+
 import random
 # shuffle categories to get a random selection
 random.shuffle(categories)
@@ -127,74 +138,6 @@ for cat in enumerate(categories):
 
 URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
-replacements = {
-    r"\bsex\b": "affection",
-    r"\bporn\w*\b": "adult entertainment",
-    r"fuck": "have intimate relations with",
-    r"fucking": "romancing, physically",
-    r"\bfuck\w*\b": " (bleep) ",
-    r"\bass\b": "dump truck",
-    r"\bshit\w*\b": "poop",
-    r"damn\w*\b": "darn",
-    r"god-damn\w*\b|goddamn\w*\b": "super darn",
-    r"\bass\b|\wasse*": "rear end",
-    r"cock": "rooster",
-    r"small dick energy": "little man syndrome",
-    r"\bdick\w*\b": " johnson ",
-    r"ppl": "people",
-    "\bwat\b": "what",
-    r"a black": "an african-american",
-    r"black person": "dark skinned person",
-    r"\bpee\b": "urinate",
-    r"\bpiss\b": "urinate",
-    r"\b(peeing|pissing)": "urinating",
-    r"white person": "caucasian",
-    r"\bwhore\w*\b": "prostitute",
-    r"nigg*": "racial slur",
-    "\r\n": " ",
-    r"\bslut\b": " loose person ",
-    r"\bblowjob\b": "random gift",
-    r"racist": "ignorant",
-    "racism": "fear of people that look different",
-    r"faggot": "gay person",
-    r"\bfag\w*\b": "gay person",
-    r"boob|boob*|breast": "lady pillows",
-    r"\bbitch*\b": "mean woman",
-    r"bastard*": "illegitimate child",
-    r"hoes?": "chicks",
-    r"breast*|jugs": "chest",
-    r"\bcunt*\b": "comtemptible person",
-    r"\bpuss\w*\b": "vagina",
-    r"\wdick*": "penis",
-    r"naked": "disrobed",
-    r"\bnud\w*\b": "unclothed",
-    r"\nmasterbate\w*\b": "self-gratified",
-    r"\bmasturbating\w*\b": "gratifying themselves",
-    r"\b\w{4}ilf\b": "person id like to get to know",
-    r"mastu\w*\b": "self-gratification",
-    "god": "deity",
-    "jesus": "religious figure",
-    "christ": "religious figure",
-    "bible": "religious text",
-    "church": "place of worship",
-    "religion": "set of beliefs",
-    r"\bpray\w*\b": "communicate with a deity",
-    "prayer": "a conversation with a deity",
-    "faith": "belief",
-    " lord ": "captain",
-    " allah ": "a diety",
-    "gay": "homosexual",
-    r" rapist ": " intense toucher ",
-    r" rape ": " unwelcomed tickling ",  # eek I know...
-    r"pedo\w*\b": "seventies mustached van driver",
-    "yahwey": "a deity",
-    "yeshua": "a religious figure",
-    " sexual": " reproductive",
-    "douche": "chad",
-    " sex ": " private adult time ",
-    "milf": "mother I would like to take on a date",
-    " butt ": "dumptruck/tailgate",
-}
 
 
 def replacer_censor(definition, phrase, replacements_dict):
@@ -246,7 +189,7 @@ def unpack_definitions(phrase, definition):
     # remove extra spaces
     # definition = re.sub(' +', ' ', definition)
 
-    phrase, definition = replacer_censor(definition, phrase, replacements)
+    #!phrase, definition = replacer_censor(definition, phrase, replacements)
 
     return phrase, definition
 
@@ -356,8 +299,6 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
     return card_deck
 
 #^ bot functions for groupme
-
-import requests
 
 def groupme_bot(message_text="Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert."):
     # Replace :bot_id with your bot's ID
@@ -563,7 +504,7 @@ def generate_related_deck(primary_card, number_of_cards_to_generate, min_len=100
 
 #^ refining functions
 def refine_cards(card_deck):
-    sentence_count = 2
+    sentence_count = 1
     card_deck = [
         {
             **card, # merge the card with the new summary
@@ -657,3 +598,91 @@ while len(card_deck) < 5000:
     with open('ppn_deck.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
 print(f"I have created a deck of {len(card_deck)} cards")
+
+
+from nltk.metrics.distance import edit_distance
+import json
+import nltk
+from nltk.corpus import wordnet
+import random
+import nltk
+from nltk.corpus import wordnet
+from tqdm import tqdm
+
+
+def find_synonyms(word):
+    synonyms = []
+    lemmatizer = nltk.WordNetLemmatizer()
+    for syn in wordnet.synsets(word):
+        for lemma in syn.lemmas():
+            synonym = lemma.name()
+            if synonym != word and synonym not in synonyms:
+                synonyms.append(synonym)
+    return set(synonyms)
+
+
+# open the card deck file
+with open("ppn_deck.json", "r") as read_file:
+    card_deck = json.load(read_file)
+
+stop_words = nltk.corpus.stopwords.words("english")
+
+
+def find_similar_words(title, definition, threshold=3):
+    # split the definition into a list of words
+    if type(definition) == list:
+        definition = " ".join(definition)
+    words = definition.split()
+    # remove words less than 3 characters and any english stop words
+    words = [word for word in words if word not in stop_words]
+    words = [word for word in words if len(word) > 3]
+    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold
+    # split the title into a list of words
+    title = title.split()
+    similar_words_list = []
+    for title_word in title:
+        similar_words = [
+            word for word in words if edit_distance(title_word, word) <= threshold
+        ]
+        # append the similar words to the list of similar words
+        similar_words_list.extend(similar_words)
+    # remove duplicate words
+    similar_words = set(similar_words_list)
+
+    return similar_words
+
+
+def replace_similar_words(title, definition, threshold=3):
+    similar_words = find_similar_words(title, definition, threshold)
+
+    # replace each similar word with a synonym
+    for word in similar_words:
+        synonyms = find_synonyms(word)  # find a synonym for the word -> set
+        # extract the synonym from the set
+        synonyms = list(synonyms)
+        # choose a random synonym from the set
+        try:
+            synonym = random.choice(synonyms)
+        except IndexError:
+            synonym = word
+
+        # print(f"Replacing {word} with {synonym}")
+        if type(definition) == list:
+            definition = " ".join(definition)
+        definition = definition.replace(word, synonym)
+
+    return definition
+
+
+# iterate through each card and replace the similar words in the summary_short with synonyms
+for card in tqdm(card_deck):
+    title = card["title"]
+    definition = card["summary"]
+    definition = replace_similar_words(title, definition)
+
+    # update the definition in the card dictionary
+    card["summary_short"] = definition
+
+# save the card deck to a new file
+with open("ppn_deck_cleaned.json", "w") as write_file:
+    json.dump(card_deck, write_file, indent=4)

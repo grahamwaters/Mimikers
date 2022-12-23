@@ -74,3 +74,59 @@ if response.status_code != 202:
     print(f"Failed to send message: {response.status_code} {response.text}")
 else:
     print("Message sent successfully.")
+
+
+
+########################
+
+
+import textwrap
+from PIL import Image, ImageDraw, ImageFont
+
+def generate_card(title, definition, points):
+    # determine the font size based on the length of the definition
+    font_size = int(len(definition) / 20)
+    if font_size < 10:
+        font_size = 10
+    elif font_size > 20:
+        font_size = 20
+
+    # create the image and draw objects
+    image = Image.new('RGB', (400, 300), (255, 255, 255))
+    draw = ImageDraw.Draw(image)
+
+    # select a font and draw the title in a rectangle
+    font = ImageFont.truetype('arial.ttf', size=font_size)
+    draw.rectangle([(10, 10), (390, 50)], fill='lightgrey')
+    draw.text((20, 20), title, font=font, fill=(0, 0, 0))
+
+    # draw the definition in a rectangle
+    draw.rectangle([(10, 60), (390, 250)], fill='lightgrey')
+    draw.text((20, 70), definition, font=font, fill=(0, 0, 0))
+
+    # draw a circle around the point value
+    draw.ellipse([(360, 270), (390, 300)], fill='lightgrey')
+    draw.text((365, 275), str(points), font=font, fill=(0, 0, 0))
+
+    # save the image
+    image.save('card.png')
+
+
+def create_card(title, definition, point_value, card_width, card_height):
+    # code to create the card
+    # wrap the title text
+    wrapped_title = textwrap.wrap(title, width=card_width)
+    # wrap the definition text
+    wrapped_definition = textwrap.wrap(definition, width=card_width)
+
+
+def create_card(title, definition, point_value, card_width, card_height):
+    # code to create the card
+    # add some padding to the card
+    padding = 10
+    # draw a rectangle around the title
+    draw.rectangle([(padding, padding), (card_width-padding, padding+font_size)], fill=(255, 255, 255))
+    # draw a rectangle around the definition
+    draw.rectangle([(padding, padding+font_size), (card_width-padding, card_height-padding)], fill=(255, 255, 255))
+    # draw a circle around the point value
+    draw.ellipse([(card_width-padding-font_size, card_height-padding-font_size), (card_width-padding, card_height-padding)], fill=(255, 255, 255))
