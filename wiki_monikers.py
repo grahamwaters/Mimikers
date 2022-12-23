@@ -280,6 +280,7 @@ def get_random_wiki_entry():
             # either randomly use URL or one of the urls from the urls_master list above
             if random.randint(0, 1) == 0:
                 try:
+                    print("using random url from urls_master list")
                     URL = random.choice(urls_master)
                 except:
                     pass
