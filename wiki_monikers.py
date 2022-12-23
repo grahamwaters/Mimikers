@@ -15,109 +15,120 @@ from tqdm import tqdm
 import json
 URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
 
-categories = [
-    "Fictional characters",
-    "People",
-    "Slogans",
-    "celebrities",
-    "Cities",
-    "Famous quotes",
-    "psychological disorders",
-    "Diseases",
-    "Medical conditions",
-    "famous court cases",
-    "Famous crimes",
-    "art movements",
-    "art techniques",
-    "art styles",
-    "laws of physics",
-    "well-known laws",
-    "well-known theorems",
-    "well-known equations",
-    "well-known formulas",
-    "well-known proofs",
-    "well-known conjectures",
-    "well-known people",
-    "Famous Criminals",
-    "paradoxes",
-    "Famous speeches",
-    "mythical creatures",
-    "Famous last words",
-    "epigrams",
-    "adages",
-    "Historical events",
-    "Mythological figures",
-    "Landmarks",
-    "Inventions",
-    "Scientists",
-    "Artists",
-    "Writers",
-    "Musicians",
-    "Athletes",
-    "memes",
-    "Political figures",
-    "TV shows",
-    "Movies",
-    "Video games",
-    "Animals",
-    "Chemical compounds",
-    "Astronomical objects",
-    "Geographical features",
-    "Countries",
-    "Languages",
-    "Cultures",
-    "Holidays",
-    "Words and phrases",
-    "Proverbs",
-    "Idioms",
-    "Slang terms",
-    "Jokes",
-    "Riddles",
-    "Events",
-    "Pop culture",
-    "Literature",
-    "Art",
-    "80s pop culture",
-    "90s pop culture",
-    "2000s pop culture",
-    "2010s pop culture",
-    "2020s pop culture",
-    "70s pop culture",
-    "60s pop culture",
-    "50s pop culture",
-    "popular music",
-    "popular movies",
-    "popular television",
-    "popular books",
-    "popular video games",
-    "tiktok trends",
-    "tiktok memes",
-    "tiktok dances",
-    "tiktok challenges",
-    "tiktok songs",
-    "vine trends",
-    "vine memes",
-    "vine dances",
-    "vine challenges",
-    "teen slang",
-    "teen memes",
-    "teen dances",
-    "millennial slang",
-    "millennial memes",
-    "millennial dances",
-    "millennial challenges",
-    "millennial songs",
-    "gen z slang",
-    "gen z memes",
-    "gen z dances",
-    "gen z challenges",
-    "gen z songs",
-    "gen z trends",
-    "Science and technology",
-    "Nature and the environment",
-    "Food and drink",
-    "Sports and recreation"
-]
+hard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders']
+obscure_mode_categories = ["Fictional_inventors"]
+# categories = ["paradoxes","Slogans","English-language_books"]
+categories = ["Literary_characters","Literary_concepts",
+              "Historical_eras","Viral_videos","Internet_memes"
+              "Theorems","21st-century_male_actors","21st-century_female_actors","Fables",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']
+
+# these pages have links to extract
+pages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena']
+
+
+
+#     "Fictional characters",
+#     "People",
+#     "Slogans",
+#     "celebrities",
+#     "Cities",
+#     "Famous quotes",
+#     "psychological disorders",
+#     "Diseases",
+#     "Medical conditions",
+#     "famous court cases",
+#     "Famous crimes",
+#     "art movements",
+#     "art techniques",
+#     "art styles",
+#     "laws of physics",
+#     "well-known laws",
+#     "well-known theorems",
+#     "well-known equations",
+#     "well-known formulas",
+#     "well-known proofs",
+#     "well-known conjectures",
+#     "well-known people",
+#     "Famous Criminals",
+#     "paradoxes",
+#     "Famous speeches",
+#     "mythical creatures",
+#     "Famous last words",
+#     "epigrams",
+#     "adages",
+#     "Historical events",
+#     "Mythological figures",
+#     "Landmarks",
+#     "Inventions",
+#     "Scientists",
+#     "Artists",
+#     "Writers",
+#     "Musicians",
+#     "Athletes",
+#     "memes",
+#     "Political figures",
+#     "TV shows",
+#     "Movies",
+#     "Video games",
+#     "Animals",
+#     "Chemical compounds",
+#     "Astronomical objects",
+#     "Geographical features",
+#     "Countries",
+#     "Languages",
+#     "Cultures",
+#     "Holidays",
+#     "Words and phrases",
+#     "Proverbs",
+#     "Idioms",
+#     "Slang terms",
+#     "Jokes",
+#     "Riddles",
+#     "Events",
+#     "Pop culture",
+#     "Literature",
+#     "Art",
+#     "80s pop culture",
+#     "90s pop culture",
+#     "2000s pop culture",
+#     "2010s pop culture",
+#     "2020s pop culture",
+#     "70s pop culture",
+#     "60s pop culture",
+#     "50s pop culture",
+#     "popular music",
+#     "popular movies",
+#     "popular television",
+#     "popular books",
+#     "popular video games",
+#     "tiktok trends",
+#     "tiktok memes",
+#     "tiktok dances",
+#     "tiktok challenges",
+#     "tiktok songs",
+#     "vine trends",
+#     "vine memes",
+#     "vine dances",
+#     "vine challenges",
+#     "teen slang",
+#     "teen memes",
+#     "teen dances",
+#     "millennial slang",
+#     "millennial memes",
+#     "millennial dances",
+#     "millennial challenges",
+#     "millennial songs",
+#     "gen z slang",
+#     "gen z memes",
+#     "gen z dances",
+#     "gen z challenges",
+#     "gen z songs",
+#     "gen z trends",
+#     "Science and technology",
+#     "Nature and the environment",
+#     "Food and drink",
+#     "Sports and recreation"
+# ]
 
 
 
@@ -222,7 +233,7 @@ def get_random_wiki_entry():
             page = wikipedia.page(title)  # This is a random page from the category.
             title = page.title
             # groupme_bot(str("Found a page for " + title))
-            print("Found a page for ", title)
+            #!print("Found a page for ", title)
             # print(f'Page URL: {req_url}')
             summary = page.summary
             # categories = page.categories
@@ -275,21 +286,49 @@ def create_ppn_card():
     # else:
     #     return {}
 
+import re
+
+def replace_definition_start(definition, title):
+    # Create the pattern to search for
+    if isinstance(definition, list): definition = definition[1]
+    else: definition = str(definition)
+
+
+    pattern = r"^{}\s+(is|was|are|were)\s+a\s+".format(re.escape(title))
+
+    # Use the `search` function to find the first occurrence of the pattern
+    match = re.search(pattern, definition, re.IGNORECASE) # re.IGNORECASE makes the search case-insensitive
+    if match:
+        # Get the start and end indices of the match
+        start, end = match.span()
+        # Replace the match with "This is a"
+        new_definition = "{}This is a {}".format(definition[:start], definition[end:])
+        return new_definition
+    return definition
+
 
 def create_ppn_deck(num_cards=10, card_deck=[]):
     # create a deck of person/place/thing cards
 
+    new_card_exists_flag = False
     while len(card_deck) < num_cards:
         temp = create_ppn_card()
         if temp != {}:
             # check if the card is unique
             if temp["title"] not in [card["title"] for card in card_deck]:
                 card_deck.append(temp)
+                # in the printline show the card number as the first element, which is the length of card_deck
+                print(f'card {len(card_deck)}: {temp["title"]}: \n\t{temp["summary"][1][0:60]}...')
+                new_card_exists_flag = True
             else:
-                print("duplicate card")
-                print(f'we have {len(card_deck)} cards so far')
-                with open('ppn_deck.json', 'w') as outfile:
-                    json.dump(card_deck, outfile, indent=4)
+                # print("duplicate card")
+                # print(f'we have {len(card_deck)} cards so far')
+                if new_card_exists_flag:
+                    with open('ppn_deck.json', 'w') as outfile:
+                        json.dump(card_deck, outfile, indent=4)
+                    new_card_exists_flag = False
+        else:
+            print("error creating card")
         if len(card_deck) % 20 == 0:
             groupme_bot(f'I have {len(card_deck)} cards so far')
             # show a random card by sampling the deck
@@ -568,6 +607,80 @@ def refine_cards(card_deck):
     return card_deck
 
 
+
+#^ Creating a printable deck of cards with Pillow
+
+# import random
+# import textwrap
+# import os
+# from PIL import Image, ImageDraw, ImageFont
+# import pytrends
+# # build a pytrends object with the Google Trends API
+# pytrend = pytrends.TrendReq(hl='en-US', tz=360)
+# # with open("ppn_deck_cleaned.json", "w") as write_file:
+# #     json.dump(card_deck, write_file, indent=4)
+
+# def get_google_trends_score(title):
+#     try:
+#         pytrend.build_payload([title])
+#         trend_data = pytrend.interest_over_time()
+#         point_value = trend_data[title].mean()
+#     except:
+#         point_value = 10
+
+#     return int(point_value)
+
+# def generate_card(title, definition, points):
+#     # determine the font size based on the length of the definition
+#     # font_size = int(len(definition) / 20)
+#     font_size = max(30, int(len(definition) / 20))
+#     # create the image and draw objects
+#     # set the canvas size to 8.5 cm by 5.5 cm
+#     image = Image.new('RGB', (550, 850), (255, 255, 255))
+#     draw = ImageDraw.Draw(image)
+
+#     # select a font and draw the title in a rectangle
+#     font = ImageFont.truetype('./fonts/Menlo.ttc', 15)
+#     draw.rectangle([(10, 10), (540, 50)], fill='lightgrey')
+#     draw.text((20, 20), title, fill=(0, 0, 0), font=font)
+
+#     # draw the definition in a rectangle, and soft wrap the text. Don't exceed 40 characters per line.
+#     # wrapped_definition = textwrap.wrap(definition, width=40)
+#     definition = str(definition) if isinstance(definition, str) else definition[0]
+#     wrapped_definition = textwrap.fill(definition, width=80)
+#     wrapped_definition_str = "\n".join(wrapped_definition)
+#     font = ImageFont.truetype('./fonts/Menlo.ttc', font_size)
+#     draw.text((20, 70), wrapped_definition_str, fill=(0, 0, 0))
+
+#     # draw a circle around the point value
+#     draw.ellipse([(520, 820), (540, 840)], fill='lightblue')
+#     # draw the point value
+
+#     font = ImageFont.truetype('./fonts/Menlo.ttc', font_size)
+#     draw.text((525, 825), str(points), fill=(0, 0, 0))
+
+#     # save the image
+#     image.save('./card_images/{}.png'.format(len(os.listdir('./card_images/'))))
+
+# def generate_physical_cards():
+#     #^ Example usage
+#     card = random.choice(card_deck)
+#     print(card)
+#     summary = card['summary'][1] if isinstance(card['summary'], list) else card['summary']
+#     # summarize the definition with the summarize function
+#     summary = summarize_text(summary, 2) if isinstance(summary, str) else summary # if the summary is a list, then it's already been summarized
+#     generate_card(str(card['title']), summary, points=get_google_trends_score(card['title']))
+#     # generate_card('test title', 'test definition', 10)
+
+#     # iterate through each card and generate a card image, starting with the index of the last card image
+#     for card in tqdm(card_deck[len(os.listdir('./card_images/'))]):
+#         title = card['title']
+#         summary = card['summary'][1] if isinstance(card['summary'], list) else card['summary']
+#         # summarize the definition with the summarize function
+#         summary = summarize_text(summary, 2) if isinstance(summary, str) else summary # if the summary is a list, then it's already been summarized
+#         generate_card(str(card['title']), summary, points=get_google_trends_score(card['title']))
+
+
 #^ google forms functions
 
 
@@ -587,7 +700,7 @@ while len(card_deck) < 5000:
     # groupme_bot('I have created a copy of the deck for safety, so far I have ' + str(len(card_deck)) + ' cards')
     # show an example card (random sample)
     #* card_deck = refine_cards(card_deck)
-    #* card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
+    # card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
     # summarize the cards summaries to 2 sentences in one line
     card_deck = [{**card, **{"summary_short": "".join(str(sentence) for sentence in summarize_text(card["summary"], 2))}} for card in card_deck] # summarize the cards summaries to 2 sentences in one line
     random_card = random.choice(card_deck)
@@ -597,6 +710,10 @@ while len(card_deck) < 5000:
         groupme_bot(stringval)
     with open('ppn_deck.json', 'w') as outfile:
         json.dump(card_deck, outfile, indent=4)
+    # groupme message that the deck has been created and is being saved as pngs
+    message = 'I have created a deck of ' + str(len(card_deck)) + ' cards, and am now saving them as images'
+    groupme_bot(message)
+    #!generate_physical_cards()
 print(f"I have created a deck of {len(card_deck)} cards")
 
 
