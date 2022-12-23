@@ -307,6 +307,10 @@ def replace_definition_start(definition, title):
     return definition
 
 
+
+
+
+
 def create_ppn_deck(num_cards=10, card_deck=[]):
     # create a deck of person/place/thing cards
 
@@ -316,6 +320,11 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
         if temp != {}:
             # check if the card is unique
             if temp["title"] not in [card["title"] for card in card_deck]:
+
+                # clean up the summary:
+                card_summary = temp['summary'][1] if isinstance(temp['summary'], list) else str(temp['summary'])
+                temp['summary'] = unpack_definitions(temp['title'], card_summary) # unpack the definitions
+
                 card_deck.append(temp)
                 # in the printline show the card number as the first element, which is the length of card_deck
                 print(f'card {len(card_deck)}: {temp["title"]}: \n\t{temp["summary"][1][0:60]}...')
