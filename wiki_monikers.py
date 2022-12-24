@@ -34,7 +34,7 @@ year_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range
 # subcats_foryears = ['_in_television']
 
 # Television_characters_introduced_in_1980 through 2023
-charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]
+#//charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]
 # Video Games for years 1950 through 2023
 #!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]
 
@@ -51,7 +51,7 @@ categories.extend(pop_culture_creatures) # adds some pop culture creatures to ca
 # add year categories
 categories.extend(year_categories) # adds some year categories to categories
 # add charactersTV
-categories.extend(charactersTV) # adds some charactersTV to categories
+#//categories.extend(charactersTV) # adds some charactersTV to categories
 categories.extend(biblical_categories) # adds some biblical_categories to categories
 # add VideoGames_Categories
 #!categories.extend(VideoGames_Categories) # adds some VideoGames_Categories to categories
@@ -65,8 +65,8 @@ categories.extend(events_and_culture) # adds some events_and_culture to categori
 #* categories = meme_categories
 
 #* let's get all memes and years only
-categories = meme_categories
-categories.extend(year_categories)
+#//categories = meme_categories
+#//categories.extend(year_categories)
 
 
 # these pages have links to extract
