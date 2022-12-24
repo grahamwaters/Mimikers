@@ -1,0 +1,1067 @@
+[
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "textwrap",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "textwrap",
+        "description": "textwrap",
+        "detail": "textwrap",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFont",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "urbandictionary",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urbandictionary",
+        "description": "urbandictionary",
+        "detail": "urbandictionary",
+        "documentation": {}
+    },
+    {
+        "label": "pytrends",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytrends",
+        "description": "pytrends",
+        "detail": "pytrends",
+        "documentation": {}
+    },
+    {
+        "label": "TrendReq",
+        "importPath": "pytrends.request",
+        "description": "pytrends.request",
+        "isExtraImport": true,
+        "detail": "pytrends.request",
+        "documentation": {}
+    },
+    {
+        "label": "wikipedia",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wikipedia",
+        "description": "wikipedia",
+        "detail": "wikipedia",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "PyDictionary",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PyDictionary",
+        "description": "PyDictionary",
+        "detail": "PyDictionary",
+        "documentation": {}
+    },
+    {
+        "label": "PyDictionary",
+        "importPath": "PyDictionary",
+        "description": "PyDictionary",
+        "isExtraImport": true,
+        "detail": "PyDictionary",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "spacy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "spacy",
+        "description": "spacy",
+        "detail": "spacy",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "nltk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nltk",
+        "description": "nltk",
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "LsaSummarizer",
+        "importPath": "sumy.summarizers.lsa",
+        "description": "sumy.summarizers.lsa",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lsa",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.parse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "send_cards",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def send_cards(cards, player):\n    # Send the batch of cards to the player\n    # Replace this with your code for sending the cards\n    print(f\"Sending {cards} to {player}\")\n# Define a list of players\nplayers = ['player1', 'player2', 'player3']\n# Define a list of cards\ncards = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'card7', 'card8', 'card9', 'card10', 'card11', 'card12', 'card13', 'card14', 'card15']\n# Iterate through the list of players, and send them a batch of 10 cards\nfor player in players:",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "select_cards",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def select_cards(player):\n    # Ask the player to select their five cards\n    # Replace this with your code for asking the player to select their cards\n    selected_cards = ['card1', 'card2', 'card3', 'card4', 'card5']\n    # Return the selected cards\n    return selected_cards\n# Define a list of players\nplayers = ['player1', 'player2', 'player3']\n# Create an empty list to store the selected cards\nselected_cards = []",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def generate_card(title, definition, points):\n    # determine the font size based on the length of the definition\n    font_size = int(len(definition) / 20)\n    if font_size < 10:\n        font_size = 10\n    elif font_size > 20:\n        font_size = 20\n    # create the image and draw objects\n    image = Image.new('RGB', (400, 300), (255, 255, 255))\n    draw = ImageDraw.Draw(image)",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "create_card",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def create_card(title, definition, point_value, card_width, card_height):\n    # code to create the card\n    # wrap the title text\n    wrapped_title = textwrap.wrap(title, width=card_width)\n    # wrap the definition text\n    wrapped_definition = textwrap.wrap(definition, width=card_width)\ndef create_card(title, definition, point_value, card_width, card_height):\n    # code to create the card\n    # add some padding to the card\n    padding = 10",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "create_card",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def create_card(title, definition, point_value, card_width, card_height):\n    # code to create the card\n    # add some padding to the card\n    padding = 10\n    # draw a rectangle around the title\n    draw.rectangle([(padding, padding), (card_width-padding, padding+font_size)], fill=(255, 255, 255))\n    # draw a rectangle around the definition\n    draw.rectangle([(padding, padding+font_size), (card_width-padding, card_height-padding)], fill=(255, 255, 255))\n    # draw a circle around the point value\n    draw.ellipse([(card_width-padding-font_size, card_height-padding-font_size), (card_width-padding, card_height-padding)], fill=(255, 255, 255))",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "players = ['player1', 'player2', 'player3']\n# Define a list of cards\ncards = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'card7', 'card8', 'card9', 'card10', 'card11', 'card12', 'card13', 'card14', 'card15']\n# Iterate through the list of players, and send them a batch of 10 cards\nfor player in players:\n    # Get the next batch of 10 cards\n    batch = cards[:10]\n    # Send the batch of cards to the player\n    send_cards(batch, player)\n    # Remove the sent cards from the list",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "cards",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "cards = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'card7', 'card8', 'card9', 'card10', 'card11', 'card12', 'card13', 'card14', 'card15']\n# Iterate through the list of players, and send them a batch of 10 cards\nfor player in players:\n    # Get the next batch of 10 cards\n    batch = cards[:10]\n    # Send the batch of cards to the player\n    send_cards(batch, player)\n    # Remove the sent cards from the list\n    cards = cards[10:]\n# Define a function that takes a player, and asks them to select their five cards",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "players = ['player1', 'player2', 'player3']\n# Create an empty list to store the selected cards\nselected_cards = []\n# Iterate through the list of players, and ask them to select their five cards\nfor player in players:\n    # Ask the player to select their five cards\n    player_selected_cards = select_cards(player)\n# Add the player's selected cards to the list of selected cards\nselected_cards += player_selected_cards\n# Print the list of selected cards",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "selected_cards",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "selected_cards = []\n# Iterate through the list of players, and ask them to select their five cards\nfor player in players:\n    # Ask the player to select their five cards\n    player_selected_cards = select_cards(player)\n# Add the player's selected cards to the list of selected cards\nselected_cards += player_selected_cards\n# Print the list of selected cards\nprint(selected_cards)\nimport requests",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "bot_id",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "bot_id = \"c9d6f93a4e96eeadbeaf21feef\"\n# Set the base URL for the GroupMe API\nbase_url = \"https://api.groupme.com/v3\"\n# Set the payload for the request to the GroupMe API\n# This payload will send a message to the group with the list of cards\npayload = {\n    \"bot_id\": bot_id,\n    \"text\": \"Here are your cards: [Card 1, Card 2, Card 3, Card 4, Card 5, Card 6, Card 7, Card 8, Card 9, Card 10]\"\n}\n# Make the POST request to the GroupMe API to send the message",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "base_url",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "base_url = \"https://api.groupme.com/v3\"\n# Set the payload for the request to the GroupMe API\n# This payload will send a message to the group with the list of cards\npayload = {\n    \"bot_id\": bot_id,\n    \"text\": \"Here are your cards: [Card 1, Card 2, Card 3, Card 4, Card 5, Card 6, Card 7, Card 8, Card 9, Card 10]\"\n}\n# Make the POST request to the GroupMe API to send the message\nresponse = requests.post(f\"{base_url}/bots/post\", json=payload)\n# Check the status code of the response",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "payload",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "payload = {\n    \"bot_id\": bot_id,\n    \"text\": \"Here are your cards: [Card 1, Card 2, Card 3, Card 4, Card 5, Card 6, Card 7, Card 8, Card 9, Card 10]\"\n}\n# Make the POST request to the GroupMe API to send the message\nresponse = requests.post(f\"{base_url}/bots/post\", json=payload)\n# Check the status code of the response\nif response.status_code != 202:\n    print(f\"Failed to send message: {response.status_code} {response.text}\")\nelse:",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "response = requests.post(f\"{base_url}/bots/post\", json=payload)\n# Check the status code of the response\nif response.status_code != 202:\n    print(f\"Failed to send message: {response.status_code} {response.text}\")\nelse:\n    print(\"Message sent successfully.\")\n########################\nimport textwrap\nfrom PIL import Image, ImageDraw, ImageFont\ndef generate_card(title, definition, points):",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "def check_for_badwords(definition, bad_patterns):\n    # define a dictionary of replacements for the bad words\npattern = r'word*|the second|kite'\n# to make the game more fun we can replace words with less inflamatory ones.\ndef check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    return",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "def check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    return\ndef check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        print(f'Found a good pattern in the definition: {definition}')\n        return True",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_good_patterns",
+        "kind": 2,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "def check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        print(f'Found a good pattern in the definition: {definition}')\n        return True\n    elif any(re.match(r'\\b' + word + r'\\b', title) for word in good_patterns):\n        print(f'Found a good pattern in the title: {title}')\n        return True\n    else:",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "bad_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "bad_patterns = r\"sex*| porn*|fuck*|-ass*|ass|shit|damn*|ass|asse*|cock*|whor*|nigg*|slut*|blowjob|fagg*|boob|boob*| bitch*| bastard*| ho |hoe|breast*|jugs| cunt*| puss*| dick*| naked| nud*| masterb*|mastu|nipple*|penis|penal|peni*|god|jesus|christ|bible|church|religion|pray|praye|faith|lord|allah|muslim|islam|allah|ejaculate|jew*|islamic|atheist|rapist*|rape*|pedo*|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|yahwey|yeshua|israel*|sex*| porn*|fuck*|-ass*|ass|shit|slut*|blowjob|fagg*|boob|boob*| breast*|jugs| cunt*| puss*| dick*| naked| nud*| nipple*|penis|penal|peni*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*| fellatio| fuck| nigg*|lynch|erotic*|genit*|balls|nipples\"\nreplacements = {\n    'sex*': 'affection',\n    'porn*': 'adult entertainment',\n    'fuck*': 'intercourse',\n    '-ass*': 'rear end',\n    'ass': 'rear end',\n    'shit': 'feces',\n    'damn*': 'darn',\n    'ass|asse*': 'rear end',",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "replacements",
+        "kind": 5,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "replacements = {\n    'sex*': 'affection',\n    'porn*': 'adult entertainment',\n    'fuck*': 'intercourse',\n    '-ass*': 'rear end',\n    'ass': 'rear end',\n    'shit': 'feces',\n    'damn*': 'darn',\n    'ass|asse*': 'rear end',\n    'cock*': 'male bird',",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "pattern",
+        "kind": 5,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "pattern = r'word*|the second|kite'\n# to make the game more fun we can replace words with less inflamatory ones.\ndef check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    return\ndef check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in bad_patterns):\n        return True\n    else:\n        return False\ndef check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_good_patterns",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        print(f'Found a good pattern in the definition: {definition}')\n        return True\n    elif any(re.match(r'\\b' + word + r'\\b', title) for word in good_patterns):\n        print(f'Found a good pattern in the title: {title}')\n        return True\n    else:",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "remove_undesireable_sentences",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def remove_undesireable_sentences(definition, title, bad_patterns):\n    # convert the definition and title to lowercase\n    definition = definition.lower()\n    title = title.lower()\n    # split the definition into sentences\n    sentences = definition.split('.')\n    # split the title into words\n    title_words = title.split()\n    # initialize a list to store the acceptable sentences\n    acceptable_sentences = []",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def unpack_definitions(definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\",\"\")\n    definition = definition.replace(\"]\",\"\")\n    definition = definition.replace(\"'\",\"\")\n    definition = definition.replace('\"',\"\")\n    definition = definition.replace(\"(\",\"\")\n    definition = definition.replace(\")\",\"\")\n    # remove double spaces",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_length",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def get_page_length(phrase):\n  # search for pages on Wikipedia that match the given phrase\n    try:\n        pages = wikipedia.search(phrase)\n        # retrieve the first page from the search results\n        page = wikipedia.page(pages[0])\n        print(f'Found the page for {page.title}', end='')\n        if phrase.lower() != page.title.lower():\n            print(' ... nevermind... not the right page.')\n            return 0",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def main():\n    # example: usage example,\n    # upvotes: number of upvotes on Urban Dictionary,\n    # downvotes: number of downvotes on Urban Dictionary\n    import time\n    wikitest = False # set to true to test the wikipedia page length\n    # include a phrase if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary\n    rand_dict = {}\n    total_votes_thresh = 200 # min number of upvotes + downvotes\n    upvotes_thresh = 100 # min number of upvotes",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "bad_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "bad_patterns = r\"sex*| porn*|fuck*|-ass*|ass|shit|damn*|ass|asse*|cock*|whor*|nigg*|slut*|blowjob|fagg*|boob|boob*| bitch*| bastard*| ho |hoe|breast*|jugs| cunt*| puss*| dick*| naked| nud*| masterb*|mastu|nipple*|penis|penal|peni*|god|jesus|christ|bible|church|religion|pray|praye|faith|lord|allah|muslim|islam|allah|ejaculate|jew*|islamic|atheist|rapist*|rape*|pedo*|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|yahwey|yeshua|israel*|sex*| porn*|fuck*|-ass*|ass|shit|slut*|blowjob|fagg*|boob|boob*| breast*|jugs| cunt*| puss*| dick*| naked| nud*| nipple*|penis|penal|peni*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*| fellatio| fuck| nigg*|lynch|erotic*|genit*|balls|nipples\"\n# to make the game more fun we can replace words with less inflamatory ones.\ndef check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in bad_patterns):\n        return True\n    else:\n        return False\ndef check_for_good_patterns(definition, title):",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_good_patterns",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def check_for_good_patterns(definition, title, good_patterns):\n    # check both title and definition for good patterns\n    good_patterns = [r'phobia','slang','acronymn','meme']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        return True\n    elif any(re.match(r'\\b' + word + r'\\b', title) for word in good_patterns):\n        return True\n    else:\n        return False\ndef unpack_definitions(definition):",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def unpack_definitions(definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\",\"\")\n    definition = definition.replace(\"]\",\"\")\n    definition = definition.replace(\"'\",\"\")\n    definition = definition.replace('\"',\"\")\n    definition = definition.replace(\"(\",\"\")\n    definition = definition.replace(\")\",\"\")\n    print(definition)",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_card",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def create_ppn_card():\n    # create a person/place/thing card\n    # get a random wikipedia entry\n    random_wiki_entry = wikipedia.random(pages=1)\n    # get the summary of the entry\n    random_wiki_entry_summary = wikipedia.summary(random_wiki_entry)\n    # get the url of the entry\n    random_wiki_entry_url = wikipedia.page(random_wiki_entry).url\n    # get the title of the entry\n    random_wiki_entry_title = wikipedia.page(random_wiki_entry).title",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "is_person",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def is_person(wiki_entry_dict):\n    # check if the entry is a person. If it is, return True. If not, return False.\n    # get the categories of the entry\n    random_wiki_entry_categories = wiki_entry_dict[\"categories\"]\n    # check if the entry is a person\n    if \"Category:Living people\" in random_wiki_entry_categories:\n        return True\n    else:\n        return False\n# Function Two: Card Creator for a random Phrase from Urban Dictionary",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_religious_words",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def check_for_religious_words(definition):\n    definition = definition.lower()\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in ['god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians']):\n        return True\n    else:\n        return False\nimport re\ndef check_for_badwords(definition):\n    definition = definition.lower()\n    bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def check_for_badwords(definition):\n    definition = definition.lower()\n    bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']\n    # if any of the buzzwords are found return true else false\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in bad_patterns):\n        return True\n    else:\n        return False\ndef remove_undesireable_sentences(definition):\n    definition = definition.lower()",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "remove_undesireable_sentences",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def remove_undesireable_sentences(definition):\n    definition = definition.lower()\n    # removes any sentence that contains a regex match to any word in the buzzwords list leaving the other sentences intact.\n    # remove sentences that are not in English\n    definition = re.sub(r'[^\\x00-\\x7f]',r'', definition)\n    # example: \"A woman with huge breasts\" would be removed because of the mention of \"breast\"\n    buzzwords = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']\n    # remove sentences that contain a regex match to any word in the buzzwords list\n    definition = re.sub(r'|'.join(map(re.escape, buzzwords)), '', definition)\n    return definition #",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def main():\n    # example: usage example,\n    # upvotes: number of upvotes on Urban Dictionary,\n    # downvotes: number of downvotes on Urban Dictionary\n    import time\n    wikitest = False # set to true to test the wikipedia page length\n    # include a phrase if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary\n    rand_dict = {}\n    total_votes_thresh = 20\n    upvotes_thresh = 50 # min number of upvotes",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "good_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "good_patterns = [r'phobia','slang','acronymn','meme']\ndef main():\n    # example: usage example,\n    # upvotes: number of upvotes on Urban Dictionary,\n    # downvotes: number of downvotes on Urban Dictionary\n    import time\n    wikitest = False # set to true to test the wikipedia page length\n    # include a phrase if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary\n    rand_dict = {}\n    total_votes_thresh = 20",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "bad_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.test.",
+        "description": "storage_bin.test.",
+        "peekOfCode": "bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'bitch*', r'bastard*',' ho |hoe',r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'masterb*',r'mastu',r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','ejaculate','jew*','islamic','atheist',r'rapist*|rape*',r'pedo*','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','yahwey','yeshua',r'israel*',r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']\n# bad patterns with no dupes\nunique = [] # init\nunique = [word for word in bad_patterns if word not in unique]",
+        "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "unique",
+        "kind": 5,
+        "importPath": "storage_bin.test.",
+        "description": "storage_bin.test.",
+        "peekOfCode": "unique = [] # init\nunique = [word for word in bad_patterns if word not in unique]",
+        "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "unique",
+        "kind": 5,
+        "importPath": "storage_bin.test.",
+        "description": "storage_bin.test.",
+        "peekOfCode": "unique = [word for word in bad_patterns if word not in unique]",
+        "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\n# open the card deck file",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "find_similar_words",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold\n    # split the title into a list of words",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "replace_similar_words",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    # replace each similar word with a synonym\n    for word in similar_words:\n        synonyms = find_synonyms(word)  # find a synonym for the word -> set\n        # extract the synonym from the set\n        synonyms = list(synonyms)\n        # choose a random synonym from the set\n        try:\n            synonym = random.choice(synonyms)",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "replacer_censor",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)\n    return phrase, definition\n# todo\ndef summarize_text(text, num_sentences):\n    \"\"\"",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    # create a PlaintextParser object to parse the text\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    # choose a summarization algorithm\n    # algorithm = LsaSummarizer()\n    algorithm = LexRankSummarizer()\n    # summarize the text and return the summary as a list of sentences",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def unpack_definitions(phrase, definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\", \"\")\n    definition = definition.replace(\"]\", \"\")\n    definition = definition.replace(\"'\", \"\")\n    definition = definition.replace('\"', \"\")\n    definition = definition.replace(\"(\", \"\")\n    definition = definition.replace(\")\", \"\")\n    # remove double spaces",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entry",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            # shuffle categories to get a random selection\n            random.shuffle(original_categories)\n            # select 10 random categories\n            categories = original_categories[:20]\n            for cat in enumerate(categories):",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_card",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def create_ppn_card():\n    # create a person/place/thing card\n    # get a random wikipedia entry\n    try:\n        random_wiki_entry_dict = get_random_wiki_entry()\n        # get the summary of the entry\n        random_wiki_entry_summary = random_wiki_entry_dict[\"summary\"]\n        # get the title of the entry\n        random_wiki_entry_title = random_wiki_entry_dict[\"title\"]\n        # get the related pages of the entry",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "replace_definition_start",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def replace_definition_start(definition, title):\n    # Create the pattern to search for\n    if isinstance(definition, list): definition = definition[1]\n    else: definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    # Use the `search` function to find the first occurrence of the pattern\n    match = re.search(pattern, definition, re.IGNORECASE) # re.IGNORECASE makes the search case-insensitive\n    if match:\n        # Get the start and end indices of the match\n        start, end = match.span()",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    # create a deck of person/place/thing cards\n    new_card_exists_flag = False\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            # check if the card is unique\n            if temp[\"title\"] not in [card[\"title\"] for card in card_deck]:\n                # if the title has \"List of\" in it, skip it\n                if \"List of\" in temp[\"title\"]:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "groupme_bot",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def groupme_bot(message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\"):\n    # Replace :bot_id with your bot's ID\n    # read bot_id from secrets.json\n    with open('./secrets.json') as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets['groupme_botid']\n    # if the message is not a single string, convert it to a string\n    if type(message_text) != str:\n        message_text = str(message_text)\n    # Set the payload for the request",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def generate_related_deck(primary_card,number_of_cards_to_generate):\n    # generate a deck of cards that are related to the primary card\n    # get the title of the primary card\n    primary_card_title = primary_card['title']\n    # get the related pages of the primary card\n    primary_card_related = primary_card['related']\n    # create a list of the related pages\n    related_pages = [page for page in primary_card_related]\n    # shuffle the list of related pages\n    random.shuffle(related_pages)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_from_wiki",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def get_page_from_wiki(title):\n    return wikipedia.page(title)\ndef page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_person",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if \"location\" in page.content.lower() and \"country\" in page.content.lower() and \"city\" in page.content.lower():\n        return True",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_location",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if \"location\" in page.content.lower() and \"country\" in page.content.lower() and \"city\" in page.content.lower():\n        return True\n    elif page.coordinates is not None:\n        return True\n    else:\n        return False\ndef page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_organization",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.\n    if \"organization\" in page.content.lower() or \"company\" in page.content.lower() and \"business\" in page.content.lower():\n        # also cannot be a person or location\n        if not page_is_person(page) and not page_is_location(page):\n            return True\n        else:\n            return False\n    else:\n        return False",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_event",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_event(page):\n    # event pages have the words \"event\" \"incident\" and \"disaster\" in the article text. We can use this to filter out event pages.\n    if \"event\" in page.content.lower() and \"date\" in page.content.lower() and \"history\" in page.content.lower():\n        if not page_is_person(page) and not page_is_location(page) and not page_is_organization(page):\n            return True\n        else:\n            return False\n    else:\n        return False\ndef generate_related_deck(primary_card, number_of_cards_to_generate, min_len=100, min_links=5, people=True,locations=True,organizations=True,events=True,other=False):",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate, min_len=100, min_links=5, people=True,locations=True,organizations=True,events=True,other=False):\n    new_card_deck = []\n    primary_card_title = primary_card['title']\n    primary_card_related = wikipedia.page(primary_card_title).links\n    related_pages = [page for page in primary_card_related]\n    random.shuffle(related_pages)\n    related_pages = [page for page in related_pages if page not in [card['title'] for card in new_card_deck]]\n    # Loop through each related page\n    for random_page in related_pages:\n        try:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "refine_cards",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card, # merge the card with the new summary\n            **{ # create a new key called summary_short\n                \"summary_short\": \"\".join( # join the sentences together\n                    str(sentence) # convert the sentence to a string\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\n# open the card deck file",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "find_similar_words",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold\n    # split the title into a list of words",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "replace_similar_words",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    # replace each similar word with a synonym\n    for word in similar_words:\n        synonyms = find_synonyms(word)  # find a synonym for the word -> set\n        # extract the synonym from the set\n        synonyms = list(synonyms)\n        # choose a random synonym from the set\n        try:\n            synonym = random.choice(synonyms)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "URL",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\nhard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders']\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "hard_mode_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "hard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders']\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "obscure_mode_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "obscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "profanity_pages",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "profanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]\n# subcats_foryears = ['_in_television']",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "events_and_culture",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "events_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "linguistic_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "linguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "biblical_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "biblical_categories = ['Biblical_phrases']\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "base_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "base_categories = [\"Literary_characters\",\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "meme_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "meme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "year_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "year_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1940,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "charactersTV",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "VideoGames_Categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(pop_culture_creatures) # adds some pop culture creatures to categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "pop_culture_creatures",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "pop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(pop_culture_creatures) # adds some pop culture creatures to categories\n# add year categories\ncategories.extend(year_categories) # adds some year categories to categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(pop_culture_creatures) # adds some pop culture creatures to categories\n# add year categories\ncategories.extend(year_categories) # adds some year categories to categories\n# add charactersTV",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "pages",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "pages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena','https://en.wikipedia.org/wiki/List_of_largest_cities','https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies']\n# these are links for current events\npages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report']\n# categories_extra = [\n#     \"Fictional characters\",\n#     \"People\",\n#     \"Slogans\",\n#     \"celebrities\",\n#     \"Cities\",\n#     \"Famous quotes\",",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "pages",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "pages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report']\n# categories_extra = [\n#     \"Fictional characters\",\n#     \"People\",\n#     \"Slogans\",\n#     \"celebrities\",\n#     \"Cities\",\n#     \"Famous quotes\",\n#     \"psychological disorders\",\n#     \"Diseases\",",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "original_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\ndef replacer_censor(definition, phrase, replacements_dict):",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\ndef replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "urls_master = pd.read_csv('./peoplelinks.csv', error_bad_lines=False)\n# convert to list of urls urls_master.values[0][0]\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            # shuffle categories to get a random selection",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            # shuffle categories to get a random selection\n            random.shuffle(original_categories)\n            # select 10 random categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "english_words",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 10000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # groupme_bot(stringval)\n    card_deck = create_ppn_deck(10000, card_deck)\n    # create a copy of the card deck file for safety",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    }
+]
