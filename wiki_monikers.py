@@ -15,12 +15,14 @@ from tqdm import tqdm
 import json
 URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
 
-hard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders']
+hard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders','Classics_educators']
 obscure_mode_categories = ["Fictional_inventors"]
 
 profanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)
 
 events_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']
+
+movies = ['Universal_Pictures_films','Paramount_Pictures_films']
 
 linguistic_categories = ['English_phrases']
 biblical_categories = ['Biblical_phrases']
@@ -59,6 +61,7 @@ categories.extend(biblical_categories) # adds some biblical_categories to catego
 categories.extend(linguistic_categories) # adds some linguistic_categories to categories
 # add events_and_culture
 categories.extend(events_and_culture) # adds some events_and_culture to categories
+categories.extend(movies) # adds some movies to categories
 
 
 #* let's get all memes only
@@ -73,7 +76,7 @@ categories.extend(events_and_culture) # adds some events_and_culture to categori
 pages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena','https://en.wikipedia.org/wiki/List_of_largest_cities','https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies']
 
 # these are links for current events
-pages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report']
+pages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report','https://en.wikipedia.org/wiki/List_of_eponymous_laws']
 
 
 
