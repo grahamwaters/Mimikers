@@ -1436,7 +1436,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def replace_definition_start(definition, title):\n    # Create the pattern to search for\n    if isinstance(definition, list): definition = definition[1]\n    else: definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    # Use the `search` function to find the first occurrence of the pattern\n    match = re.search(pattern, definition, re.IGNORECASE) # re.IGNORECASE makes the search case-insensitive\n    if match:\n        # Get the start and end indices of the match\n        start, end = match.span()",
+        "peekOfCode": "def replace_definition_start(definition, title):\n    # Create the pattern to search for\n    if isinstance(definition, list):\n        definition = definition[1]\n    else:\n        definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    # Use the `search` function to find the first occurrence of the pattern\n    match = re.search(\n        pattern, definition, re.IGNORECASE",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1454,7 +1454,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def groupme_bot(message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\"):\n    # Replace :bot_id with your bot's ID\n    # read bot_id from secrets.json\n    with open('./secrets.json') as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets['groupme_botid']\n    # if the message is not a single string, convert it to a string\n    if type(message_text) != str:\n        message_text = str(message_text)\n    # Set the payload for the request",
+        "peekOfCode": "def groupme_bot(\n    message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\",\n):\n    # Replace :bot_id with your bot's ID\n    # read bot_id from secrets.json\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"groupme_botid\"]\n    # if the message is not a single string, convert it to a string\n    if type(message_text) != str:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1463,7 +1463,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def generate_related_deck(primary_card,number_of_cards_to_generate):\n    # generate a deck of cards that are related to the primary card\n    # get the title of the primary card\n    primary_card_title = primary_card['title']\n    # get the related pages of the primary card\n    primary_card_related = primary_card['related']\n    # create a list of the related pages\n    related_pages = [page for page in primary_card_related]\n    # shuffle the list of related pages\n    random.shuffle(related_pages)",
+        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate):\n    # generate a deck of cards that are related to the primary card\n    # get the title of the primary card\n    primary_card_title = primary_card[\"title\"]\n    # get the related pages of the primary card\n    primary_card_related = primary_card[\"related\"]\n    # create a list of the related pages\n    related_pages = [page for page in primary_card_related]\n    # shuffle the list of related pages\n    random.shuffle(related_pages)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1481,7 +1481,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if \"location\" in page.content.lower() and \"country\" in page.content.lower() and \"city\" in page.content.lower():\n        return True",
+        "peekOfCode": "def page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1490,7 +1490,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if \"location\" in page.content.lower() and \"country\" in page.content.lower() and \"city\" in page.content.lower():\n        return True\n    elif page.coordinates is not None:\n        return True\n    else:\n        return False\ndef page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.",
+        "peekOfCode": "def page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()\n        and \"country\" in page.content.lower()\n        and \"city\" in page.content.lower()\n    ):\n        return True\n    elif page.coordinates is not None:\n        return True",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1499,7 +1499,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.\n    if \"organization\" in page.content.lower() or \"company\" in page.content.lower() and \"business\" in page.content.lower():\n        # also cannot be a person or location\n        if not page_is_person(page) and not page_is_location(page):\n            return True\n        else:\n            return False\n    else:\n        return False",
+        "peekOfCode": "def page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.\n    if (\n        \"organization\" in page.content.lower()\n        or \"company\" in page.content.lower()\n        and \"business\" in page.content.lower()\n    ):\n        # also cannot be a person or location\n        if not page_is_person(page) and not page_is_location(page):\n            return True",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1508,7 +1508,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_event(page):\n    # event pages have the words \"event\" \"incident\" and \"disaster\" in the article text. We can use this to filter out event pages.\n    if \"event\" in page.content.lower() and \"date\" in page.content.lower() and \"history\" in page.content.lower():\n        if not page_is_person(page) and not page_is_location(page) and not page_is_organization(page):\n            return True\n        else:\n            return False\n    else:\n        return False\ndef generate_related_deck(primary_card, number_of_cards_to_generate, min_len=100, min_links=5, people=True,locations=True,organizations=True,events=True,other=False):",
+        "peekOfCode": "def page_is_event(page):\n    # event pages have the words \"event\" \"incident\" and \"disaster\" in the article text. We can use this to filter out event pages.\n    if (\n        \"event\" in page.content.lower()\n        and \"date\" in page.content.lower()\n        and \"history\" in page.content.lower()\n    ):\n        if (\n            not page_is_person(page)\n            and not page_is_location(page)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1517,7 +1517,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate, min_len=100, min_links=5, people=True,locations=True,organizations=True,events=True,other=False):\n    new_card_deck = []\n    primary_card_title = primary_card['title']\n    primary_card_related = wikipedia.page(primary_card_title).links\n    related_pages = [page for page in primary_card_related]\n    random.shuffle(related_pages)\n    related_pages = [page for page in related_pages if page not in [card['title'] for card in new_card_deck]]\n    # Loop through each related page\n    for random_page in related_pages:\n        try:",
+        "peekOfCode": "def generate_related_deck(\n    primary_card,\n    number_of_cards_to_generate,\n    min_len=100,\n    min_links=5,\n    people=True,\n    locations=True,\n    organizations=True,\n    events=True,\n    other=False,",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1526,7 +1526,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card, # merge the card with the new summary\n            **{ # create a new key called summary_short\n                \"summary_short\": \"\".join( # join the sentences together\n                    str(sentence) # convert the sentence to a string\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
+        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card,  # merge the card with the new summary\n            **{  # create a new key called summary_short\n                \"summary_short\": \"\".join(  # join the sentences together\n                    str(sentence)  # convert the sentence to a string\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1562,7 +1562,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\nhard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders','Classics_educators']\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nmovies = ['Universal_Pictures_films','Paramount_Pictures_films']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]",
+        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\nhard_mode_categories = [\n    \"Philosophers_of_ethics_and_morality\",\n    \"United_States_Supreme_Court_cases\",\n    \"Political_party_founders\",\n    \"Classics_educators\",\n]\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = [\n    \"English_profanity\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1571,7 +1571,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "hard_mode_categories = ['Philosophers_of_ethics_and_morality','United_States_Supreme_Court_cases','Political_party_founders','Classics_educators']\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nmovies = ['Universal_Pictures_films','Paramount_Pictures_films']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']",
+        "peekOfCode": "hard_mode_categories = [\n    \"Philosophers_of_ethics_and_morality\",\n    \"United_States_Supreme_Court_cases\",\n    \"Political_party_founders\",\n    \"Classics_educators\",\n]\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = [\n    \"English_profanity\"\n]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1580,7 +1580,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "obscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nmovies = ['Universal_Pictures_films','Paramount_Pictures_films']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories",
+        "peekOfCode": "obscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = [\n    \"English_profanity\"\n]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = [\n    \"Whistleblowing\",\n    \"News_leaks\",\n    \"WikiLeaks\",\n    \"Popular_music\",\n    \"Fiction_about_personifications_of_death\",",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1589,7 +1589,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "profanity_pages = ['English_profanity'] #note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nmovies = ['Universal_Pictures_films','Paramount_Pictures_films']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]",
+        "peekOfCode": "profanity_pages = [\n    \"English_profanity\"\n]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = [\n    \"Whistleblowing\",\n    \"News_leaks\",\n    \"WikiLeaks\",\n    \"Popular_music\",\n    \"Fiction_about_personifications_of_death\",\n    \"Bogeymen\",",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1598,7 +1598,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "events_and_culture = ['Whistleblowing','News_leaks','WikiLeaks','Popular_music','Fiction_about_personifications_of_death','Bogeymen']\nmovies = ['Universal_Pictures_films','Paramount_Pictures_films']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1970,2020,10)]",
+        "peekOfCode": "events_and_culture = [\n    \"Whistleblowing\",\n    \"News_leaks\",\n    \"WikiLeaks\",\n    \"Popular_music\",\n    \"Fiction_about_personifications_of_death\",\n    \"Bogeymen\",\n]\nmovies = [\"Universal_Pictures_films\", \"Paramount_Pictures_films\"]\nlinguistic_categories = [\"English_phrases\"]",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1607,7 +1607,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "movies = ['Universal_Pictures_films','Paramount_Pictures_films']\nlinguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1970,2020,10)]\n# subcats_foryears = ['_in_television']",
+        "peekOfCode": "movies = [\"Universal_Pictures_films\", \"Paramount_Pictures_films\"]\nlinguistic_categories = [\"English_phrases\"]\nbiblical_categories = [\"Biblical_phrases\"]\n# Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\n    \"Literary_concepts\",\n    \"Historical_eras\",\n    \"Viral_videos\",\n    \"Internet_memes\",",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1616,7 +1616,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "linguistic_categories = ['English_phrases']\nbiblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1970,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023",
+        "peekOfCode": "linguistic_categories = [\"English_phrases\"]\nbiblical_categories = [\"Biblical_phrases\"]\n# Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\n    \"Literary_concepts\",\n    \"Historical_eras\",\n    \"Viral_videos\",\n    \"Internet_memes\",\n    \"Theorems\",",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1625,7 +1625,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "biblical_categories = ['Biblical_phrases']\n#Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1970,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\n#//charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]",
+        "peekOfCode": "biblical_categories = [\"Biblical_phrases\"]\n# Literary_characters\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\n    \"Literary_concepts\",\n    \"Historical_eras\",\n    \"Viral_videos\",\n    \"Internet_memes\",\n    \"Theorems\",\n    \"21st-century_male_actors\",",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1634,7 +1634,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "base_categories = [\"Literary_concepts\",\"Historical_eras\",\"Viral_videos\",\"Internet_memes\",\"Theorems\",\"21st-century_male_actors\",\"21st-century_female_actors\",\"Fables\",'American_Internet_celebrities','Legends','Mythology','Rules_of_thumb','Adages','Fallacies','Mountains','Lakes','Oceans','Sea_Monsters','fairy_tales','1800s','Tall_tales','Urban_legends','Superstitions','Western_culture','English-language_idioms','Catchphrases','Quotations_from_film','Quotations_from_music','Quotations_from_literature','Quotations_from_television','Quotations_from_video_games']\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1970,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\n#//charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\n#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture",
+        "peekOfCode": "base_categories = [\n    \"Literary_concepts\",\n    \"Historical_eras\",\n    \"Viral_videos\",\n    \"Internet_memes\",\n    \"Theorems\",\n    \"21st-century_male_actors\",\n    \"21st-century_female_actors\",\n    \"Fables\",\n    \"American_Internet_celebrities\",",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1643,7 +1643,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "meme_categories = ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)]\nyear_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1970,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\n#//charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\n#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1970, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\n# //charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1652,16 +1652,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "year_categories = ['{}s_in_Internet_culture'.format(str(year)) for year in range(1970,2020,10)]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\n#//charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\n#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "#//charactersTV",
-        "kind": 5,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "#//charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\n#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1970, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\n# //charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# Video Games for years 1950 through 2023\n#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = [",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1670,7 +1661,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(pop_culture_creatures) # adds some pop culture creatures to categories",
+        "peekOfCode": "#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = [\n    \"Dinosaurs_in_popular_culture\",\n    \"Extraterrestrial_life_in_popular_culture\",\n]\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add in events and culture",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1679,7 +1670,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "pop_culture_creatures = ['Dinosaurs_in_popular_culture','Extraterrestrial_life_in_popular_culture']\ncategories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(pop_culture_creatures) # adds some pop culture creatures to categories\n# add year categories\ncategories.extend(year_categories) # adds some year categories to categories",
+        "peekOfCode": "pop_culture_creatures = [\n    \"Dinosaurs_in_popular_culture\",\n    \"Extraterrestrial_life_in_popular_culture\",\n]\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture)  # adds some events and culture to categories\n# add pop_culture_creatures",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1688,16 +1679,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = base_categories\n#* appending to categories\ncategories.extend(meme_categories) # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture) # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(pop_culture_creatures) # adds some pop culture creatures to categories\n# add year categories\ncategories.extend(year_categories) # adds some year categories to categories\n# add charactersTV",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "#//categories",
-        "kind": 5,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "#//categories = meme_categories\n#//categories.extend(year_categories)\n# these pages have links to extract\npages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena','https://en.wikipedia.org/wiki/List_of_largest_cities','https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies']\n# these are links for current events\npages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report','https://en.wikipedia.org/wiki/List_of_eponymous_laws']\noriginal_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)",
+        "peekOfCode": "categories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture)  # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(\n    pop_culture_creatures\n)  # adds some pop culture creatures to categories\n# add year categories",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1706,7 +1688,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "pages = ['https://en.wikipedia.org/wiki/List_of_Internet_phenomena','https://en.wikipedia.org/wiki/List_of_largest_cities','https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies']\n# these are links for current events\npages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report','https://en.wikipedia.org/wiki/List_of_eponymous_laws']\noriginal_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):",
+        "peekOfCode": "pages = [\n    \"https://en.wikipedia.org/wiki/List_of_Internet_phenomena\",\n    \"https://en.wikipedia.org/wiki/List_of_largest_cities\",\n    \"https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies\",\n]\n# these are links for current events\npages = [\n    \"https://en.wikipedia.org/wiki/Portal:Current_events/December_2022\",\n    \"https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report\",\n    \"https://en.wikipedia.org/wiki/List_of_eponymous_laws\",",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1715,7 +1697,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "pages = ['https://en.wikipedia.org/wiki/Portal:Current_events/December_2022','https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report','https://en.wikipedia.org/wiki/List_of_eponymous_laws']\noriginal_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"",
+        "peekOfCode": "pages = [\n    \"https://en.wikipedia.org/wiki/Portal:Current_events/December_2022\",\n    \"https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report\",\n    \"https://en.wikipedia.org/wiki/List_of_eponymous_laws\",\n]\noriginal_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1742,7 +1724,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = pd.read_csv('./peoplelinks.csv', error_bad_lines=False)\n# convert to list of urls urls_master.values[0][0]\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\n# convert to list of urls urls_master.values[0][0]\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
