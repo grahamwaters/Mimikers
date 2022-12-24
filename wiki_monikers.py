@@ -162,7 +162,7 @@ URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
 import wikipedia
 # create a GroupMeAPI object
-groupme_api = GroupMeAPI(secrets["groupme_token"])
+# groupme_api = GroupMeAPI(secrets["groupme_token"])
 
 
 # function to check the groupme thread for new messages (that are not from the bot)

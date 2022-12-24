@@ -1733,16 +1733,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe\nimport wikipedia\n# create a GroupMeAPI object\ngroupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "groupme_api",
-        "kind": 5,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "groupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"groupme_botid\"]\n    global groupme_api\n    # access the GroupMe API and get the latest messages in the thread\n    latest_messages = groupme_api.get_latest_messages()\n    # filter the messages to get only those that are not from the bot",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe\nimport wikipedia\n# create a GroupMeAPI object\n# groupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():",
         "detail": "wiki_monikers",
         "documentation": {}
     },
