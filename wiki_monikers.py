@@ -158,6 +158,47 @@ for cat in enumerate(categories):
 
 URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
+#^ Dynamic updates through GroupMe
+
+import wikipedia
+# create a GroupMeAPI object
+groupme_api = GroupMeAPI(secrets["groupme_token"])
+
+
+# function to check the groupme thread for new messages (that are not from the bot)
+def check_for_new_messages():
+    with open("./secrets.json") as json_file:
+        secrets = json.load(json_file)
+        bot_id = secrets["groupme_botid"]
+
+    global groupme_api
+    # access the GroupMe API and get the latest messages in the thread
+    latest_messages = groupme_api.get_latest_messages()
+
+    # filter the messages to get only those that are not from the bot
+    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]
+
+    return new_messages
+
+
+def add_category(message):
+    # check if the message is a valid Wikipedia category
+    try:
+        wikipedia.WikipediaPage(message).category
+        is_valid_category = True
+    except wikipedia.exceptions.PageError:
+        is_valid_category = False
+
+    # if the message is a valid Wikipedia category, add it to the categories text file
+    if is_valid_category:
+        with open("categories.txt", "a") as categories_file:
+            categories_file.write(f"{message}\n")
+    # if the message is not a valid Wikipedia category, ignore it
+    else:
+        pass
+
+
+
 
 def replacer_censor(definition, phrase, replacements_dict):
     # Iterate over the keys in the replacements dictionary

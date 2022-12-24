@@ -1387,6 +1387,24 @@
         "documentation": {}
     },
     {
+        "label": "check_for_new_messages",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"groupme_botid\"]\n    global groupme_api\n    # access the GroupMe API and get the latest messages in the thread\n    latest_messages = groupme_api.get_latest_messages()\n    # filter the messages to get only those that are not from the bot\n    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]\n    return new_messages",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "add_category",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def add_category(message):\n    # check if the message is a valid Wikipedia category\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    # if the message is a valid Wikipedia category, add it to the categories text file\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
         "label": "replacer_censor",
         "kind": 2,
         "importPath": "wiki_monikers",
@@ -1706,7 +1724,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "original_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\ndef replacer_censor(definition, phrase, replacements_dict):",
+        "peekOfCode": "original_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1715,7 +1733,16 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\ndef replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe\nimport wikipedia\n# create a GroupMeAPI object\ngroupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "groupme_api",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "groupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"groupme_botid\"]\n    global groupme_api\n    # access the GroupMe API and get the latest messages in the thread\n    latest_messages = groupme_api.get_latest_messages()\n    # filter the messages to get only those that are not from the bot",
         "detail": "wiki_monikers",
         "documentation": {}
     },
