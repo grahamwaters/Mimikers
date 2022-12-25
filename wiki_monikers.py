@@ -121,6 +121,16 @@ categories.extend(
 categories.extend(events_and_culture)  # adds some events_and_culture to categories
 categories.extend(movies)  # adds some movies to categories
 
+extras = ['English-language_idioms','British_English_idioms']
+
+most_linkedto_categories = ['Living_people']
+categories.extend(extras)
+categories.extend(most_linkedto_categories)
+
+# save the categories to a file so we can use them later
+with open("categories.json", "w") as f:
+    json.dump(categories, f)
+
 
 # * let's get all memes only
 # * categories = meme_categories

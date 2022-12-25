@@ -1710,6 +1710,24 @@
         "documentation": {}
     },
     {
+        "label": "extras",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "extras = ['English-language_idioms','British_English_idioms']\nmost_linkedto_categories = ['Living_people']\ncategories.extend(extras)\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\n# * let's get all memes only\n# * categories = meme_categories\n# * let's get all memes and years only",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "most_linkedto_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "most_linkedto_categories = ['Living_people']\ncategories.extend(extras)\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\n# * let's get all memes only\n# * categories = meme_categories\n# * let's get all memes and years only\n# //categories = meme_categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
         "label": "pages",
         "kind": 5,
         "importPath": "wiki_monikers",
