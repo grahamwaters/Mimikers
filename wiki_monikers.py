@@ -297,6 +297,7 @@ def get_random_wiki_entry():
             # categories = original_categories[:20]
             # randomly sample 20 categories
             categories = random.sample(original_categories, 5)
+            #*categories.extend(most_linkedto_categories) # extend the list with the most linked to categories
             for cat in enumerate(categories):
                 URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
             URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
