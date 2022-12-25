@@ -33,7 +33,7 @@ for card in tqdm(card_deck):
     # now split the title of the card into a list of words, and remove any stopwords from the list of words using nltk stopwords
     stopwords = nltk.corpus.stopwords.words('english')
     card_title_words = card_title.split()
-    card_title_words = [word for word in card_title_words if word not in stopwords]
+    card_title_words = [word for word in card_title_words if word not in stopwords or word == "the"]
     # now we have a list of words that are in the title of the card, but not stopwords. (i.e. Hobbit, Eragon, etc.)
     # if these words appear in the card summary, we want to hide them in the summary by replacing them with the phrase "clue_hider" (or something similar)
     # we can use the re.sub() function to replace the words in the card title with the phrase "clue_hider" in the summary phrase.

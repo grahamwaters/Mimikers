@@ -169,7 +169,7 @@ import wikipedia
 def check_for_new_messages():
     with open("./secrets.json") as json_file:
         secrets = json.load(json_file)
-        bot_id = secrets["groupme_botid"]
+        bot_id = secrets["#groupme_botid"]
 
     global groupme_api
     # access the GroupMe API and get the latest messages in the thread
@@ -311,7 +311,7 @@ def get_random_wiki_entry():
                 pass
 
             # once every 30 times use Random article from Wikipedia
-            if random.randint(0, 30) == 0:
+            if random.randint(0, 15) == 0:
                 URL = "https://en.wikipedia.org/wiki/Special:Random"
 
             # Use requests to get the page, then pass the redirected page url to wikipedia library.
@@ -336,7 +336,7 @@ def get_random_wiki_entry():
             # Using wikipedia library.
             page = wikipedia.page(title)  # This is a random page from the category.
             title = page.title
-            # groupme_bot(str("Found a page for " + title))
+            # #groupme_bot(str("Found a page for " + title))
             #!print("Found a page for ", title)
             # print(f'Page URL: {req_url}')
             summary = page.summary
@@ -455,11 +455,11 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
         else:
             print("error creating card")
         if len(card_deck) % 20 == 0:
-            groupme_bot(f"I have {len(card_deck)} cards so far")
+            #groupme_bot(f"I have {len(card_deck)} cards so far")
             # show a random card by sampling the deck
             random_card = random.sample(card_deck, 1)[0]
             # print the card
-            groupme_bot(f'{random_card["title"]}: {random_card["summary"]}')
+            #groupme_bot(f'{random_card["title"]}: {random_card["summary"]}')
     return card_deck
 
 
@@ -473,7 +473,7 @@ def groupme_bot(
     # read bot_id from secrets.json
     with open("./secrets.json") as json_file:
         secrets = json.load(json_file)
-        bot_id = secrets["groupme_botid"]
+        bot_id = secrets["#groupme_botid"]
 
     # if the message is not a single string, convert it to a string
     if type(message_text) != str:
@@ -778,7 +778,7 @@ def refine_cards(card_deck):
     #     if len(card["summary_short"]) > 1200
     # ]
     talk = "I have refined the deck, so far I have " + str(len(card_deck)) + " cards"
-    # groupme_bot(talk)
+    # #groupme_bot(talk)
     return card_deck
 
 
@@ -866,12 +866,12 @@ with open("ppn_deck.json", "r") as read_file:
 while len(card_deck) < 10000:
     print(len(card_deck))
     # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'
-    # groupme_bot(stringval)
+    # #groupme_bot(stringval)
     card_deck = create_ppn_deck(10000, card_deck)
     # create a copy of the card deck file for safety
     with open("ppn_deck_copy.json", "w") as outfile:
         json.dump(card_deck, outfile, indent=4)
-    # groupme_bot('I have created a copy of the deck for safety, so far I have ' + str(len(card_deck)) + ' cards')
+    # #groupme_bot('I have created a copy of the deck for safety, so far I have ' + str(len(card_deck)) + ' cards')
     # show an example card (random sample)
     # * card_deck = refine_cards(card_deck)
     # card_deck = [card for card in card_deck if len(card["summary_short"]) >= 100]
@@ -896,7 +896,7 @@ while len(card_deck) < 10000:
             + " "
             + str(random_card["summary_short"])
         )
-        groupme_bot(stringval)
+        #!#groupme_bot(stringval)
     with open("ppn_deck.json", "w") as outfile:
         json.dump(card_deck, outfile, indent=4)
     # groupme message that the deck has been created and is being saved as pngs
@@ -905,7 +905,7 @@ while len(card_deck) < 10000:
         + str(len(card_deck))
         + " cards, and am now saving them as images"
     )
-    groupme_bot(message)
+    #!#groupme_bot(message)
     #!generate_physical_cards()
 print(f"I have created a deck of {len(card_deck)} cards")
 
