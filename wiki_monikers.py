@@ -86,7 +86,7 @@ URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
 
 import pandas as pd
 # read in the categories from categories.csv file as a string
-categories = pd.read_csv("basic_categories.csv", header=None, delimiter=",")
+categories = pd.read_csv("categories.csv", header=None, delimiter=",")
 # remove extra spaces leading/trailing spaces from the categories
 categories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 # now remove " from the categories
