@@ -150,6 +150,14 @@
         "documentation": {}
     },
     {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -670,6 +678,15 @@
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "urllib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib",
+        "description": "urllib",
+        "detail": "urllib",
         "documentation": {}
     },
     {
@@ -1581,6 +1598,51 @@
         "documentation": {}
     },
     {
+        "label": "get_random_page_url",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_random_page_url(categories, category_sample_size):\n    base_url = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n    for i, cat in enumerate(categories):\n        base_url += f\"&category{i}={urllib.parse.quote(str(cat).lower())}\"\n    base_url += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n    return base_url\nfrom bs4 import BeautifulSoup\ndef get_page_title_and_summary(html):\n    soup = BeautifulSoup(html, 'html.parser')\n    title = soup.title.string.replace(\" - Wikipedia\", \"\").replace(\"Wiki\", \"\")",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_title_and_summary",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_page_title_and_summary(html):\n    soup = BeautifulSoup(html, 'html.parser')\n    title = soup.title.string.replace(\" - Wikipedia\", \"\").replace(\"Wiki\", \"\")\n    summary = soup.find('p').text\n    return title, summary\ndef get_random_wiki_entry_dict(original_categories, category_sample_size):\n    while True:\n        categories = random.sample(original_categories, category_sample_size)\n        random_page_url = get_random_page_url(categories, category_sample_size)\n        response = requests.get(random_page_url)",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entry_dict",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_random_wiki_entry_dict(original_categories, category_sample_size):\n    while True:\n        categories = random.sample(original_categories, category_sample_size)\n        random_page_url = get_random_page_url(categories, category_sample_size)\n        response = requests.get(random_page_url)\n        redirected_url = response.url\n        html = response.text\n        title, summary = get_page_title_and_summary(html)\n        if redirected_url == \"https://randomincategory.toolforge.org/\":\n            continue",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entries_dict",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_random_wiki_entries_dict(original_categories, category_sample_size, num_entries):\n    entries = []\n    for _ in range(num_entries):\n        entry = get_random_wiki_entry_dict(original_categories, category_sample_size)\n        entries.append(entry)\ndef main():\n    original_categories = [\"Technology\", \"Arts\", \"Geography\"]\n    category_sample_size = 2\n    num_entries = 5\n    entries = get_random_wiki_entries_dict(original_categories, category_sample_size, num_entries)",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def main():\n    original_categories = [\"Technology\", \"Arts\", \"Geography\"]\n    category_sample_size = 2\n    num_entries = 5\n    entries = get_random_wiki_entries_dict(original_categories, category_sample_size, num_entries)\n    print(entries)\nif __name__ == \"__main__\":\n    main()",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
         "label": "find_synonyms",
         "kind": 2,
         "importPath": "testing",
@@ -1666,7 +1728,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            # either randomly use URL or one of the urls from the urls_master list above",
+        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            # either randomly use URL or one of the urls from the urls_master list above",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1819,7 +1881,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = pd.read_csv(\"categories.csv\", header=None, delimiter=\",\")\n# remove extra spaces leading/trailing spaces from the categories\ncategories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)\n# now remove \" from the categories\ncategories = categories.applymap(lambda x: x.replace('\"', \"\") if isinstance(x, str) else x)\n# replace spaces with _ in the categories\ncategories = categories.applymap(lambda x: x.replace(\" \", \"_\") if isinstance(x, str) else x)\ncategories = categories.values.tolist()[0]\nbase_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories",
+        "peekOfCode": "categories = pd.read_csv(\"basic_categories.csv\", header=None, delimiter=\",\")\n# remove extra spaces leading/trailing spaces from the categories\ncategories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)\n# now remove \" from the categories\ncategories = categories.applymap(lambda x: x.replace('\"', \"\") if isinstance(x, str) else x)\n# replace spaces with _ in the categories\ncategories = categories.applymap(lambda x: x.replace(\" \", \"_\") if isinstance(x, str) else x)\ncategories = categories.values.tolist()[0]\nbase_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1945,7 +2007,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -1954,7 +2016,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },

@@ -86,7 +86,7 @@ URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
 
 import pandas as pd
 # read in the categories from categories.csv file as a string
-categories = pd.read_csv("categories.csv", header=None, delimiter=",")
+categories = pd.read_csv("basic_categories.csv", header=None, delimiter=",")
 # remove extra spaces leading/trailing spaces from the categories
 categories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 # now remove " from the categories
@@ -285,8 +285,8 @@ def get_random_wiki_entry(category_sample_size=3):
     while True:
         try:
             URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
-            categories = random.sample(original_categories, category_sample_size)
-            for cat in enumerate(categories):
+            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories
+            for cat in enumerate(categories): # add the categories to the URL
                 URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
             URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
@@ -294,8 +294,7 @@ def get_random_wiki_entry(category_sample_size=3):
             activate_loop = True  # flag
             if random.randint(0, 1) == 0 or not activate_loop:
                 try:
-                    #!print("using random url from urls_master list")
-                    # *URL = random.choice(urls_master)
+                    URL = random.choice(urls_master)
                     # pick a random card title from the list of cards and get the related pages with the get_related_pages function
                     page_title = random.choice(card_deck)["title"]
                     URL = generate_related_deck(page_title, 10)[
@@ -356,6 +355,13 @@ def get_random_wiki_entry(category_sample_size=3):
             # If the page is not found, retry the request with a different URL.
             # print("DisambiguationError occurred:", e)
             return random_wiki_entry_dict
+
+
+
+
+
+
+
 
 
 # make a card from the random wiki entry
