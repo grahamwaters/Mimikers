@@ -16,143 +16,137 @@ import json
 
 URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
 
-hard_mode_categories = [
-    "Philosophers_of_ethics_and_morality",
-    "United_States_Supreme_Court_cases",
-    "Political_party_founders",
-    "Classics_educators",
-]
-obscure_mode_categories = ["Fictional_inventors"]
+# hard_mode_categories = [
+#     "Philosophers_of_ethics_and_morality",
+#     "United_States_Supreme_Court_cases",
+#     "Political_party_founders",
+#     "Classics_educators",
+# ]
+# obscure_mode_categories = ["Fictional_inventors"]
 
-profanity_pages = [
-    "English_profanity"
-]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)
+# profanity_pages = [
+#     "English_profanity"
+# ]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)
 
-events_and_culture = [
-    "Whistleblowing",
-    "News_leaks",
-    "WikiLeaks",
-    "Popular_music",
-    "Fiction_about_personifications_of_death",
-    "Bogeymen",
-]
+# events_and_culture = [
+#     "Whistleblowing",
+#     "News_leaks",
+#     "WikiLeaks",
+#     "Popular_music",
+#     "Fiction_about_personifications_of_death",
+#     "Bogeymen",
+#     "Comedians",
+#     "Authors",
+#     "Artists"
+# ]
 
-movies = ["Universal_Pictures_films", "Paramount_Pictures_films"]
+# family_added_categories = ['Melons','Human_anatomy']
 
-linguistic_categories = ["English_phrases"]
-biblical_categories = ["Biblical_phrases"]
-# Literary_characters
-# categories = ["paradoxes","Slogans","English-language_books"]
-base_categories = [
-    "Literary_concepts",
-    "Historical_eras",
-    "Viral_videos",
-    "Internet_memes",
-    "Theorems",
-    "21st-century_male_actors",
-    "21st-century_female_actors",
-    "Fables",
-    "American_Internet_celebrities",
-    "Legends",
-    "Mythology",
-    "Rules_of_thumb",
-    "Adages",
-    "Fallacies",
-    "Mountains",
-    "Lakes",
-    "Oceans",
-    "Sea_Monsters",
-    "fairy_tales",
-    "1800s",
-    "Tall_tales",
-    "Urban_legends",
-    "Superstitions",
-    "Western_culture",
-    "English-language_idioms",
-    "Catchphrases",
-    "Quotations_from_film",
-    "Quotations_from_music",
-    "Quotations_from_literature",
-    "Quotations_from_television",
-    "Quotations_from_video_games",
-]
+# specific_page_links_to_include = ['Jorts']
+
+# movies = ["Universal_Pictures_films", "Paramount_Pictures_films"]
+
+# linguistic_categories = ["English_phrases", "English_proverbs","English-language_slang","English_slang"]
+# biblical_categories = ["Biblical_phrases"]
+# # Literary_characters
+# # categories = ["paradoxes","Slogans","English-language_books"]
+# base_categories = [
+#     "Literary_concepts",
+#     "Historical_eras",
+#     "Viral_videos",
+#     "Internet_memes",
+#     "Theorems",
+#     "21st-century_male_actors",
+#     "21st-century_female_actors",
+#     "Fables",
+#     "American_Internet_celebrities",
+#     "Legends",
+#     "Mythology",
+#     "Rules_of_thumb",
+#     "Adages",
+#     "Fallacies",
+#     "Mountains",
+#     "Lakes",
+#     "Oceans",
+#     "Sea_Monsters",
+#     "fairy_tales",
+#     "1800s",
+#     "Tall_tales",
+#     "Urban_legends",
+#     "Superstitions",
+#     "Western_culture",
+#     "English-language_idioms",
+#     "Catchphrases",
+#     "Quotations_from_film",
+#     "Quotations_from_music",
+#     "Quotations_from_literature",
+#     "Quotations_from_television",
+#     "Quotations_from_video_games",
+# ]
+
+import pandas as pd
+# read in the categories from categories.csv file as a string
+categories = pd.read_csv("categories.csv", header=None, delimiter=",")
+# remove extra spaces leading/trailing spaces from the categories
+categories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+# now remove " from the categories
+categories = categories.applymap(lambda x: x.replace('"', "") if isinstance(x, str) else x)
+# replace spaces with _ in the categories
+categories = categories.applymap(lambda x: x.replace(" ", "_") if isinstance(x, str) else x)
+categories = categories.values.tolist()[0]
+
+
+base_categories = categories.copy()
+
 
 # append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories
 meme_categories = [
     "Internet_memes_introduced_in_{}".format(str(year)) for year in range(2000, 2023)
 ]
+# save the links for meme_categories to a file so we can use them later
+with open("meme_categories.json", "w") as f:
+    json.dump(meme_categories, f)
+
+
 year_categories = [
     "{}s_in_Internet_culture".format(str(year)) for year in range(1970, 2020, 10)
 ]
 # subcats_foryears = ['_in_television']
 
 # Television_characters_introduced_in_1980 through 2023
-# //charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]
+charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]
+
+# save the links for charactersTV to a file so we can use them later
+with open("charactersTV.json", "w") as f:
+    json.dump(charactersTV, f)
+
 # Video Games for years 1950 through 2023
-#!VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]
+VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]
+
+# save the links for VideoGames_Categories to a file so we can use them later
+with open("VideoGames_Categories.json", "w") as f:
+    json.dump(VideoGames_Categories, f)
+
 
 # create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture
-pop_culture_creatures = [
-    "Dinosaurs_in_popular_culture",
-    "Extraterrestrial_life_in_popular_culture",
-]
 
 categories = base_categories
 # * appending to categories
 categories.extend(meme_categories)  # add meme categories to categories
-# add in events and culture
-categories.extend(events_and_culture)  # adds some events and culture to categories
-# add pop_culture_creatures
-categories.extend(
-    pop_culture_creatures
-)  # adds some pop culture creatures to categories
+
 # add year categories
 categories.extend(year_categories)  # adds some year categories to categories
-# add charactersTV
-# //categories.extend(charactersTV) # adds some charactersTV to categories
-categories.extend(biblical_categories)  # adds some biblical_categories to categories
-# add VideoGames_Categories
-#!categories.extend(VideoGames_Categories) # adds some VideoGames_Categories to categories
-# add linguistic_categories
-categories.extend(
-    linguistic_categories
-)  # adds some linguistic_categories to categories
+
+
 # add events_and_culture
-categories.extend(events_and_culture)  # adds some events_and_culture to categories
-categories.extend(movies)  # adds some movies to categories
 
-extras = ['English-language_idioms','British_English_idioms']
+# extras = ['English-language_idioms','British_English_idioms']
 
-most_linkedto_categories = ['Living_people']
-categories.extend(extras)
-categories.extend(most_linkedto_categories)
+# most_linkedto_categories = ['Living_people']
 
 # save the categories to a file so we can use them later
 with open("categories.json", "w") as f:
     json.dump(categories, f)
-
-
-# * let's get all memes only
-# * categories = meme_categories
-
-# * let's get all memes and years only
-# //categories = meme_categories
-# //categories.extend(year_categories)
-
-
-# these pages have links to extract
-pages = [
-    "https://en.wikipedia.org/wiki/List_of_Internet_phenomena",
-    "https://en.wikipedia.org/wiki/List_of_largest_cities",
-    "https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies",
-]
-
-# these are links for current events
-pages = [
-    "https://en.wikipedia.org/wiki/Portal:Current_events/December_2022",
-    "https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report",
-    "https://en.wikipedia.org/wiki/List_of_eponymous_laws",
-]
 
 
 original_categories = categories.copy()
@@ -286,18 +280,12 @@ urls_master = [url for url in urls_master if "wikipedia" in url]
 
 
 @sleep_and_retry
-def get_random_wiki_entry():
+def get_random_wiki_entry(category_sample_size=3):
     # Use a while loop to retry the request until a valid page is found.
     while True:
         try:
             URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
-            # shuffle categories to get a random selection
-            random.shuffle(original_categories)
-            # select 10 random categories
-            # categories = original_categories[:20]
-            # randomly sample 20 categories
-            categories = random.sample(original_categories, 5)
-            #*categories.extend(most_linkedto_categories) # extend the list with the most linked to categories
+            categories = random.sample(original_categories, category_sample_size)
             for cat in enumerate(categories):
                 URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
             URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
@@ -314,7 +302,6 @@ def get_random_wiki_entry():
                         0
                     ]  # get the first related page
                     # get the first related page
-                    # tag1
                     print("using related page")
                 except Exception as e:
                     pass
@@ -323,8 +310,11 @@ def get_random_wiki_entry():
 
             # once every 30 times use Random article from Wikipedia
             if random.randint(0, 15) == 0:
-                URL = "https://en.wikipedia.org/wiki/Special:Random"
-
+                print("using random article from wikipedia")
+                if random.randint(0, 1) == 0:
+                    URL = "https://en.wikipedia.org/wiki/Special:Random"
+                else:
+                    URL = 'https://en.wikiquote.org/wiki/Special:Random'
             # Use requests to get the page, then pass the redirected page url to wikipedia library.
             req_url = requests.get(URL).url  # This is a random page from the category.
             req_html = requests.get(req_url).text
@@ -372,7 +362,6 @@ def get_random_wiki_entry():
 def create_ppn_card():
     # create a person/place/thing card
     # get a random wikipedia entry
-
     try:
         random_wiki_entry_dict = get_random_wiki_entry()
         # get the summary of the entry
@@ -929,6 +918,7 @@ import random
 import nltk
 from nltk.corpus import wordnet
 from tqdm import tqdm
+from main import base_categories
 
 
 def find_synonyms(word):
