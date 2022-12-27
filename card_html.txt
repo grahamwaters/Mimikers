@@ -1,0 +1,46 @@
+<style>
+.card {
+    width: 550px;
+    height: 850px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-family: 'SFNSMono';
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.card-middle {
+    width: 550px;
+    height: MIDDLE_HEIGHTpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card-description {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.card-points {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 845px;
+    left: 20px
+}
+</style>
+<div>
+    <div class="card">
+        <div class="card-title">Card Title</div>
+        <div class="card-description">Card Description</div>
+        <div class="card-middle">Middle Content</div>
+        <div class="card-points">Point Value</div>
+        </div>
+    </div>
+</div>

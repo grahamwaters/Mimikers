@@ -66,6 +66,30 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFont",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -327,6 +351,153 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "textstat",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "textstat",
+        "description": "textstat",
+        "detail": "textstat",
+        "documentation": {}
+    },
+    {
+        "label": "Html2Image",
+        "importPath": "html2image",
+        "description": "html2image",
+        "isExtraImport": true,
+        "detail": "html2image",
+        "documentation": {}
+    },
+    {
         "label": "stopwords",
         "importPath": "nltk.corpus",
         "description": "nltk.corpus",
@@ -536,78 +707,6 @@
         "documentation": {}
     },
     {
-        "label": "Tokenizer",
-        "importPath": "sumy.nlp.tokenizers",
-        "description": "sumy.nlp.tokenizers",
-        "isExtraImport": true,
-        "detail": "sumy.nlp.tokenizers",
-        "documentation": {}
-    },
-    {
-        "label": "Tokenizer",
-        "importPath": "sumy.nlp.tokenizers",
-        "description": "sumy.nlp.tokenizers",
-        "isExtraImport": true,
-        "detail": "sumy.nlp.tokenizers",
-        "documentation": {}
-    },
-    {
-        "label": "Tokenizer",
-        "importPath": "sumy.nlp.tokenizers",
-        "description": "sumy.nlp.tokenizers",
-        "isExtraImport": true,
-        "detail": "sumy.nlp.tokenizers",
-        "documentation": {}
-    },
-    {
-        "label": "PlaintextParser",
-        "importPath": "sumy.parsers.plaintext",
-        "description": "sumy.parsers.plaintext",
-        "isExtraImport": true,
-        "detail": "sumy.parsers.plaintext",
-        "documentation": {}
-    },
-    {
-        "label": "PlaintextParser",
-        "importPath": "sumy.parsers.plaintext",
-        "description": "sumy.parsers.plaintext",
-        "isExtraImport": true,
-        "detail": "sumy.parsers.plaintext",
-        "documentation": {}
-    },
-    {
-        "label": "PlaintextParser",
-        "importPath": "sumy.parsers.plaintext",
-        "description": "sumy.parsers.plaintext",
-        "isExtraImport": true,
-        "detail": "sumy.parsers.plaintext",
-        "documentation": {}
-    },
-    {
-        "label": "LexRankSummarizer",
-        "importPath": "sumy.summarizers.lex_rank",
-        "description": "sumy.summarizers.lex_rank",
-        "isExtraImport": true,
-        "detail": "sumy.summarizers.lex_rank",
-        "documentation": {}
-    },
-    {
-        "label": "LexRankSummarizer",
-        "importPath": "sumy.summarizers.lex_rank",
-        "description": "sumy.summarizers.lex_rank",
-        "isExtraImport": true,
-        "detail": "sumy.summarizers.lex_rank",
-        "documentation": {}
-    },
-    {
-        "label": "LexRankSummarizer",
-        "importPath": "sumy.summarizers.lex_rank",
-        "description": "sumy.summarizers.lex_rank",
-        "isExtraImport": true,
-        "detail": "sumy.summarizers.lex_rank",
-        "documentation": {}
-    },
-    {
         "label": "LsaSummarizer",
         "importPath": "sumy.summarizers.lsa",
         "description": "sumy.summarizers.lsa",
@@ -669,15 +768,6 @@
         "description": "sumy.nlp.stemmers",
         "isExtraImport": true,
         "detail": "sumy.nlp.stemmers",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
         "documentation": {}
     },
     {
@@ -1037,6 +1127,96 @@
         "description": "storage_bin.test.",
         "peekOfCode": "unique = [word for word in bad_patterns if word not in unique]",
         "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "determine_grade_level",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def determine_grade_level(summary):\n    \"\"\"\n    determine_grade_level - generates a grade level for the given summary using the Flesch-Kincaid Grade Level formula\n    The Flesch-Kincaid Grade Level formula is a readability test designed to indicate how difficult a passage in English is to understand. The score is based on the average number of syllables per 100 words and the average number of words per sentence. The higher the score, the more difficult the text is to understand.\n    :param summary: _description_\n    :type summary: _type_\n    :return: _description_\n    :rtype: float\n    \"\"\"\n    grade_level = textstat.flesch_kincaid_grade(summary)",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    try:\n        # create a PlaintextParser object to parse the text\n        parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n        # choose a summarization algorithm\n        # algorithm = LsaSummarizer()\n        algorithm = LexRankSummarizer()",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def generate_card(title, definition, points, name=None):\n    ic(title)\n    #ic()\n    # create a blank image\n    # ^print(f'creating: {title}')\n    # ignore Theo Carver\n    # add checks to make sure title and defition are both not empty and not longer than 40 characters * 25 lines (1000 characters). If they are, raise an error, also if either are None raise an error\n    #print(f'title length: {len(title)}, definition length: {len(definition)}')\n    #* It isn't related to the length of title, or description\n    if 'diltondoiley' in title:",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "generate_physical_cards",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def generate_physical_cards():\n    #ic()\n    # choose a random card from the card deck\n    card = random.choice(card_deck)\n    print(card)\n    # get the summary for the card\n    summary = (\n        card[\"summary\"][1] if isinstance(card[\"summary\"], list) else card[\"summary\"]\n    )\n    # summarize the summary if it is a string, or convert it to a string if it is a list",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "card_summary",
+        "kind": 5,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "card_summary = \"The quick brown fox jumps over the lazy dog.\"\ngrade_level = determine_grade_level(card_summary)\nprint(grade_level) # prints \"4.9\"\ndef summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    try:\n        # create a PlaintextParser object to parse the text\n        parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "grade_level",
+        "kind": 5,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "grade_level = determine_grade_level(card_summary)\nprint(grade_level) # prints \"4.9\"\ndef summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    try:\n        # create a PlaintextParser object to parse the text\n        parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n        # choose a summarization algorithm",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "def generate_card(title: str, description: str, points: str) -> None:\n    # Create the HTML content for the card\n    # The card is 550x850 pixels\n    # read the template file from the current directory 'card_html.txt'\n    with open('card_html.txt', 'r') as f:\n        html = f.read()\n    # replace the placeholders with the actual values\n    html = html.replace('Card Title', title)\n    html = html.replace('Card Description', description)\n    html = html.replace('Point Value', points)",
+        "detail": "html_generate",
+        "documentation": {}
+    },
+    {
+        "label": "title",
+        "kind": 5,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "title = 'Tarzan yell'\ndescription = 'Tarzan yell, The Tarzan yell or Tarzans jungle call is the distinctive, ululating yell of the character Tarzan as portrayed by actor Johnny Weissmuller in the films based on the character created by Edgar Rice Burroughs starting with Tarzan the Ape Man 1932. The yell was a creation of the movies based on what Burroughs described in his books as simply the victory cry of the bull ape.'\npoints = '10 Points'\ngenerate_card(title, description, points)",
+        "detail": "html_generate",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "description = 'Tarzan yell, The Tarzan yell or Tarzans jungle call is the distinctive, ululating yell of the character Tarzan as portrayed by actor Johnny Weissmuller in the films based on the character created by Edgar Rice Burroughs starting with Tarzan the Ape Man 1932. The yell was a creation of the movies based on what Burroughs described in his books as simply the victory cry of the bull ape.'\npoints = '10 Points'\ngenerate_card(title, description, points)",
+        "detail": "html_generate",
+        "documentation": {}
+    },
+    {
+        "label": "points",
+        "kind": 5,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "points = '10 Points'\ngenerate_card(title, description, points)",
+        "detail": "html_generate",
         "documentation": {}
     },
     {
@@ -2025,7 +2205,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 10000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(10000, card_deck)\n    # create a copy of the card deck file for safety",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 15000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(15000, card_deck)\n    # create a copy of the card deck file for safety",
         "detail": "wiki_monikers",
         "documentation": {}
     },
