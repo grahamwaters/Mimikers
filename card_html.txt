@@ -35,12 +35,12 @@
     left: 20px
 }
 </style>
+
 <div>
     <div class="card">
         <div class="card-title">Card Title</div>
         <div class="card-description">Card Description</div>
         <div class="card-middle">Middle Content</div>
-        <div class="card-points">Point Value</div>
-        </div>
+        <div class="card-points">Point Value points</div>
     </div>
 </div>
