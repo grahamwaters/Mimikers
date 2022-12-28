@@ -560,6 +560,22 @@
         "documentation": {}
     },
     {
+        "label": "TextBlob",
+        "importPath": "textblob",
+        "description": "textblob",
+        "isExtraImport": true,
+        "detail": "textblob",
+        "documentation": {}
+    },
+    {
+        "label": "Speller",
+        "importPath": "autocorrect",
+        "description": "autocorrect",
+        "isExtraImport": true,
+        "detail": "autocorrect",
+        "documentation": {}
+    },
+    {
         "label": "MinMaxScaler",
         "importPath": "sklearn.preprocessing",
         "description": "sklearn.preprocessing",
@@ -1272,6 +1288,15 @@
         "importPath": "card_engine",
         "description": "card_engine",
         "peekOfCode": "def summarize_text(text, num_sentences):\n    #ic()\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    algorithm = LexRankSummarizer()\n    summary = algorithm(parser.document, num_sentences)\n    summary_text = \"\\n\".join([str(sentence) for sentence in summary])\n    return summary_text",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "clear_card_box",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def clear_card_box(card_box_directory):\n    for file in os.listdir(card_box_directory):\n        os.remove(os.path.join(card_box_directory, file))\n# clear the card box directory\n# clear_card_box('new_card_box') #note: to clear the card box, uncomment this line\ndef generate_card(\n    title: str,\n    description: str,\n    points: str,\n    html_template: str,",
         "detail": "card_engine",
         "documentation": {}
     },
@@ -2131,6 +2156,15 @@
         "documentation": {}
     },
     {
+        "label": "links_file",
+        "kind": 5,
+        "importPath": "process_links",
+        "description": "process_links",
+        "peekOfCode": "links_file = open(\"links.csv\", \"r\"):\n    links = links_file.readlines()\n    links_file.close()",
+        "detail": "process_links",
+        "documentation": {}
+    },
+    {
         "label": "parse_page",
         "kind": 2,
         "importPath": "random_celebrities",
@@ -2423,43 +2457,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = pd.read_csv(\"categories.csv\", header=None, delimiter=\",\")\n# remove extra spaces leading/trailing spaces from the categories\ncategories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)\n# now remove \" from the categories\ncategories = categories.applymap(lambda x: x.replace('\"', \"\") if isinstance(x, str) else x)\n# replace spaces with _ in the categories\ncategories = categories.applymap(lambda x: x.replace(\" \", \"_\") if isinstance(x, str) else x)\ncategories = categories.values.tolist()[0]\nbase_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "categories",
-        "kind": 5,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "categories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)\n# now remove \" from the categories\ncategories = categories.applymap(lambda x: x.replace('\"', \"\") if isinstance(x, str) else x)\n# replace spaces with _ in the categories\ncategories = categories.applymap(lambda x: x.replace(\" \", \"_\") if isinstance(x, str) else x)\ncategories = categories.values.tolist()[0]\nbase_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "categories",
-        "kind": 5,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "categories = categories.applymap(lambda x: x.replace('\"', \"\") if isinstance(x, str) else x)\n# replace spaces with _ in the categories\ncategories = categories.applymap(lambda x: x.replace(\" \", \"_\") if isinstance(x, str) else x)\ncategories = categories.values.tolist()[0]\nbase_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "categories",
-        "kind": 5,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "categories = categories.applymap(lambda x: x.replace(\" \", \"_\") if isinstance(x, str) else x)\ncategories = categories.values.tolist()[0]\nbase_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "categories",
-        "kind": 5,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "categories = categories.values.tolist()[0]\nbase_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [",
+        "peekOfCode": "categories = [category.strip() for category in categories]\nbase_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2468,7 +2466,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "base_categories = categories.copy()\n# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1970, 2020, 10)",
+        "peekOfCode": "base_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2477,7 +2475,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1970, 2020, 10)\n]\n# subcats_foryears = ['_in_television']",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2486,7 +2484,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1970, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2495,7 +2493,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture",
+        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2504,7 +2502,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories",
+        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2513,7 +2511,25 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories\n# add events_and_culture\n# extras = ['English-language_idioms','British_English_idioms']\n# most_linkedto_categories = ['Living_people']\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:",
+        "peekOfCode": "categories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories\n# add charactersTV\ncategories.extend(charactersTV)  # adds some year categories to categories\n# add events_and_culture\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "extras",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "extras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "most_linkedto_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "most_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2522,7 +2538,25 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "original_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe",
+        "peekOfCode": "original_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "original_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2567,7 +2601,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 150:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(150, card_deck)\n    # create a copy of the card deck file for safety",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 2000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(2000, card_deck)\n    # create a copy of the card deck file for safety",
         "detail": "wiki_monikers",
         "documentation": {}
     },

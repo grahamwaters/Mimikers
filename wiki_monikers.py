@@ -86,20 +86,20 @@ URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
 
 import pandas as pd
 # read in the categories from categories.csv file as a string
-categories = pd.read_csv("categories.csv", header=None, delimiter=",")
+# categories = pd.read_csv("categories.csv", header=None, delimiter=",")
+# read in the categories from the json file as a string
+with open("categories.json", "r") as f:
+    categories = json.load(f) # this is a list of strings
 # remove extra spaces leading/trailing spaces from the categories
-categories = categories.applymap(lambda x: x.strip() if isinstance(x, str) else x)
-# now remove " from the categories
-categories = categories.applymap(lambda x: x.replace('"', "") if isinstance(x, str) else x)
-# replace spaces with _ in the categories
-categories = categories.applymap(lambda x: x.replace(" ", "_") if isinstance(x, str) else x)
-categories = categories.values.tolist()[0]
+categories = [category.strip() for category in categories]
+
+
 
 
 base_categories = categories.copy()
 
 
-# append this ['Internet_memes_introduced_in_{}'.format(str(year)) for year in range(2000,2023)] to categories
+# add meme categories
 meme_categories = [
     "Internet_memes_introduced_in_{}".format(str(year)) for year in range(2000, 2023)
 ]
@@ -109,7 +109,7 @@ with open("meme_categories.json", "w") as f:
 
 
 year_categories = [
-    "{}s_in_Internet_culture".format(str(year)) for year in range(1970, 2020, 10)
+    "{}s_in_Internet_culture".format(str(year)) for year in range(1980, 2020, 10)
 ]
 # subcats_foryears = ['_in_television']
 
@@ -121,7 +121,7 @@ with open("charactersTV.json", "w") as f:
     json.dump(charactersTV, f)
 
 # Video Games for years 1950 through 2023
-VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(1970,2010)]
+VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]
 
 # save the links for VideoGames_Categories to a file so we can use them later
 with open("VideoGames_Categories.json", "w") as f:
@@ -136,13 +136,16 @@ categories.extend(meme_categories)  # add meme categories to categories
 
 # add year categories
 categories.extend(year_categories)  # adds some year categories to categories
-
+# add charactersTV
+categories.extend(charactersTV)  # adds some year categories to categories
 
 # add events_and_culture
 
-# extras = ['English-language_idioms','British_English_idioms']
+extras = ['English-language_idioms','British_English_idioms']
+categories.extend(extras)
 
-# most_linkedto_categories = ['Living_people']
+most_linkedto_categories = ['Living_people']
+categories.extend(most_linkedto_categories)
 
 # save the categories to a file so we can use them later
 with open("categories.json", "w") as f:
@@ -150,6 +153,11 @@ with open("categories.json", "w") as f:
 
 
 original_categories = categories.copy()
+# remove duplicates
+original_categories = list(set(categories))
+categories = original_categories.copy()
+# sort the categories
+original_categories.sort()
 
 import random
 
@@ -200,9 +208,6 @@ def add_category(message):
     # if the message is not a valid Wikipedia category, ignore it
     else:
         pass
-
-
-
 
 def replacer_censor(definition, phrase, replacements_dict):
     # Iterate over the keys in the replacements dictionary
@@ -869,11 +874,11 @@ english_words = words.words()
 with open("ppn_deck.json", "r") as read_file:
     card_deck = json.load(read_file)
 
-while len(card_deck) < 150:
+while len(card_deck) < 2000:
     print(len(card_deck))
     # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'
     # #groupme_bot(stringval)
-    card_deck = create_ppn_deck(150, card_deck)
+    card_deck = create_ppn_deck(2000, card_deck)
     # create a copy of the card deck file for safety
     with open("ppn_deck_copy.json", "w") as outfile:
         json.dump(card_deck, outfile, indent=4)

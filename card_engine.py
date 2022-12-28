@@ -11,6 +11,15 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 from icecream import ic
 from PIL import Image
 from profanity_check import predict, predict_prob
+# using contextual spell checking
+# verify that python -m spacy download en_core_web_sm has been run
+#!python -m spacy download en_core_web_sm
+
+#!pip install textblob
+from textblob import TextBlob
+#!pip install autocorrect
+from autocorrect import Speller # for spell checking
+
 # constants
 spell_check_flag = False
 # ignore warnings
@@ -32,6 +41,12 @@ def summarize_text(text, num_sentences):
     summary_text = "\n".join([str(sentence) for sentence in summary])
     return summary_text
 
+def clear_card_box(card_box_directory):
+    for file in os.listdir(card_box_directory):
+        os.remove(os.path.join(card_box_directory, file))
+
+# clear the card box directory
+# clear_card_box('new_card_box') #note: to clear the card box, uncomment this line
 
 def generate_card(
     title: str,
