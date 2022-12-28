@@ -70,13 +70,30 @@ def generate_card(
 
     if description[0] == "[" or description[0] == "(":
         # then this is a tuple still, and must be extracted from the description. Look for '.' (must include the ') and get the following text to the end of the string. This is the description.
-        description = str(description).split("','")[1] # get the second element of the tuple (the description)
-        description = description.replace("')", "") # remove the trailing ')'
-        description = description.replace("]", "") # remove the trailing ')'
+        try:
+            description = str(description).split("', '")[1] # get the second element of the tuple (the description)
+            description = description.replace("')", "") # remove the trailing ')'
+            description = description.replace("]", "") # remove the trailing ')'
+            description = description.replace(")", "") # remove the trailing ')'
+            description = description.replace("',", "") # remove the trailing ')'
 
+            #note: I know this is unconventional and a hack, I am replacing '\n' occurrences here with a space.
+            while '\\n' in description:
+                description = description.replace('\\n', ' ')
+            # description = description.replace("\n", " ")
+            description = description.replace("\\r", " ")
+            description = description.replace("\\t", " ")
+            description = description.replace("\\v", " ")
+            description = description.replace("\\f", " ")
+            while "  " in description:
+                description = description.replace("  ", " ")
+        except Exception as e:
+            description = str(description)
     # convert the description to a string
     description = str(description)
-
+    description_words = description.split(" ")
+    stripped_words = [re.sub(r"\n|\\n", "", word) for word in description_words]
+    description = " ".join(stripped_words) # convert the list of words back to a string
     description = description.replace(" - ", " ")
 
     while "  " in description:
@@ -84,6 +101,20 @@ def generate_card(
     description = clean_string(description)
     #ic()
     #!assert (len(description) > 0, "There is no Description")
+
+    # if '\n' or '\r' or '\t' or '\v' or '\f' or any special character in description, then replace it with a space and print a warning
+    if '\\n' in description:
+        print('Warning: \\n in description')
+        description = description.replace('\n', ' ')
+    if '\\r' in description:
+        print('Warning: \\r in description')
+        description = description.replace('\r', ' ')
+    if '\\t' in description:
+        print('Warning: \\t in description')
+        description = description.replace('\t', ' ')
+
+    print(description) #note: debug
+
     html = html.replace("CARD_TITLE", title)
     html = html.replace("CARD_DESCRIPTION", description)
     html = html.replace("CARD_CATEGORY", category)
