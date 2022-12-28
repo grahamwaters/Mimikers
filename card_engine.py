@@ -1,5 +1,6 @@
 import json
 import os
+import warnings
 import random
 import re
 from html2image import Html2Image
@@ -8,9 +9,17 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.summarizers.lex_rank import LexRankSummarizer
 from icecream import ic
+from PIL import Image
+from profanity_check import predict, predict_prob
+# constants
+spell_check_flag = False
+# ignore warnings
+warnings.filterwarnings("ignore")
+
+# functions
 
 def summarize_text(text, num_sentences):
-    ic()
+    #ic()
     """
     Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string
     """
@@ -58,13 +67,23 @@ def generate_card(
     else:
         if category == "other":
             category = "Wild Card"
+
+    if description[0] == "[" or description[0] == "(":
+        # then this is a tuple still, and must be extracted from the description. Look for '.' (must include the ') and get the following text to the end of the string. This is the description.
+        description = str(description).split("','")[1] # get the second element of the tuple (the description)
+        description = description.replace("')", "") # remove the trailing ')'
+        description = description.replace("]", "") # remove the trailing ')'
+
+    # convert the description to a string
+    description = str(description)
+
     description = description.replace(" - ", " ")
 
     while "  " in description:
         description = description.replace("  ", " ")
     description = clean_string(description)
-    ic()
-    assert (len(description) > 0, "There is no Description")
+    #ic()
+    #!assert (len(description) > 0, "There is no Description")
     html = html.replace("CARD_TITLE", title)
     html = html.replace("CARD_DESCRIPTION", description)
     html = html.replace("CARD_CATEGORY", category)
@@ -81,21 +100,35 @@ def generate_card(
     output_path = "./card_box/"
     if not os.path.exists(output_path):
         os.makedirs(output_path)
-    savepath = os.path.join(output_path, filename)
-    hti.output_path = output_path
 
-    filename = "{}.png".format(re.sub(r"[^\w\s]", "", title).replace(" ", "_"))
-    filename = filename.lower()
-    hti.screenshot(html_str=html, save_as=filename)
+    try:
+        # Generate the image file
+        filename = "{}.png".format(re.sub(r"[^\w\s]", "", title).replace(" ", "_"))
+        filename = filename.lower()
+        savepath = os.path.join(output_path, filename)
+        hti.output_path = output_path
+        hti.screenshot(html_str=html, save_as=filename)
 
-    print(f"Generated card {title} at {savepath}!")
-    savepath_out = "./new_card_box/{}.png".format(
-        re.sub(r"[^\w\s]", "", title).replace(" ", "_")
-    ).lower()
-    crop_image(savepath, savepath_out, title)
+        print(f"Generated card {title} at {savepath}!")
+    except Exception as e:
+        pass
+        print(f"An error occurred while generating the image file: {e}")
 
-    os.remove(savepath)
-    print(f"Cropped card {title} at {savepath}!")
+    try:
+        # Crop the image file
+        savepath_out = "./new_card_box/{}.png".format(
+            re.sub(r"[^\w\s]", "", title).replace(" ", "_")
+        ).lower()
+        crop_image(savepath, savepath_out, title)
+    except Exception as e:
+        print(f"An error occurred while cropping the image file: {e}")
+
+    try:
+        # Delete the original image file
+        os.remove(savepath)
+        print(f"Cropped card {title} at {savepath}!")
+    except OSError as e:
+        print(f"An error occurred while deleting the original image file: {e}")
 
 
 def run_spell_check_on_cards(nlp):
@@ -117,16 +150,43 @@ def run_spell_check_on_cards(nlp):
         else:
             print("Spell check was not performed")
 
+tries = 0
 
-def generate_physical_cards(options):
+def crop_image(input_file, output_file, title):
+    # Generate the output file name based on the title argument
+    output_file = './new_card_box/{}.png'.format(re.sub(r'[^\w\s]', '', title).replace(' ', '_')).lower()
+    # Open the input image
+    try:
+        img = Image.open(input_file)
+
+        # Crop the image to maintain a 14px buffer on the left, top, bottom, and right
+        # of a rectangle that is 1182px wide and 1779px tall, starting from the upper left
+        left = 14 # buffer
+        cropped_img = img.crop((left, 14, 1182+left, 1779+left))
+
+        # Save the cropped image to the specified output file
+        cropped_img.save(output_file)
+
+    except Exception as e:
+        print(f"An error occurred while cropping image {input_file}: {e}")
+
+
+
+
+def generate_physical_cards(options, html_template):
     print(f"Generating physical cards...")
     print(f"With the following options: {options}")
     print("--" * 20)
+    print(
+        f"Gandalf is automatically adding keywords for the 2018-2022 years to the deck."
+    )
 
     cards_to_generate = options["cards_to_generate"]
     profanity = options["profanity"]
     grade_level = options["grade_level"]
     keywords = options["keywords"]
+    for year in range(2018, 2023):
+        keywords.append(str(year))
 
     with open("ppn_deck.json", "r") as f:
         card_deck = json.load(f)
@@ -176,12 +236,7 @@ def generate_physical_cards(options):
 
 def gandalf_card_finder(card, keywords, grade_level, profanity):
 
-    print(
-        f"Gandalf is automatically adding keywords for the 2018-2022 years to the deck."
-    )
-    for year in range(2018, 2023):
-        keywords.append(str(year))
-    assert ("summary" in card.keys(), "Card does not have a summary!")
+    #!assert ("summary" in card.keys(), "Card does not have a summary!")
     full_summary = card["summary"]
     if isinstance(full_summary, list):
         full_summary = full_summary[1]
@@ -238,7 +293,7 @@ def clean_string(string):
 
     cleaned_string = re.sub(r"[\.\?\!]\s(?=[a-z])", ". ", cleaned_string)
 
-    assert (len(cleaned_string) > 0, "Cleaned string is empty!")
+    #!assert (len(cleaned_string) > 0, "Cleaned string is empty!")
     return cleaned_string
 
 
@@ -274,45 +329,56 @@ def run_cleaner_on_cards():
         json.dump(card_deck, f)
 
 
-print("Initialized, ready to spell check!")
-if spell_check_flag:
-    run_cleaner_on_cards()
-print("Spell check complete, ready to generate cards!")
-generate_card(
-    "Test Card",
-    "from Armentires is an English song that was particularly popular during World War I. It is also known by its ersatz French hook line, Inky Pinky Parlez Vous, or the American variant Hinky Dinky Parlez-vous variant: Parlay voo. Inky Pinky was a Scottish childrens name for parsnip and potato cakes, but it has been suggested that an onomatopoeic reference to the sound of bed springs is a more likely soldiers ribald derivation.",
-    10,
-    html_template,
-    "Mademoiselle from Armentières",
-    0,
-    "People",
-)
-keywords = [
-    "amish",
-    "dance",
-    "actor",
-    "ghost",
-    "character",
-    "book",
-    "movie",
-    "funny",
-    "nasa",
-    "famous",
-    "viral",
-    "dog poop",
-    "poop",
-    "therapy",
-    "vegetables",
-    "melon",
-    "die",
-    "embarrassing",
-]
-options = {
-    "grade_level": 16,
-    "profanity": True,
-    "cards_to_generate": 100,
-    "keywords": keywords,
-    "categories": [],
-}
-generate_physical_cards(options)
-print("Done")
+def main():
+    # templates
+    with open("card_html.txt", mode="r",encoding="UTF-8") as f:
+        html_template = f.read()
+    global spell_check_flag
+
+    print("Initialized, ready to spell check!")
+
+    if spell_check_flag:
+        run_cleaner_on_cards()
+    print("Spell check complete, ready to generate cards!")
+    generate_card(
+        "Test Card",
+        "from Armentires is an English song that was particularly popular during World War I. It is also known by its ersatz French hook line, Inky Pinky Parlez Vous, or the American variant Hinky Dinky Parlez-vous variant: Parlay voo. Inky Pinky was a Scottish childrens name for parsnip and potato cakes, but it has been suggested that an onomatopoeic reference to the sound of bed springs is a more likely soldiers ribald derivation.",
+        10,
+        html_template,
+        "Mademoiselle from Armentières",
+        0,
+        "People",
+    )
+    keywords = [
+        "amish",
+        "dance",
+        "actor",
+        "ghost",
+        "character",
+        "book",
+        "movie",
+        "funny",
+        "nasa",
+        "famous",
+        "viral",
+        "dog poop",
+        "poop",
+        "therapy",
+        "vegetables",
+        "melon",
+        "die",
+        "embarrassing",
+    ]
+    options = {
+        "grade_level": 16,
+        "profanity": True,
+        "cards_to_generate": 100,
+        "keywords": keywords,
+        "categories": [],
+    }
+    generate_physical_cards(options, html_template)
+    print("Done")
+
+# main function
+if __name__ == "__main__":
+    main()

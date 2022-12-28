@@ -50,6 +50,14 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "ImageDraw",
         "importPath": "PIL",
         "description": "PIL",
@@ -271,6 +279,15 @@
         "documentation": {}
     },
     {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
         "label": "Html2Image",
         "importPath": "html2image",
         "description": "html2image",
@@ -524,6 +541,22 @@
         "description": "icecream",
         "isExtraImport": true,
         "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "importPath": "profanity_check",
+        "description": "profanity_check",
+        "isExtraImport": true,
+        "detail": "profanity_check",
+        "documentation": {}
+    },
+    {
+        "label": "predict_prob",
+        "importPath": "profanity_check",
+        "description": "profanity_check",
+        "isExtraImport": true,
+        "detail": "profanity_check",
         "documentation": {}
     },
     {
@@ -1238,7 +1271,7 @@
         "kind": 2,
         "importPath": "card_engine",
         "description": "card_engine",
-        "peekOfCode": "def summarize_text(text, num_sentences):\n    ic()\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    algorithm = LexRankSummarizer()\n    summary = algorithm(parser.document, num_sentences)\n    summary_text = \"\\n\".join([str(sentence) for sentence in summary])\n    return summary_text",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    #ic()\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    algorithm = LexRankSummarizer()\n    summary = algorithm(parser.document, num_sentences)\n    summary_text = \"\\n\".join([str(sentence) for sentence in summary])\n    return summary_text",
         "detail": "card_engine",
         "documentation": {}
     },
@@ -1261,11 +1294,20 @@
         "documentation": {}
     },
     {
+        "label": "crop_image",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def crop_image(input_file, output_file, title):\n    # Generate the output file name based on the title argument\n    output_file = './new_card_box/{}.png'.format(re.sub(r'[^\\w\\s]', '', title).replace(' ', '_')).lower()\n    # Open the input image\n    try:\n        img = Image.open(input_file)\n        # Crop the image to maintain a 14px buffer on the left, top, bottom, and right\n        # of a rectangle that is 1182px wide and 1779px tall, starting from the upper left\n        left = 14 # buffer\n        cropped_img = img.crop((left, 14, 1182+left, 1779+left))",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
         "label": "generate_physical_cards",
         "kind": 2,
         "importPath": "card_engine",
         "description": "card_engine",
-        "peekOfCode": "def generate_physical_cards(options):\n    print(f\"Generating physical cards...\")\n    print(f\"With the following options: {options}\")\n    print(\"--\" * 20)\n    cards_to_generate = options[\"cards_to_generate\"]\n    profanity = options[\"profanity\"]\n    grade_level = options[\"grade_level\"]\n    keywords = options[\"keywords\"]\n    with open(\"ppn_deck.json\", \"r\") as f:\n        card_deck = json.load(f)",
+        "peekOfCode": "def generate_physical_cards(options, html_template):\n    print(f\"Generating physical cards...\")\n    print(f\"With the following options: {options}\")\n    print(\"--\" * 20)\n    print(\n        f\"Gandalf is automatically adding keywords for the 2018-2022 years to the deck.\"\n    )\n    cards_to_generate = options[\"cards_to_generate\"]\n    profanity = options[\"profanity\"]\n    grade_level = options[\"grade_level\"]",
         "detail": "card_engine",
         "documentation": {}
     },
@@ -1274,7 +1316,7 @@
         "kind": 2,
         "importPath": "card_engine",
         "description": "card_engine",
-        "peekOfCode": "def gandalf_card_finder(card, keywords, grade_level, profanity):\n    print(\n        f\"Gandalf is automatically adding keywords for the 2018-2022 years to the deck.\"\n    )\n    for year in range(2018, 2023):\n        keywords.append(str(year))\n    assert (\"summary\" in card.keys(), \"Card does not have a summary!\")\n    full_summary = card[\"summary\"]\n    if isinstance(full_summary, list):\n        full_summary = full_summary[1]",
+        "peekOfCode": "def gandalf_card_finder(card, keywords, grade_level, profanity):\n    #!assert (\"summary\" in card.keys(), \"Card does not have a summary!\")\n    full_summary = card[\"summary\"]\n    if isinstance(full_summary, list):\n        full_summary = full_summary[1]\n    found_keyword = False\n    for keyword in keywords:\n        if re.search(r\"\\b\" + keyword + r\"\\b\", full_summary, re.IGNORECASE):\n            found_keyword = True\n            break",
         "detail": "card_engine",
         "documentation": {}
     },
@@ -1297,20 +1339,29 @@
         "documentation": {}
     },
     {
-        "label": "keywords",
-        "kind": 5,
+        "label": "main",
+        "kind": 2,
         "importPath": "card_engine",
         "description": "card_engine",
-        "peekOfCode": "keywords = [\n    \"amish\",\n    \"dance\",\n    \"actor\",\n    \"ghost\",\n    \"character\",\n    \"book\",\n    \"movie\",\n    \"funny\",\n    \"nasa\",",
+        "peekOfCode": "def main():\n    # templates\n    with open(\"card_html.txt\", mode=\"r\",encoding=\"UTF-8\") as f:\n        html_template = f.read()\n    global spell_check_flag\n    print(\"Initialized, ready to spell check!\")\n    if spell_check_flag:\n        run_cleaner_on_cards()\n    print(\"Spell check complete, ready to generate cards!\")\n    generate_card(",
         "detail": "card_engine",
         "documentation": {}
     },
     {
-        "label": "options",
+        "label": "spell_check_flag",
         "kind": 5,
         "importPath": "card_engine",
         "description": "card_engine",
-        "peekOfCode": "options = {\n    \"grade_level\": 16,\n    \"profanity\": True,\n    \"cards_to_generate\": 100,\n    \"keywords\": keywords,\n    \"categories\": [],\n}\ngenerate_physical_cards(options)\nprint(\"Done\")",
+        "peekOfCode": "spell_check_flag = False\n# ignore warnings\nwarnings.filterwarnings(\"ignore\")\n# functions\ndef summarize_text(text, num_sentences):\n    #ic()\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "tries",
+        "kind": 5,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "tries = 0\ndef crop_image(input_file, output_file, title):\n    # Generate the output file name based on the title argument\n    output_file = './new_card_box/{}.png'.format(re.sub(r'[^\\w\\s]', '', title).replace(' ', '_')).lower()\n    # Open the input image\n    try:\n        img = Image.open(input_file)\n        # Crop the image to maintain a 14px buffer on the left, top, bottom, and right\n        # of a rectangle that is 1182px wide and 1779px tall, starting from the upper left\n        left = 14 # buffer",
         "detail": "card_engine",
         "documentation": {}
     },
