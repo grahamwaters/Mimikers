@@ -262,12 +262,28 @@
         "documentation": {}
     },
     {
-        "label": "nltk",
+        "label": "os",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "nltk",
-        "description": "nltk",
-        "detail": "nltk",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Html2Image",
+        "importPath": "html2image",
+        "description": "html2image",
+        "isExtraImport": true,
+        "detail": "html2image",
+        "documentation": {}
+    },
+    {
+        "label": "Html2Image",
+        "importPath": "html2image",
+        "description": "html2image",
+        "isExtraImport": true,
+        "detail": "html2image",
         "documentation": {}
     },
     {
@@ -356,6 +372,142 @@
         "description": "tqdm",
         "isExtraImport": true,
         "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
         "documentation": {}
     },
     {
@@ -367,108 +519,204 @@
         "documentation": {}
     },
     {
-        "label": "PlaintextParser",
-        "importPath": "sumy.parsers.plaintext",
-        "description": "sumy.parsers.plaintext",
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
         "isExtraImport": true,
-        "detail": "sumy.parsers.plaintext",
+        "detail": "icecream",
         "documentation": {}
     },
     {
-        "label": "PlaintextParser",
-        "importPath": "sumy.parsers.plaintext",
-        "description": "sumy.parsers.plaintext",
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sumy.parsers.plaintext",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "PlaintextParser",
-        "importPath": "sumy.parsers.plaintext",
-        "description": "sumy.parsers.plaintext",
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sumy.parsers.plaintext",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "PlaintextParser",
-        "importPath": "sumy.parsers.plaintext",
-        "description": "sumy.parsers.plaintext",
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sumy.parsers.plaintext",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "LexRankSummarizer",
-        "importPath": "sumy.summarizers.lex_rank",
-        "description": "sumy.summarizers.lex_rank",
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sumy.summarizers.lex_rank",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "LexRankSummarizer",
-        "importPath": "sumy.summarizers.lex_rank",
-        "description": "sumy.summarizers.lex_rank",
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sumy.summarizers.lex_rank",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "LexRankSummarizer",
-        "importPath": "sumy.summarizers.lex_rank",
-        "description": "sumy.summarizers.lex_rank",
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sumy.summarizers.lex_rank",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "LexRankSummarizer",
-        "importPath": "sumy.summarizers.lex_rank",
-        "description": "sumy.summarizers.lex_rank",
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sumy.summarizers.lex_rank",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "Tokenizer",
-        "importPath": "sumy.nlp.tokenizers",
-        "description": "sumy.nlp.tokenizers",
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
         "isExtraImport": true,
-        "detail": "sumy.nlp.tokenizers",
+        "detail": "nltk.corpus",
         "documentation": {}
     },
     {
-        "label": "Tokenizer",
-        "importPath": "sumy.nlp.tokenizers",
-        "description": "sumy.nlp.tokenizers",
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
         "isExtraImport": true,
-        "detail": "sumy.nlp.tokenizers",
+        "detail": "nltk.corpus",
         "documentation": {}
     },
     {
-        "label": "Tokenizer",
-        "importPath": "sumy.nlp.tokenizers",
-        "description": "sumy.nlp.tokenizers",
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
         "isExtraImport": true,
-        "detail": "sumy.nlp.tokenizers",
+        "detail": "nltk.corpus",
         "documentation": {}
     },
     {
-        "label": "Tokenizer",
-        "importPath": "sumy.nlp.tokenizers",
-        "description": "sumy.nlp.tokenizers",
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
         "isExtraImport": true,
-        "detail": "sumy.nlp.tokenizers",
+        "detail": "nltk.corpus",
         "documentation": {}
     },
     {
-        "label": "os",
+        "label": "words",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "nltk",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "importPath": "nltk",
+        "description": "nltk",
+        "detail": "nltk",
         "documentation": {}
     },
     {
@@ -487,150 +735,6 @@
         "importPath": "textstat",
         "description": "textstat",
         "detail": "textstat",
-        "documentation": {}
-    },
-    {
-        "label": "Html2Image",
-        "importPath": "html2image",
-        "description": "html2image",
-        "isExtraImport": true,
-        "detail": "html2image",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "words",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "wordnet",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "wordnet",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "wordnet",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "wordnet",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "words",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "wordnet",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "wordnet",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "MinMaxScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "MinMaxScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "MinMaxScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "MinMaxScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
@@ -1127,6 +1231,213 @@
         "description": "storage_bin.test.",
         "peekOfCode": "unique = [word for word in bad_patterns if word not in unique]",
         "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    ic()\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    algorithm = LexRankSummarizer()\n    summary = algorithm(parser.document, num_sentences)\n    summary_text = \"\\n\".join([str(sentence) for sentence in summary])\n    return summary_text",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def generate_card(\n    title: str,\n    description: str,\n    points: str,\n    html_template: str,\n    name: str,\n    links_on_wikipedia: str,\n    category=\"Wild Card\",\n):\n    filename = \"{}.png\".format(title.replace(\" \", \"_\"))",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "run_spell_check_on_cards",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def run_spell_check_on_cards(nlp):\n    with open(\"ppn_deck.json\", \"r\") as f:\n        card_deck = json.load(f)\n    for card in tqdm(card_deck):\n        summary = card[\"summary_short\"]\n        if isinstance(summary, list):\n            summary = summary[1]\n        doc = nlp(summary)\n        if doc._.performed_spellCheck:\n            summary = doc._.outcome_spellCheck",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "generate_physical_cards",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def generate_physical_cards(options):\n    print(f\"Generating physical cards...\")\n    print(f\"With the following options: {options}\")\n    print(\"--\" * 20)\n    cards_to_generate = options[\"cards_to_generate\"]\n    profanity = options[\"profanity\"]\n    grade_level = options[\"grade_level\"]\n    keywords = options[\"keywords\"]\n    with open(\"ppn_deck.json\", \"r\") as f:\n        card_deck = json.load(f)",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "gandalf_card_finder",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def gandalf_card_finder(card, keywords, grade_level, profanity):\n    print(\n        f\"Gandalf is automatically adding keywords for the 2018-2022 years to the deck.\"\n    )\n    for year in range(2018, 2023):\n        keywords.append(str(year))\n    assert (\"summary\" in card.keys(), \"Card does not have a summary!\")\n    full_summary = card[\"summary\"]\n    if isinstance(full_summary, list):\n        full_summary = full_summary[1]",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "clean_string",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def clean_string(string):\n    string = re.sub(r\"(?<=[.!?])\\s*[^a-zA-Z\\d]\", \"\", string)\n    corrected_string = string\n    corrected_string = str(corrected_string)\n    description = corrected_string\n    description = re.sub(r\"\\.(?=[^ ])\", \". \", description)\n    description = re.sub(r\",(?=[^ ])\", \", \", description)\n    description = re.sub(r\";(?=[^ ])\", \"; \", description)\n    description = re.sub(r\":(?=[^ ])\", \": \", description)\n    description = re.sub(r\"\\?(?=[^ ])\", \"? \", description)",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "run_cleaner_on_cards",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def run_cleaner_on_cards():\n    with open(\"ppn_deck.json\", \"r\") as f:\n        card_deck = json.load(f)\n    for card in tqdm(card_deck):\n        if \"cleaned\" in card.keys():\n            continue\n        summary = card[\"summary_short\"]\n        if isinstance(summary, list):\n            summary = summary[1]\n        if isinstance(summary, list):",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "keywords",
+        "kind": 5,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "keywords = [\n    \"amish\",\n    \"dance\",\n    \"actor\",\n    \"ghost\",\n    \"character\",\n    \"book\",\n    \"movie\",\n    \"funny\",\n    \"nasa\",",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "options",
+        "kind": 5,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "options = {\n    \"grade_level\": 16,\n    \"profanity\": True,\n    \"cards_to_generate\": 100,\n    \"keywords\": keywords,\n    \"categories\": [],\n}\ngenerate_physical_cards(options)\nprint(\"Done\")",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=50):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []\n    # Get a list of English stopwords\n    stop_words = stopwords.words(\"english\")\n    # Iterate through each card in the card deck\n    card_id = 0",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=20):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []\n    # Get a list of English stopwords\n    stop_words = stopwords.words(\"english\")\n    # Iterate through each card in the card deck\n    card_id = 0",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=20):\n    stop_words = stopwords.words(\"english\")\n    card_id = 0\n    related_words = []\n    for card in card_deck:\n        summary_text = card['summary'][1]\n        words = summary_text.split()\n        nonstop_words = [word for word in words if word not in stop_words]\n        word_count = len(nonstop_words)\n        try:",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "english_stopwords",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "english_stopwords = stopwords.words('english')\nstopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom tqdm import tqdm\n# %%\nimport nltk\nfrom nltk.corpus import stopwords\nfrom sklearn.preprocessing import MinMaxScaler\nscaler = MinMaxScaler(feature_range=(0, 50))",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "stopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom tqdm import tqdm\n# %%\nimport nltk\nfrom nltk.corpus import stopwords\nfrom sklearn.preprocessing import MinMaxScaler\nscaler = MinMaxScaler(feature_range=(0, 50))\n# read card_deck from ppn_deck.json file",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(0, 50))\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=50):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(0, 20))\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck, max_points=50)\n# %%\nimport json\nfrom sklearn.preprocessing import MinMaxScaler\nimport pandas as pd\nfrom nltk.corpus import stopwords\nscaler = MinMaxScaler(feature_range=(0, 20))\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(0, 20))\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):\n    stop_words = stopwords.words(\"english\")\n    card_id = 0\n    related_words = []\n    for card in card_deck:\n        summary_text = card['summary'][1]\n        words = summary_text.split()",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck, max_points=50)\n# %%\n# show an example with the revised point values\n# convert to dataframe\ndf = pd.DataFrame(card_deck)\n# show the first 5 rows\n# df.head()\n# %%\n# %%\n# the summary_short needs to always be the second element in the tuple if it is an instance of a tuple, else it is itself (str)",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "df = pd.DataFrame(card_deck)\n# show the first 5 rows\n# df.head()\n# %%\n# %%\n# the summary_short needs to always be the second element in the tuple if it is an instance of a tuple, else it is itself (str)\nfor card in card_deck:\n    summary = card['summary']\n    if isinstance(summary, tuple) or isinstance(summary, list):\n        summary_short = summary[1]",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck,20)\n# %%\n# the point_value must always be a value from 1 to 10 never 0. Replace all 0's with 1's\ndf['point_value'] = df['point_value'].replace(0,1)\n# # %%\n# df.head()\n# %%\n# plot a histogram of the point values\ndf['point_value'].hist()\n# %%",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "df['point_value']",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "df['point_value'] = df['point_value'].replace(0,1)\n# # %%\n# df.head()\n# %%\n# plot a histogram of the point values\ndf['point_value'].hist()\n# %%\n# now save the df as a json file\ncard_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:\n    json.dump(card_deck, write_file)\n# %%",
+        "detail": "card_point_revision",
         "documentation": {}
     },
     {
@@ -2205,7 +2516,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 500:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(15000, card_deck)\n    # create a copy of the card deck file for safety",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 150:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(150, card_deck)\n    # create a copy of the card deck file for safety",
         "detail": "wiki_monikers",
         "documentation": {}
     },
