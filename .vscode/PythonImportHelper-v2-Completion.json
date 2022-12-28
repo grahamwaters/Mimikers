@@ -1,0 +1,2617 @@
+[
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "textwrap",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "textwrap",
+        "description": "textwrap",
+        "detail": "textwrap",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFont",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFont",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFont",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "urbandictionary",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urbandictionary",
+        "description": "urbandictionary",
+        "detail": "urbandictionary",
+        "documentation": {}
+    },
+    {
+        "label": "pytrends",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytrends",
+        "description": "pytrends",
+        "detail": "pytrends",
+        "documentation": {}
+    },
+    {
+        "label": "TrendReq",
+        "importPath": "pytrends.request",
+        "description": "pytrends.request",
+        "isExtraImport": true,
+        "detail": "pytrends.request",
+        "documentation": {}
+    },
+    {
+        "label": "TrendReq",
+        "importPath": "pytrends.request",
+        "description": "pytrends.request",
+        "isExtraImport": true,
+        "detail": "pytrends.request",
+        "documentation": {}
+    },
+    {
+        "label": "wikipedia",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wikipedia",
+        "description": "wikipedia",
+        "detail": "wikipedia",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "PyDictionary",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PyDictionary",
+        "description": "PyDictionary",
+        "detail": "PyDictionary",
+        "documentation": {}
+    },
+    {
+        "label": "PyDictionary",
+        "importPath": "PyDictionary",
+        "description": "PyDictionary",
+        "isExtraImport": true,
+        "detail": "PyDictionary",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "spacy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "spacy",
+        "description": "spacy",
+        "detail": "spacy",
+        "documentation": {}
+    },
+    {
+        "label": "wikipediaapi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wikipediaapi",
+        "description": "wikipediaapi",
+        "detail": "wikipediaapi",
+        "documentation": {}
+    },
+    {
+        "label": "aiohttp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiohttp",
+        "description": "aiohttp",
+        "detail": "aiohttp",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "Html2Image",
+        "importPath": "html2image",
+        "description": "html2image",
+        "isExtraImport": true,
+        "detail": "html2image",
+        "documentation": {}
+    },
+    {
+        "label": "Html2Image",
+        "importPath": "html2image",
+        "description": "html2image",
+        "isExtraImport": true,
+        "detail": "html2image",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "importPath": "profanity_check",
+        "description": "profanity_check",
+        "isExtraImport": true,
+        "detail": "profanity_check",
+        "documentation": {}
+    },
+    {
+        "label": "predict_prob",
+        "importPath": "profanity_check",
+        "description": "profanity_check",
+        "isExtraImport": true,
+        "detail": "profanity_check",
+        "documentation": {}
+    },
+    {
+        "label": "TextBlob",
+        "importPath": "textblob",
+        "description": "textblob",
+        "isExtraImport": true,
+        "detail": "textblob",
+        "documentation": {}
+    },
+    {
+        "label": "Speller",
+        "importPath": "autocorrect",
+        "description": "autocorrect",
+        "isExtraImport": true,
+        "detail": "autocorrect",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "nltk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nltk",
+        "description": "nltk",
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "textstat",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "textstat",
+        "description": "textstat",
+        "detail": "textstat",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.parse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "LsaSummarizer",
+        "importPath": "sumy.summarizers.lsa",
+        "description": "sumy.summarizers.lsa",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lsa",
+        "documentation": {}
+    },
+    {
+        "label": "LsaSummarizer",
+        "importPath": "sumy.summarizers.lsa",
+        "description": "sumy.summarizers.lsa",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lsa",
+        "documentation": {}
+    },
+    {
+        "label": "LsaSummarizer",
+        "importPath": "sumy.summarizers.lsa",
+        "description": "sumy.summarizers.lsa",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lsa",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "Stemmer",
+        "importPath": "sumy.nlp.stemmers",
+        "description": "sumy.nlp.stemmers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.stemmers",
+        "documentation": {}
+    },
+    {
+        "label": "urllib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib",
+        "description": "urllib",
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "base_categories",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "send_cards",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def send_cards(cards, player):\n    # Send the batch of cards to the player\n    # Replace this with your code for sending the cards\n    print(f\"Sending {cards} to {player}\")\n# Define a list of players\nplayers = ['player1', 'player2', 'player3']\n# Define a list of cards\ncards = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'card7', 'card8', 'card9', 'card10', 'card11', 'card12', 'card13', 'card14', 'card15']\n# Iterate through the list of players, and send them a batch of 10 cards\nfor player in players:",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "select_cards",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def select_cards(player):\n    # Ask the player to select their five cards\n    # Replace this with your code for asking the player to select their cards\n    selected_cards = ['card1', 'card2', 'card3', 'card4', 'card5']\n    # Return the selected cards\n    return selected_cards\n# Define a list of players\nplayers = ['player1', 'player2', 'player3']\n# Create an empty list to store the selected cards\nselected_cards = []",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def generate_card(title, definition, points):\n    # determine the font size based on the length of the definition\n    font_size = int(len(definition) / 20)\n    if font_size < 10:\n        font_size = 10\n    elif font_size > 20:\n        font_size = 20\n    # create the image and draw objects\n    image = Image.new('RGB', (400, 300), (255, 255, 255))\n    draw = ImageDraw.Draw(image)",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "create_card",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def create_card(title, definition, point_value, card_width, card_height):\n    # code to create the card\n    # wrap the title text\n    wrapped_title = textwrap.wrap(title, width=card_width)\n    # wrap the definition text\n    wrapped_definition = textwrap.wrap(definition, width=card_width)\ndef create_card(title, definition, point_value, card_width, card_height):\n    # code to create the card\n    # add some padding to the card\n    padding = 10",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "create_card",
+        "kind": 2,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "def create_card(title, definition, point_value, card_width, card_height):\n    # code to create the card\n    # add some padding to the card\n    padding = 10\n    # draw a rectangle around the title\n    draw.rectangle([(padding, padding), (card_width-padding, padding+font_size)], fill=(255, 255, 255))\n    # draw a rectangle around the definition\n    draw.rectangle([(padding, padding+font_size), (card_width-padding, card_height-padding)], fill=(255, 255, 255))\n    # draw a circle around the point value\n    draw.ellipse([(card_width-padding-font_size, card_height-padding-font_size), (card_width-padding, card_height-padding)], fill=(255, 255, 255))",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "players = ['player1', 'player2', 'player3']\n# Define a list of cards\ncards = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'card7', 'card8', 'card9', 'card10', 'card11', 'card12', 'card13', 'card14', 'card15']\n# Iterate through the list of players, and send them a batch of 10 cards\nfor player in players:\n    # Get the next batch of 10 cards\n    batch = cards[:10]\n    # Send the batch of cards to the player\n    send_cards(batch, player)\n    # Remove the sent cards from the list",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "cards",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "cards = ['card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'card7', 'card8', 'card9', 'card10', 'card11', 'card12', 'card13', 'card14', 'card15']\n# Iterate through the list of players, and send them a batch of 10 cards\nfor player in players:\n    # Get the next batch of 10 cards\n    batch = cards[:10]\n    # Send the batch of cards to the player\n    send_cards(batch, player)\n    # Remove the sent cards from the list\n    cards = cards[10:]\n# Define a function that takes a player, and asks them to select their five cards",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "players = ['player1', 'player2', 'player3']\n# Create an empty list to store the selected cards\nselected_cards = []\n# Iterate through the list of players, and ask them to select their five cards\nfor player in players:\n    # Ask the player to select their five cards\n    player_selected_cards = select_cards(player)\n# Add the player's selected cards to the list of selected cards\nselected_cards += player_selected_cards\n# Print the list of selected cards",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "selected_cards",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "selected_cards = []\n# Iterate through the list of players, and ask them to select their five cards\nfor player in players:\n    # Ask the player to select their five cards\n    player_selected_cards = select_cards(player)\n# Add the player's selected cards to the list of selected cards\nselected_cards += player_selected_cards\n# Print the list of selected cards\nprint(selected_cards)\nimport requests",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "bot_id",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "bot_id = \"c9d6f93a4e96eeadbeaf21feef\"\n# Set the base URL for the GroupMe API\nbase_url = \"https://api.groupme.com/v3\"\n# Set the payload for the request to the GroupMe API\n# This payload will send a message to the group with the list of cards\npayload = {\n    \"bot_id\": bot_id,\n    \"text\": \"Here are your cards: [Card 1, Card 2, Card 3, Card 4, Card 5, Card 6, Card 7, Card 8, Card 9, Card 10]\"\n}\n# Make the POST request to the GroupMe API to send the message",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "base_url",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "base_url = \"https://api.groupme.com/v3\"\n# Set the payload for the request to the GroupMe API\n# This payload will send a message to the group with the list of cards\npayload = {\n    \"bot_id\": bot_id,\n    \"text\": \"Here are your cards: [Card 1, Card 2, Card 3, Card 4, Card 5, Card 6, Card 7, Card 8, Card 9, Card 10]\"\n}\n# Make the POST request to the GroupMe API to send the message\nresponse = requests.post(f\"{base_url}/bots/post\", json=payload)\n# Check the status code of the response",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "payload",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "payload = {\n    \"bot_id\": bot_id,\n    \"text\": \"Here are your cards: [Card 1, Card 2, Card 3, Card 4, Card 5, Card 6, Card 7, Card 8, Card 9, Card 10]\"\n}\n# Make the POST request to the GroupMe API to send the message\nresponse = requests.post(f\"{base_url}/bots/post\", json=payload)\n# Check the status code of the response\nif response.status_code != 202:\n    print(f\"Failed to send message: {response.status_code} {response.text}\")\nelse:",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "storage_bin.cards",
+        "description": "storage_bin.cards",
+        "peekOfCode": "response = requests.post(f\"{base_url}/bots/post\", json=payload)\n# Check the status code of the response\nif response.status_code != 202:\n    print(f\"Failed to send message: {response.status_code} {response.text}\")\nelse:\n    print(\"Message sent successfully.\")\n########################\nimport textwrap\nfrom PIL import Image, ImageDraw, ImageFont\ndef generate_card(title, definition, points):",
+        "detail": "storage_bin.cards",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "def check_for_badwords(definition, bad_patterns):\n    # define a dictionary of replacements for the bad words\npattern = r'word*|the second|kite'\n# to make the game more fun we can replace words with less inflamatory ones.\ndef check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    return",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "def check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    return\ndef check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        print(f'Found a good pattern in the definition: {definition}')\n        return True",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_good_patterns",
+        "kind": 2,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "def check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        print(f'Found a good pattern in the definition: {definition}')\n        return True\n    elif any(re.match(r'\\b' + word + r'\\b', title) for word in good_patterns):\n        print(f'Found a good pattern in the title: {title}')\n        return True\n    else:",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "bad_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "bad_patterns = r\"sex*| porn*|fuck*|-ass*|ass|shit|damn*|ass|asse*|cock*|whor*|nigg*|slut*|blowjob|fagg*|boob|boob*| bitch*| bastard*| ho |hoe|breast*|jugs| cunt*| puss*| dick*| naked| nud*| masterb*|mastu|nipple*|penis|penal|peni*|god|jesus|christ|bible|church|religion|pray|praye|faith|lord|allah|muslim|islam|allah|ejaculate|jew*|islamic|atheist|rapist*|rape*|pedo*|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|yahwey|yeshua|israel*|sex*| porn*|fuck*|-ass*|ass|shit|slut*|blowjob|fagg*|boob|boob*| breast*|jugs| cunt*| puss*| dick*| naked| nud*| nipple*|penis|penal|peni*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*| fellatio| fuck| nigg*|lynch|erotic*|genit*|balls|nipples\"\nreplacements = {\n    'sex*': 'affection',\n    'porn*': 'adult entertainment',\n    'fuck*': 'intercourse',\n    '-ass*': 'rear end',\n    'ass': 'rear end',\n    'shit': 'feces',\n    'damn*': 'darn',\n    'ass|asse*': 'rear end',",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "replacements",
+        "kind": 5,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "replacements = {\n    'sex*': 'affection',\n    'porn*': 'adult entertainment',\n    'fuck*': 'intercourse',\n    '-ass*': 'rear end',\n    'ass': 'rear end',\n    'shit': 'feces',\n    'damn*': 'darn',\n    'ass|asse*': 'rear end',\n    'cock*': 'male bird',",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "pattern",
+        "kind": 5,
+        "importPath": "storage_bin.copilot",
+        "description": "storage_bin.copilot",
+        "peekOfCode": "pattern = r'word*|the second|kite'\n# to make the game more fun we can replace words with less inflamatory ones.\ndef check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    return\ndef check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):",
+        "detail": "storage_bin.copilot",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in bad_patterns):\n        return True\n    else:\n        return False\ndef check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_good_patterns",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def check_for_good_patterns(definition, title):\n    # check both title and definition for good patterns\n    good_patterns = [r'\\b\\w+phobia\\.?\\b', r'\\bslang\\b', r'\\bacronymn\\b', r'\\bmeme\\b']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        print(f'Found a good pattern in the definition: {definition}')\n        return True\n    elif any(re.match(r'\\b' + word + r'\\b', title) for word in good_patterns):\n        print(f'Found a good pattern in the title: {title}')\n        return True\n    else:",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "remove_undesireable_sentences",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def remove_undesireable_sentences(definition, title, bad_patterns):\n    # convert the definition and title to lowercase\n    definition = definition.lower()\n    title = title.lower()\n    # split the definition into sentences\n    sentences = definition.split('.')\n    # split the title into words\n    title_words = title.split()\n    # initialize a list to store the acceptable sentences\n    acceptable_sentences = []",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def unpack_definitions(definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\",\"\")\n    definition = definition.replace(\"]\",\"\")\n    definition = definition.replace(\"'\",\"\")\n    definition = definition.replace('\"',\"\")\n    definition = definition.replace(\"(\",\"\")\n    definition = definition.replace(\")\",\"\")\n    # remove double spaces",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_length",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def get_page_length(phrase):\n  # search for pages on Wikipedia that match the given phrase\n    try:\n        pages = wikipedia.search(phrase)\n        # retrieve the first page from the search results\n        page = wikipedia.page(pages[0])\n        print(f'Found the page for {page.title}', end='')\n        if phrase.lower() != page.title.lower():\n            print(' ... nevermind... not the right page.')\n            return 0",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "def main():\n    # example: usage example,\n    # upvotes: number of upvotes on Urban Dictionary,\n    # downvotes: number of downvotes on Urban Dictionary\n    import time\n    wikitest = False # set to true to test the wikipedia page length\n    # include a phrase if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary\n    rand_dict = {}\n    total_votes_thresh = 200 # min number of upvotes + downvotes\n    upvotes_thresh = 100 # min number of upvotes",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "bad_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.game",
+        "description": "storage_bin.game",
+        "peekOfCode": "bad_patterns = r\"sex*| porn*|fuck*|-ass*|ass|shit|damn*|ass|asse*|cock*|whor*|nigg*|slut*|blowjob|fagg*|boob|boob*| bitch*| bastard*| ho |hoe|breast*|jugs| cunt*| puss*| dick*| naked| nud*| masterb*|mastu|nipple*|penis|penal|peni*|god|jesus|christ|bible|church|religion|pray|praye|faith|lord|allah|muslim|islam|allah|ejaculate|jew*|islamic|atheist|rapist*|rape*|pedo*|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|yahwey|yeshua|israel*|sex*| porn*|fuck*|-ass*|ass|shit|slut*|blowjob|fagg*|boob|boob*| breast*|jugs| cunt*| puss*| dick*| naked| nud*| nipple*|penis|penal|peni*|islamic|atheist|atheism|atheists|atheist|atheists|christian|christianity|christians|christian|christians|gay|tit*|titt*| fellatio| fuck| nigg*|lynch|erotic*|genit*|balls|nipples\"\n# to make the game more fun we can replace words with less inflamatory ones.\ndef check_for_badwords(definition, bad_patterns):\n    definition = definition.lower()\n    # if any of the buzzwords are found return true else false\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in bad_patterns):\n        return True\n    else:\n        return False\ndef check_for_good_patterns(definition, title):",
+        "detail": "storage_bin.game",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_good_patterns",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def check_for_good_patterns(definition, title, good_patterns):\n    # check both title and definition for good patterns\n    good_patterns = [r'phobia','slang','acronymn','meme']\n    if any(re.match(r'\\b' + word + r'\\b', definition) for word in good_patterns):\n        return True\n    elif any(re.match(r'\\b' + word + r'\\b', title) for word in good_patterns):\n        return True\n    else:\n        return False\ndef unpack_definitions(definition):",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def unpack_definitions(definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\",\"\")\n    definition = definition.replace(\"]\",\"\")\n    definition = definition.replace(\"'\",\"\")\n    definition = definition.replace('\"',\"\")\n    definition = definition.replace(\"(\",\"\")\n    definition = definition.replace(\")\",\"\")\n    print(definition)",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_card",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def create_ppn_card():\n    # create a person/place/thing card\n    # get a random wikipedia entry\n    random_wiki_entry = wikipedia.random(pages=1)\n    # get the summary of the entry\n    random_wiki_entry_summary = wikipedia.summary(random_wiki_entry)\n    # get the url of the entry\n    random_wiki_entry_url = wikipedia.page(random_wiki_entry).url\n    # get the title of the entry\n    random_wiki_entry_title = wikipedia.page(random_wiki_entry).title",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "is_person",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def is_person(wiki_entry_dict):\n    # check if the entry is a person. If it is, return True. If not, return False.\n    # get the categories of the entry\n    random_wiki_entry_categories = wiki_entry_dict[\"categories\"]\n    # check if the entry is a person\n    if \"Category:Living people\" in random_wiki_entry_categories:\n        return True\n    else:\n        return False\n# Function Two: Card Creator for a random Phrase from Urban Dictionary",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_religious_words",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def check_for_religious_words(definition):\n    definition = definition.lower()\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in ['god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians']):\n        return True\n    else:\n        return False\nimport re\ndef check_for_badwords(definition):\n    definition = definition.lower()\n    bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_badwords",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def check_for_badwords(definition):\n    definition = definition.lower()\n    bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']\n    # if any of the buzzwords are found return true else false\n    if any(re.search(r'\\b' + word + r'\\b', definition) for word in bad_patterns):\n        return True\n    else:\n        return False\ndef remove_undesireable_sentences(definition):\n    definition = definition.lower()",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "remove_undesireable_sentences",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def remove_undesireable_sentences(definition):\n    definition = definition.lower()\n    # removes any sentence that contains a regex match to any word in the buzzwords list leaving the other sentences intact.\n    # remove sentences that are not in English\n    definition = re.sub(r'[^\\x00-\\x7f]',r'', definition)\n    # example: \"A woman with huge breasts\" would be removed because of the mention of \"breast\"\n    buzzwords = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']\n    # remove sentences that contain a regex match to any word in the buzzwords list\n    definition = re.sub(r'|'.join(map(re.escape, buzzwords)), '', definition)\n    return definition #",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "def main():\n    # example: usage example,\n    # upvotes: number of upvotes on Urban Dictionary,\n    # downvotes: number of downvotes on Urban Dictionary\n    import time\n    wikitest = False # set to true to test the wikipedia page length\n    # include a phrase if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary\n    rand_dict = {}\n    total_votes_thresh = 20\n    upvotes_thresh = 50 # min number of upvotes",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "good_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.mimiker",
+        "description": "storage_bin.mimiker",
+        "peekOfCode": "good_patterns = [r'phobia','slang','acronymn','meme']\ndef main():\n    # example: usage example,\n    # upvotes: number of upvotes on Urban Dictionary,\n    # downvotes: number of downvotes on Urban Dictionary\n    import time\n    wikitest = False # set to true to test the wikipedia page length\n    # include a phrase if it has a combined total of at least 100 upvotes and downvotes on Urban Dictionary\n    rand_dict = {}\n    total_votes_thresh = 20",
+        "detail": "storage_bin.mimiker",
+        "documentation": {}
+    },
+    {
+        "label": "bad_patterns",
+        "kind": 5,
+        "importPath": "storage_bin.test.",
+        "description": "storage_bin.test.",
+        "peekOfCode": "bad_patterns = [r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'bitch*', r'bastard*',' ho |hoe',r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'masterb*',r'mastu',r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','ejaculate','jew*','islamic','atheist',r'rapist*|rape*',r'pedo*','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','yahwey','yeshua',r'israel*',r'sex*', r'porn*',r'fuck*',r'-ass*','ass','shit',r'damn*',r'ass|asse*',r'cock*',r'whor*',r'nigg*',r'slut*','blowjob',r'fagg*',r'boob|boob*', r'breast*|jugs', r'cunt*', r'puss*', r'dick*', 'naked', r'nud*', r'nipple*',r'penis|penal|peni*','god','jesus','christ','bible','church','religion','pray','prayer','faith','lord','allah','muslim','islam','allah','islamic','atheist','atheism','atheists','atheist','atheists','christian','christianity','christians','christian','christians','gay',r'tit*|titt*', 'fellatio', 'fuck', 'nigger','lynch']\n# bad patterns with no dupes\nunique = [] # init\nunique = [word for word in bad_patterns if word not in unique]",
+        "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "unique",
+        "kind": 5,
+        "importPath": "storage_bin.test.",
+        "description": "storage_bin.test.",
+        "peekOfCode": "unique = [] # init\nunique = [word for word in bad_patterns if word not in unique]",
+        "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "unique",
+        "kind": 5,
+        "importPath": "storage_bin.test.",
+        "description": "storage_bin.test.",
+        "peekOfCode": "unique = [word for word in bad_patterns if word not in unique]",
+        "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    #ic()\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    algorithm = LexRankSummarizer()\n    summary = algorithm(parser.document, num_sentences)\n    summary_text = \"\\n\".join([str(sentence) for sentence in summary])\n    return summary_text",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "clear_card_box",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def clear_card_box(card_box_directory):\n    for file in os.listdir(card_box_directory):\n        os.remove(os.path.join(card_box_directory, file))\n# clear the card box directory\n# clear_card_box('new_card_box') #note: to clear the card box, uncomment this line\ndef generate_card(\n    title: str,\n    description: str,\n    points: str,\n    html_template: str,",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def generate_card(\n    title: str,\n    description: str,\n    points: str,\n    html_template: str,\n    name: str,\n    links_on_wikipedia: str,\n    category=\"Wild Card\",\n):\n    filename = \"{}.png\".format(title.replace(\" \", \"_\"))",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "run_spell_check_on_cards",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def run_spell_check_on_cards(nlp):\n    with open(\"ppn_deck.json\", \"r\") as f:\n        card_deck = json.load(f)\n    for card in tqdm(card_deck):\n        summary = card[\"summary_short\"]\n        if isinstance(summary, list):\n            summary = summary[1]\n        doc = nlp(summary)\n        if doc._.performed_spellCheck:\n            summary = doc._.outcome_spellCheck",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def crop_image(input_file, output_file, title):\n    # Generate the output file name based on the title argument\n    output_file = './new_card_box/{}.png'.format(re.sub(r'[^\\w\\s]', '', title).replace(' ', '_')).lower()\n    # Open the input image\n    try:\n        img = Image.open(input_file)\n        # Crop the image to maintain a 14px buffer on the left, top, bottom, and right\n        # of a rectangle that is 1182px wide and 1779px tall, starting from the upper left\n        left = 14 # buffer\n        cropped_img = img.crop((left, 14, 1182+left, 1779+left))",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "generate_physical_cards",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def generate_physical_cards(options, html_template):\n    print(f\"Generating physical cards...\")\n    print(f\"With the following options: {options}\")\n    print(\"--\" * 20)\n    print(\n        f\"Gandalf is automatically adding keywords for the 2018-2022 years to the deck.\"\n    )\n    profanity = options[\"profanity\"]\n    grade_level = options[\"grade_level\"]\n    keywords = options[\"keywords\"]",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "gandalf_card_finder",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def gandalf_card_finder(card, keywords, grade_level, profanity):\n    #!assert (\"summary\" in card.keys(), \"Card does not have a summary!\")\n    full_summary = card[\"summary\"]\n    if isinstance(full_summary, list):\n        full_summary = full_summary[1]\n    found_keyword = False\n    for keyword in keywords:\n        if re.search(r\"\\b\" + keyword + r\"\\b\", full_summary, re.IGNORECASE):\n            found_keyword = True\n            break",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "clean_string",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def clean_string(string):\n    string = re.sub(r\"(?<=[.!?])\\s*[^a-zA-Z\\d]\", \"\", string)\n    corrected_string = string\n    corrected_string = str(corrected_string)\n    description = corrected_string\n    description = re.sub(r\"\\.(?=[^ ])\", \". \", description)\n    description = re.sub(r\",(?=[^ ])\", \", \", description)\n    description = re.sub(r\";(?=[^ ])\", \"; \", description)\n    description = re.sub(r\":(?=[^ ])\", \": \", description)\n    description = re.sub(r\"\\?(?=[^ ])\", \"? \", description)",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "run_cleaner_on_cards",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def run_cleaner_on_cards():\n    with open(\"ppn_deck.json\", \"r\") as f:\n        card_deck = json.load(f)\n    for card in tqdm(card_deck):\n        if \"cleaned\" in card.keys():\n            continue\n        summary = card[\"summary_short\"]\n        if isinstance(summary, list):\n            summary = summary[1]\n        if isinstance(summary, list):",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "def main():\n    # templates\n    with open(\"card_html.txt\", mode=\"r\",encoding=\"UTF-8\") as f:\n        html_template = f.read()\n    global spell_check_flag\n    print(\"Initialized, ready to spell check!\")\n    if spell_check_flag:\n        run_cleaner_on_cards()\n    print(\"Spell check complete, ready to generate cards!\")\n    generate_card(",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "spell_check_flag",
+        "kind": 5,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "spell_check_flag = False\n# ignore warnings\nwarnings.filterwarnings(\"ignore\")\n# functions\ndef summarize_text(text, num_sentences):\n    #ic()\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "tries",
+        "kind": 5,
+        "importPath": "card_engine",
+        "description": "card_engine",
+        "peekOfCode": "tries = 0\ndef crop_image(input_file, output_file, title):\n    # Generate the output file name based on the title argument\n    output_file = './new_card_box/{}.png'.format(re.sub(r'[^\\w\\s]', '', title).replace(' ', '_')).lower()\n    # Open the input image\n    try:\n        img = Image.open(input_file)\n        # Crop the image to maintain a 14px buffer on the left, top, bottom, and right\n        # of a rectangle that is 1182px wide and 1779px tall, starting from the upper left\n        left = 14 # buffer",
+        "detail": "card_engine",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=50):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []\n    # Get a list of English stopwords\n    stop_words = stopwords.words(\"english\")\n    # Iterate through each card in the card deck\n    card_id = 0",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=20):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []\n    # Get a list of English stopwords\n    stop_words = stopwords.words(\"english\")\n    # Iterate through each card in the card deck\n    card_id = 0",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=20):\n    stop_words = stopwords.words(\"english\")\n    card_id = 0\n    related_words = []\n    for card in card_deck:\n        summary_text = card['summary'][1]\n        words = summary_text.split()\n        nonstop_words = [word for word in words if word not in stop_words]\n        word_count = len(nonstop_words)\n        try:",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "english_stopwords",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "english_stopwords = stopwords.words('english')\nstopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom tqdm import tqdm\n# %%\nimport nltk\nfrom nltk.corpus import stopwords\nfrom sklearn.preprocessing import MinMaxScaler\nscaler = MinMaxScaler(feature_range=(0, 50))",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "stopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom tqdm import tqdm\n# %%\nimport nltk\nfrom nltk.corpus import stopwords\nfrom sklearn.preprocessing import MinMaxScaler\nscaler = MinMaxScaler(feature_range=(0, 50))\n# read card_deck from ppn_deck.json file",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(0, 50))\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=50):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(0, 20))\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    related_words = []",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck, max_points=50)\n# %%\nimport json\nfrom sklearn.preprocessing import MinMaxScaler\nimport pandas as pd\nfrom nltk.corpus import stopwords\nscaler = MinMaxScaler(feature_range=(0, 20))\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(0, 20))\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):\n    stop_words = stopwords.words(\"english\")\n    card_id = 0\n    related_words = []\n    for card in card_deck:\n        summary_text = card['summary'][1]\n        words = summary_text.split()",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck, max_points=50)\n# %%\n# show an example with the revised point values\n# convert to dataframe\ndf = pd.DataFrame(card_deck)\n# show the first 5 rows\n# df.head()\n# %%\n# %%\n# the summary_short needs to always be the second element in the tuple if it is an instance of a tuple, else it is itself (str)",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "df = pd.DataFrame(card_deck)\n# show the first 5 rows\n# df.head()\n# %%\n# %%\n# the summary_short needs to always be the second element in the tuple if it is an instance of a tuple, else it is itself (str)\nfor card in card_deck:\n    summary = card['summary']\n    if isinstance(summary, tuple) or isinstance(summary, list):\n        summary_short = summary[1]",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck,20)\n# %%\n# the point_value must always be a value from 1 to 10 never 0. Replace all 0's with 1's\ndf['point_value'] = df['point_value'].replace(0,1)\n# # %%\n# df.head()\n# %%\n# plot a histogram of the point values\ndf['point_value'].hist()\n# %%",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "df['point_value']",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "df['point_value'] = df['point_value'].replace(0,1)\n# # %%\n# df.head()\n# %%\n# plot a histogram of the point values\ndf['point_value'].hist()\n# %%\n# now save the df as a json file\ncard_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "card_point_revision",
+        "description": "card_point_revision",
+        "peekOfCode": "card_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:\n    json.dump(card_deck, write_file)\n# %%",
+        "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "determine_grade_level",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def determine_grade_level(summary):\n    \"\"\"\n    determine_grade_level - generates a grade level for the given summary using the Flesch-Kincaid Grade Level formula\n    The Flesch-Kincaid Grade Level formula is a readability test designed to indicate how difficult a passage in English is to understand. The score is based on the average number of syllables per 100 words and the average number of words per sentence. The higher the score, the more difficult the text is to understand.\n    :param summary: _description_\n    :type summary: _type_\n    :return: _description_\n    :rtype: float\n    \"\"\"\n    grade_level = textstat.flesch_kincaid_grade(summary)",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    try:\n        # create a PlaintextParser object to parse the text\n        parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n        # choose a summarization algorithm\n        # algorithm = LsaSummarizer()\n        algorithm = LexRankSummarizer()",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def generate_card(title, definition, points, name=None):\n    ic(title)\n    #ic()\n    # create a blank image\n    # ^print(f'creating: {title}')\n    # ignore Theo Carver\n    # add checks to make sure title and defition are both not empty and not longer than 40 characters * 25 lines (1000 characters). If they are, raise an error, also if either are None raise an error\n    #print(f'title length: {len(title)}, definition length: {len(definition)}')\n    #* It isn't related to the length of title, or description\n    if 'diltondoiley' in title:",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "generate_physical_cards",
+        "kind": 2,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "def generate_physical_cards():\n    #ic()\n    # choose a random card from the card deck\n    card = random.choice(card_deck)\n    print(card)\n    # get the summary for the card\n    summary = (\n        card[\"summary\"][1] if isinstance(card[\"summary\"], list) else card[\"summary\"]\n    )\n    # summarize the summary if it is a string, or convert it to a string if it is a list",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "card_summary",
+        "kind": 5,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "card_summary = \"The quick brown fox jumps over the lazy dog.\"\ngrade_level = determine_grade_level(card_summary)\nprint(grade_level) # prints \"4.9\"\ndef summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    try:\n        # create a PlaintextParser object to parse the text\n        parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "grade_level",
+        "kind": 5,
+        "importPath": "debug",
+        "description": "debug",
+        "peekOfCode": "grade_level = determine_grade_level(card_summary)\nprint(grade_level) # prints \"4.9\"\ndef summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    try:\n        # create a PlaintextParser object to parse the text\n        parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n        # choose a summarization algorithm",
+        "detail": "debug",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "def generate_card(title: str, description: str, points: str) -> None:\n    # Create the HTML content for the card\n    # The card is 550x850 pixels\n    # read the template file from the current directory 'card_html.txt'\n    with open('card_html.txt', 'r') as f:\n        html = f.read()\n    # replace the placeholders with the actual values\n    html = html.replace('Card Title', title)\n    html = html.replace('Card Description', description)\n    html = html.replace('Point Value', points)",
+        "detail": "html_generate",
+        "documentation": {}
+    },
+    {
+        "label": "title",
+        "kind": 5,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "title = 'Tarzan yell'\ndescription = 'Tarzan yell, The Tarzan yell or Tarzans jungle call is the distinctive, ululating yell of the character Tarzan as portrayed by actor Johnny Weissmuller in the films based on the character created by Edgar Rice Burroughs starting with Tarzan the Ape Man 1932. The yell was a creation of the movies based on what Burroughs described in his books as simply the victory cry of the bull ape.'\npoints = '10 Points'\ngenerate_card(title, description, points)",
+        "detail": "html_generate",
+        "documentation": {}
+    },
+    {
+        "label": "description",
+        "kind": 5,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "description = 'Tarzan yell, The Tarzan yell or Tarzans jungle call is the distinctive, ululating yell of the character Tarzan as portrayed by actor Johnny Weissmuller in the films based on the character created by Edgar Rice Burroughs starting with Tarzan the Ape Man 1932. The yell was a creation of the movies based on what Burroughs described in his books as simply the victory cry of the bull ape.'\npoints = '10 Points'\ngenerate_card(title, description, points)",
+        "detail": "html_generate",
+        "documentation": {}
+    },
+    {
+        "label": "points",
+        "kind": 5,
+        "importPath": "html_generate",
+        "description": "html_generate",
+        "peekOfCode": "points = '10 Points'\ngenerate_card(title, description, points)",
+        "detail": "html_generate",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=100):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}\n    # Initialize a list to store the word counts for each card\n    card_word_counts = []\n    # Get a list of English stopwords\n    stop_words = stopwords.words(\"english\")\n    # Iterate through each card in the card deck\n    card_id = 0\n    for card in tqdm(card_deck):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "replacer_censor",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)\n    return phrase, definition\n# todo\ndef summarize_text(text, num_sentences):\n    \"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    # create a PlaintextParser object to parse the text\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    # choose a summarization algorithm\n    # algorithm = LsaSummarizer()\n    algorithm = LexRankSummarizer()\n    # summarize the text and return the summary as a list of sentences",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def unpack_definitions(phrase, definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\", \"\")\n    definition = definition.replace(\"]\", \"\")\n    definition = definition.replace(\"'\", \"\")\n    definition = definition.replace('\"', \"\")\n    definition = definition.replace(\"(\", \"\")\n    definition = definition.replace(\")\", \"\")\n    # remove double spaces",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entry",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            # shuffle categories to get a random selection\n            random.shuffle(original_categories)\n            # select 10 random categories\n            categories = original_categories[:20]\n            for cat in enumerate(categories):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_card",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_ppn_card():\n    # create a person/place/thing card\n    # get a random wikipedia entry\n    try:\n        random_wiki_entry_dict = get_random_wiki_entry()\n        # get the summary of the entry\n        random_wiki_entry_summary = random_wiki_entry_dict[\"summary\"]\n        # get the title of the entry\n        random_wiki_entry_title = random_wiki_entry_dict[\"title\"]\n        # get the related pages of the entry",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "replace_definition_start",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def replace_definition_start(definition, title):\n    # Create the pattern to search for\n    if isinstance(definition, list):\n        definition = definition[1]\n    else:\n        definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    # Use the `search` function to find the first occurrence of the pattern\n    match = re.search(\n        pattern, definition, re.IGNORECASE",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_deck",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    # create a deck of person/place/thing cards\n    new_card_exists_flag = False\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            # check if the card is unique\n            if temp[\"title\"] not in [card[\"title\"] for card in card_deck]:\n                # if the title has \"List of\" in it, skip it\n                if \"List of\" in temp[\"title\"]:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "groupme_bot",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def groupme_bot(\n    message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\",\n):\n    # Replace :bot_id with your bot's ID\n    # read bot_id from secrets.json\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"groupme_botid\"]\n    # if the message is not a single string, convert it to a string\n    if type(message_text) != str:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate):\n    # generate a deck of cards that are related to the primary card\n    # get the title of the primary card\n    primary_card_title = primary_card[\"title\"]\n    # get the related pages of the primary card\n    primary_card_related = primary_card[\"related\"]\n    # create a list of the related pages\n    related_pages = [page for page in primary_card_related]\n    # shuffle the list of related pages\n    random.shuffle(related_pages)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_from_wiki",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_page_from_wiki(title):\n    return wikipedia.page(title)\ndef page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_person",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_location",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()\n        and \"country\" in page.content.lower()\n        and \"city\" in page.content.lower()\n    ):\n        return True\n    elif page.coordinates is not None:\n        return True",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_organization",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.\n    if (\n        \"organization\" in page.content.lower()\n        or \"company\" in page.content.lower()\n        and \"business\" in page.content.lower()\n    ):\n        # also cannot be a person or location\n        if not page_is_person(page) and not page_is_location(page):\n            return True",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_event",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def page_is_event(page):\n    # event pages have the words \"event\" \"incident\" and \"disaster\" in the article text. We can use this to filter out event pages.\n    if (\n        \"event\" in page.content.lower()\n        and \"date\" in page.content.lower()\n        and \"history\" in page.content.lower()\n    ):\n        if (\n            not page_is_person(page)\n            and not page_is_location(page)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def generate_related_deck(\n    primary_card,\n    number_of_cards_to_generate,\n    min_len=100,\n    min_links=5,\n    people=True,\n    locations=True,\n    organizations=True,\n    events=True,\n    other=False,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "refine_cards",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card,  # merge the card with the new summary\n            **{  # create a new key called summary_short\n                \"summary_short\": \"\".join(  # join the sentences together\n                    str(sentence)  # convert the sentence to a string\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\n# open the card deck file",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "find_similar_words",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold\n    # split the title into a list of words",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "replace_similar_words",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    # replace each similar word with a synonym\n    for word in similar_words:\n        synonyms = find_synonyms(word)  # find a synonym for the word -> set\n        # extract the synonym from the set\n        synonyms = list(synonyms)\n        # choose a random synonym from the set\n        try:\n            synonym = random.choice(synonyms)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a string\n    \"\"\"\n    # create a PlaintextParser object to parse the text\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    # choose a summarization algorithm\n    # algorithm = LsaSummarizer()\n    algorithm = LexRankSummarizer()\n    # summarize the text and return the summary as a string",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_google_trends_score",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_google_trends_score(title):\n    # get the google trends score for the query (for all time)\n    # this is to determine how popular the topic is\n    title = str(title)\n    pytrend.build_payload(kw_list=[title], timeframe=\"all\")\n    interest_over_time_df = pytrend.interest_over_time()\n    # get the score for the last 12 months, and return the mean\n    recent_score = interest_over_time_df[title][-12:].mean()\n    # get the score for all time\n    all_time_score = interest_over_time_df[title].mean()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_card",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def generate_card(title, definition, points, name=None):\n    # if the font is 20 then the max width of the text is 40 characters. Use this to determine how large the title should be.\n    image = Image.new(\"RGB\", (550, 850), (255, 255, 255))\n    draw = ImageDraw.Draw(image)\n    # the title is wrapped to 40 characters, so the height of the rectangle is the number of characters * 20 (the height of the font)\n    title_size = 20\n    font_title = ImageFont.truetype(\"./fonts/Menlo.ttc\", title_size)\n    font_description = ImageFont.truetype(\"./fonts/Menlo.ttc\", 20)\n    font_points = ImageFont.truetype(\"./fonts/Menlo.ttc\", 18)\n    title_wrapped = textwrap.wrap(title, width=40)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_physical_cards",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def generate_physical_cards():\n    # ^ Example usage\n    card = random.choice(card_deck)\n    print(card)\n    summary = (\n        card[\"summary\"][1] if isinstance(card[\"summary\"], list) else card[\"summary\"]\n    )\n    # summarize the definition with the summarize function\n    summary = (\n        summarize_text(summary, 2) if isinstance(summary, str) else summary",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "english_stopwords",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "english_stopwords = stopwords.words(\"english\")\nstopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom tqdm import tqdm\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=100):\n    # Initialize a dictionary to store the word counts for each card",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "stopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom tqdm import tqdm\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=100):\n    # Initialize a dictionary to store the word counts for each card\n    word_counts = {}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "URL",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\nhard_mode_categories = [\n    \"Philosophers_of_ethics_and_morality\",\n    \"United_States_Supreme_Court_cases\",\n    \"Political_party_founders\",\n]\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = [\n    \"English_profanity\"\n]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "hard_mode_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "hard_mode_categories = [\n    \"Philosophers_of_ethics_and_morality\",\n    \"United_States_Supreme_Court_cases\",\n    \"Political_party_founders\",\n]\nobscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = [\n    \"English_profanity\"\n]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = [",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "obscure_mode_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "obscure_mode_categories = [\"Fictional_inventors\"]\nprofanity_pages = [\n    \"English_profanity\"\n]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = [\n    \"Whistleblowing\",\n    \"News_leaks\",\n    \"WikiLeaks\",\n    \"Popular_music\",\n    \"Fiction_about_personifications_of_death\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "profanity_pages",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "profanity_pages = [\n    \"English_profanity\"\n]  # note: use this to filter out profanity in the definitions (it is evolving so it is not perfect)\nevents_and_culture = [\n    \"Whistleblowing\",\n    \"News_leaks\",\n    \"WikiLeaks\",\n    \"Popular_music\",\n    \"Fiction_about_personifications_of_death\",\n    \"Bogeymen\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "events_and_culture",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "events_and_culture = [\n    \"Whistleblowing\",\n    \"News_leaks\",\n    \"WikiLeaks\",\n    \"Popular_music\",\n    \"Fiction_about_personifications_of_death\",\n    \"Bogeymen\",\n]\nlinguistic_categories = [\"English_phrases\"]\nbiblical_categories = [\"Biblical_phrases\"]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "linguistic_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "linguistic_categories = [\"English_phrases\"]\nbiblical_categories = [\"Biblical_phrases\"]\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\n    \"Literary_characters\",\n    \"Literary_concepts\",\n    \"Historical_eras\",\n    \"Viral_videos\",\n    \"Internet_memes\",\n    \"Theorems\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "biblical_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "biblical_categories = [\"Biblical_phrases\"]\n# categories = [\"paradoxes\",\"Slogans\",\"English-language_books\"]\nbase_categories = [\n    \"Literary_characters\",\n    \"Literary_concepts\",\n    \"Historical_eras\",\n    \"Viral_videos\",\n    \"Internet_memes\",\n    \"Theorems\",\n    \"21st-century_male_actors\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "base_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "base_categories = [\n    \"Literary_characters\",\n    \"Literary_concepts\",\n    \"Historical_eras\",\n    \"Viral_videos\",\n    \"Internet_memes\",\n    \"Theorems\",\n    \"21st-century_male_actors\",\n    \"21st-century_female_actors\",\n    \"Fables\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "meme_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1940, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = [\n    \"Television_characters_introduced_in_{}\".format(str(year))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "year_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1940, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = [\n    \"Television_characters_introduced_in_{}\".format(str(year))\n    for year in range(1950, 2023)\n]\n# Video Games for years 1950 through 2023",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "charactersTV",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "charactersTV = [\n    \"Television_characters_introduced_in_{}\".format(str(year))\n    for year in range(1950, 2023)\n]\n# Video Games for years 1950 through 2023\nVideoGames_Categories = [\n    \"{}_video_games\".format(str(year)) for year in range(1970, 2010)\n]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = [",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "VideoGames_Categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "VideoGames_Categories = [\n    \"{}_video_games\".format(str(year)) for year in range(1970, 2010)\n]\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\npop_culture_creatures = [\n    \"Dinosaurs_in_popular_culture\",\n    \"Extraterrestrial_life_in_popular_culture\",\n]\ncategories = base_categories\n# * appending to categories",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "pop_culture_creatures",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "pop_culture_creatures = [\n    \"Dinosaurs_in_popular_culture\",\n    \"Extraterrestrial_life_in_popular_culture\",\n]\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture)  # adds some events and culture to categories\n# add pop_culture_creatures",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "categories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add in events and culture\ncategories.extend(events_and_culture)  # adds some events and culture to categories\n# add pop_culture_creatures\ncategories.extend(\n    pop_culture_creatures\n)  # adds some pop culture creatures to categories\n# add year categories",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "pages",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "pages = [\n    \"https://en.wikipedia.org/wiki/List_of_Internet_phenomena\",\n    \"https://en.wikipedia.org/wiki/List_of_largest_cities\",\n    \"https://en.wikipedia.org/wiki/List_of_-gate_scandals_and_controversies\",\n]\n# these are links for current events\npages = [\n    \"https://en.wikipedia.org/wiki/Portal:Current_events/December_2022\",\n    \"https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report\",\n]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "pages",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "pages = [\n    \"https://en.wikipedia.org/wiki/Portal:Current_events/December_2022\",\n    \"https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report\",\n]\noriginal_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "original_categories = categories.copy()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\ndef replacer_censor(definition, phrase, replacements_dict):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\ndef replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\n# convert to list of urls urls_master.values[0][0]\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            # shuffle categories to get a random selection",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry():\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            # shuffle categories to get a random selection\n            random.shuffle(original_categories)\n            # select 10 random categories",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "english_words",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 100:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # groupme_bot(stringval)\n    card_deck = create_ppn_deck(100, card_deck)\n    # create a copy of the card deck file for safety",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "pytrend",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "pytrend = TrendReq(hl=\"en-US\", tz=360)\nstopwords = nltk.corpus.stopwords.words(\"english\")\nimport os\nfrom PIL import Image, ImageDraw, ImageFont\n# with open(\"ppn_deck_cleaned.json\", \"w\") as write_file:\n#     json.dump(card_deck, write_file, indent=4)\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\n# clear the card_images folder",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "stopwords = nltk.corpus.stopwords.words(\"english\")\nimport os\nfrom PIL import Image, ImageDraw, ImageFont\n# with open(\"ppn_deck_cleaned.json\", \"w\") as write_file:\n#     json.dump(card_deck, write_file, indent=4)\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\n# clear the card_images folder\nprint(\"Clearing card_images folder...\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "revise_point_values",
+        "kind": 2,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "def revise_point_values(card_deck, max_points=20):\n    stop_words = stopwords.words(\"english\")\n    card_id = 0\n    related_words = []\n    for card in card_deck:\n        summary_text = card['summary'][1]\n        words = summary_text.split()\n        nonstop_words = [word for word in words if word not in stop_words]\n        word_count = len(nonstop_words)\n        try:",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "english_stopwords",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "english_stopwords = stopwords.words('english')\nstopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom nltk.corpus import stopwords\nfrom sklearn.preprocessing import MinMaxScaler\nfrom tqdm import tqdm\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "stopwords = set(english_stopwords)\nimport json\nimport pandas as pd\nfrom nltk.corpus import stopwords\nfrom sklearn.preprocessing import MinMaxScaler\nfrom tqdm import tqdm\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\n# Now assign points based on the related column but scale it with MinMaxScaler",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(0, 20))\n# read card_deck from ppn_deck.json file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\n# Now assign points based on the related column but scale it with MinMaxScaler\ncard_deck = revise_point_values(card_deck, max_points=50)\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):\n    stop_words = stopwords.words(\"english\")",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck, max_points=50)\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\ndef revise_point_values(card_deck, max_points=20):\n    stop_words = stopwords.words(\"english\")\n    card_id = 0\n    related_words = []\n    for card in card_deck:\n        summary_text = card['summary'][1]\n        words = summary_text.split()",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck, max_points=50)\n# the summary_short needs to always be the second element in the tuple if it is an instance of a tuple, else it is itself (str)\nfor card in card_deck:\n    summary = card['summary']\n    if isinstance(summary, tuple) or isinstance(summary, list):\n        summary_short = summary[1]\n    else:\n        summary_short = summary\n    card['summary_short'] = summary_short\n    card['summary'] = summary_short",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "df = pd.DataFrame(card_deck)\n# revise point values\ncard_deck = revise_point_values(card_deck,20)\n# the point_value must always be a value from 1 to 10 never 0. Replace all 0's with 1's\ndf['point_value'] = df['point_value'].replace(0,1)\n# now save the df as a json file\ncard_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:\n    json.dump(card_deck, write_file)",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "card_deck = revise_point_values(card_deck,20)\n# the point_value must always be a value from 1 to 10 never 0. Replace all 0's with 1's\ndf['point_value'] = df['point_value'].replace(0,1)\n# now save the df as a json file\ncard_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:\n    json.dump(card_deck, write_file)",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "df['point_value']",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "df['point_value'] = df['point_value'].replace(0,1)\n# now save the df as a json file\ncard_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:\n    json.dump(card_deck, write_file)",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "card_deck",
+        "kind": 5,
+        "importPath": "pointrevision",
+        "description": "pointrevision",
+        "peekOfCode": "card_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:\n    json.dump(card_deck, write_file)",
+        "detail": "pointrevision",
+        "documentation": {}
+    },
+    {
+        "label": "links_file",
+        "kind": 5,
+        "importPath": "process_links",
+        "description": "process_links",
+        "peekOfCode": "links_file = open(\"links.csv\", \"r\"):\n    links = links_file.readlines()\n    links_file.close()",
+        "detail": "process_links",
+        "documentation": {}
+    },
+    {
+        "label": "parse_page",
+        "kind": 2,
+        "importPath": "random_celebrities",
+        "description": "random_celebrities",
+        "peekOfCode": "def parse_page():\n    # Make a GET request to the website\n    # Make a GET request to the website\n    url = \"https://www.randomlists.com/random-people\"\n    html = requests.get(url).text\n    # Parse the HTML with BeautifulSoup\n    soup = BeautifulSoup(html, \"html.parser\")\n    # Find all the elements that match the CSS selector\n    name_elements = soup.select(\"body > div > div.layout-main > main > article > div.Rand-stage\")  # span.rand_medium\n    # Extract the names from the elements",
+        "detail": "random_celebrities",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_page_url",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_random_page_url(categories, category_sample_size):\n    base_url = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n    for i, cat in enumerate(categories):\n        base_url += f\"&category{i}={urllib.parse.quote(str(cat).lower())}\"\n    base_url += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n    return base_url\nfrom bs4 import BeautifulSoup\ndef get_page_title_and_summary(html):\n    soup = BeautifulSoup(html, 'html.parser')\n    title = soup.title.string.replace(\" - Wikipedia\", \"\").replace(\"Wiki\", \"\")",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_title_and_summary",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_page_title_and_summary(html):\n    soup = BeautifulSoup(html, 'html.parser')\n    title = soup.title.string.replace(\" - Wikipedia\", \"\").replace(\"Wiki\", \"\")\n    summary = soup.find('p').text\n    return title, summary\ndef get_random_wiki_entry_dict(original_categories, category_sample_size):\n    while True:\n        categories = random.sample(original_categories, category_sample_size)\n        random_page_url = get_random_page_url(categories, category_sample_size)\n        response = requests.get(random_page_url)",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entry_dict",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_random_wiki_entry_dict(original_categories, category_sample_size):\n    while True:\n        categories = random.sample(original_categories, category_sample_size)\n        random_page_url = get_random_page_url(categories, category_sample_size)\n        response = requests.get(random_page_url)\n        redirected_url = response.url\n        html = response.text\n        title, summary = get_page_title_and_summary(html)\n        if redirected_url == \"https://randomincategory.toolforge.org/\":\n            continue",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entries_dict",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def get_random_wiki_entries_dict(original_categories, category_sample_size, num_entries):\n    entries = []\n    for _ in range(num_entries):\n        entry = get_random_wiki_entry_dict(original_categories, category_sample_size)\n        entries.append(entry)\ndef main():\n    original_categories = [\"Technology\", \"Arts\", \"Geography\"]\n    category_sample_size = 2\n    num_entries = 5\n    entries = get_random_wiki_entries_dict(original_categories, category_sample_size, num_entries)",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "test_async",
+        "description": "test_async",
+        "peekOfCode": "def main():\n    original_categories = [\"Technology\", \"Arts\", \"Geography\"]\n    category_sample_size = 2\n    num_entries = 5\n    entries = get_random_wiki_entries_dict(original_categories, category_sample_size, num_entries)\n    print(entries)\nif __name__ == \"__main__\":\n    main()",
+        "detail": "test_async",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\n# open the card deck file",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "find_similar_words",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold\n    # split the title into a list of words",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "replace_similar_words",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    # replace each similar word with a synonym\n    for word in similar_words:\n        synonyms = find_synonyms(word)  # find a synonym for the word -> set\n        # extract the synonym from the set\n        synonyms = list(synonyms)\n        # choose a random synonym from the set\n        try:\n            synonym = random.choice(synonyms)",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_new_messages",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"#groupme_botid\"]\n    global groupme_api\n    # access the GroupMe API and get the latest messages in the thread\n    latest_messages = groupme_api.get_latest_messages()\n    # filter the messages to get only those that are not from the bot\n    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]\n    return new_messages",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "add_category",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def add_category(message):\n    # check if the message is a valid Wikipedia category\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    # if the message is a valid Wikipedia category, add it to the categories text file\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "replacer_censor",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)\n    return phrase, definition\n# todo\ndef summarize_text(text, num_sentences):\n    \"\"\"",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    # create a PlaintextParser object to parse the text\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    # choose a summarization algorithm\n    # algorithm = LsaSummarizer()\n    algorithm = LexRankSummarizer()\n    # summarize the text and return the summary as a list of sentences",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def unpack_definitions(phrase, definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\", \"\")\n    definition = definition.replace(\"]\", \"\")\n    definition = definition.replace(\"'\", \"\")\n    definition = definition.replace('\"', \"\")\n    definition = definition.replace(\"(\", \"\")\n    definition = definition.replace(\")\", \"\")\n    # remove double spaces",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entry",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            # either randomly use URL or one of the urls from the urls_master list above",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_card",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def create_ppn_card():\n    # create a person/place/thing card\n    # get a random wikipedia entry\n    try:\n        random_wiki_entry_dict = get_random_wiki_entry()\n        # get the summary of the entry\n        random_wiki_entry_summary = random_wiki_entry_dict[\"summary\"]\n        # get the title of the entry\n        random_wiki_entry_title = random_wiki_entry_dict[\"title\"]\n        # get the related pages of the entry",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "replace_definition_start",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def replace_definition_start(definition, title):\n    # Create the pattern to search for\n    if isinstance(definition, list):\n        definition = definition[1]\n    else:\n        definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    # Use the `search` function to find the first occurrence of the pattern\n    match = re.search(\n        pattern, definition, re.IGNORECASE",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    # create a deck of person/place/thing cards\n    new_card_exists_flag = False\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            # check if the card is unique\n            if temp[\"title\"] not in [card[\"title\"] for card in card_deck]:\n                # if the title has \"List of\" in it, skip it\n                if \"List of\" in temp[\"title\"]:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "groupme_bot",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def groupme_bot(\n    message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\",\n):\n    # Replace :bot_id with your bot's ID\n    # read bot_id from secrets.json\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"#groupme_botid\"]\n    # if the message is not a single string, convert it to a string\n    if type(message_text) != str:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate):\n    # generate a deck of cards that are related to the primary card\n    # get the title of the primary card\n    primary_card_title = primary_card[\"title\"]\n    # get the related pages of the primary card\n    primary_card_related = primary_card[\"related\"]\n    # create a list of the related pages\n    related_pages = [page for page in primary_card_related]\n    # shuffle the list of related pages\n    random.shuffle(related_pages)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_from_wiki",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def get_page_from_wiki(title):\n    return wikipedia.page(title)\ndef page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_person",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_location",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()\n        and \"country\" in page.content.lower()\n        and \"city\" in page.content.lower()\n    ):\n        return True\n    elif page.coordinates is not None:\n        return True",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_organization",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.\n    if (\n        \"organization\" in page.content.lower()\n        or \"company\" in page.content.lower()\n        and \"business\" in page.content.lower()\n    ):\n        # also cannot be a person or location\n        if not page_is_person(page) and not page_is_location(page):\n            return True",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_event",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def page_is_event(page):\n    # event pages have the words \"event\" \"incident\" and \"disaster\" in the article text. We can use this to filter out event pages.\n    if (\n        \"event\" in page.content.lower()\n        and \"date\" in page.content.lower()\n        and \"history\" in page.content.lower()\n    ):\n        if (\n            not page_is_person(page)\n            and not page_is_location(page)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def generate_related_deck(\n    primary_card,\n    number_of_cards_to_generate,\n    min_len=100,\n    min_links=5,\n    people=True,\n    locations=True,\n    organizations=True,\n    events=True,\n    other=False,",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "refine_cards",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card,  # merge the card with the new summary\n            **{  # create a new key called summary_short\n                \"summary_short\": \"\".join(  # join the sentences together\n                    str(sentence)  # convert the sentence to a string\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\n# open the card deck file",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "find_similar_words",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold\n    # split the title into a list of words",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "replace_similar_words",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    # replace each similar word with a synonym\n    for word in similar_words:\n        synonyms = find_synonyms(word)  # find a synonym for the word -> set\n        # extract the synonym from the set\n        synonyms = list(synonyms)\n        # choose a random synonym from the set\n        try:\n            synonym = random.choice(synonyms)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "URL",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n# hard_mode_categories = [\n#     \"Philosophers_of_ethics_and_morality\",\n#     \"United_States_Supreme_Court_cases\",\n#     \"Political_party_founders\",\n#     \"Classics_educators\",\n# ]\n# obscure_mode_categories = [\"Fictional_inventors\"]\n# profanity_pages = [\n#     \"English_profanity\"",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = [category.strip() for category in categories]\nbase_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "base_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "base_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "meme_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "year_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "charactersTV",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "VideoGames_Categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories\n# add charactersTV\ncategories.extend(charactersTV)  # adds some year categories to categories\n# add events_and_culture\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "extras",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "extras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "most_linkedto_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "most_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "original_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "original_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe\nimport wikipedia\n# create a GroupMeAPI object\n# groupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\n# convert to list of urls urls_master.values[0][0]\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "english_words",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 16000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(16000, card_deck)\n    # create a copy of the card deck file for safety",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    }
+]

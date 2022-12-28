@@ -1,0 +1,75 @@
+<html>
+<head>
+</head
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prosto+One">
+<style>
+.card {
+	width: 550px;
+	height: 850px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	font-family: 'Crimson Pro', serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 0px;
+}
+.card-title {
+   font-size: 20px;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 30px;
+}
+.card-description {
+	color: #333;
+	margin-bottom: 20px;
+	flex-grow:1;
+	font-size: 16px;
+	font-weight: 300;
+	align-self: flex-start;
+}
+
+.card-category {
+	color: CARD_COLOR;
+    margin-bottom: 25px;
+    border-top: 5px dotted #ccc;
+    padding-top: 15px;
+}
+
+.card-points {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+	background-color: CARD_COLOR;
+	padding: 18px 25px 6px 25px;
+	border-top-right-radius: 52px;
+	border-top-left-radius: 50px;
+	color: white;
+	text-align: center;
+	display: grid;
+}
+
+.card-points::after {
+    content: "POINTS";
+    font-size: 10px;
+}
+
+
+</style>
+
+<div>
+   <div class="card">
+       <div class="card-title">CARD_TITLE</div>
+       <div class="card-description">CARD_DESCRIPTION</div>
+       <div class="card-category">CARD_CATEGORY</div>
+       <div class="card-points">CARD_POINTS</div>
+   </div>
+</div>
+
+</body>
+</html>
