@@ -408,6 +408,30 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
         "label": "Tokenizer",
         "importPath": "sumy.nlp.tokenizers",
         "description": "sumy.nlp.tokenizers",
@@ -485,6 +509,22 @@
         "description": "sumy.parsers.plaintext",
         "isExtraImport": true,
         "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
         "documentation": {}
     },
     {
@@ -656,6 +696,22 @@
         "documentation": {}
     },
     {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
         "label": "stopwords",
         "importPath": "nltk.corpus",
         "description": "nltk.corpus",
@@ -769,6 +825,151 @@
         "documentation": {}
     },
     {
+        "label": "urllib.parse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "PorterStemmer",
+        "importPath": "nltk.stem",
+        "description": "nltk.stem",
+        "isExtraImport": true,
+        "detail": "nltk.stem",
+        "documentation": {}
+    },
+    {
+        "label": "WordNetLemmatizer",
+        "importPath": "nltk.stem",
+        "description": "nltk.stem",
+        "isExtraImport": true,
+        "detail": "nltk.stem",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
@@ -787,15 +988,6 @@
         "documentation": {}
     },
     {
-        "label": "urllib.parse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "urllib.parse",
-        "description": "urllib.parse",
-        "detail": "urllib.parse",
-        "documentation": {}
-    },
-    {
         "label": "word_tokenize",
         "importPath": "nltk.tokenize",
         "description": "nltk.tokenize",
@@ -812,54 +1004,6 @@
         "documentation": {}
     },
     {
-        "label": "limits",
-        "importPath": "ratelimit",
-        "description": "ratelimit",
-        "isExtraImport": true,
-        "detail": "ratelimit",
-        "documentation": {}
-    },
-    {
-        "label": "sleep_and_retry",
-        "importPath": "ratelimit",
-        "description": "ratelimit",
-        "isExtraImport": true,
-        "detail": "ratelimit",
-        "documentation": {}
-    },
-    {
-        "label": "limits",
-        "importPath": "ratelimit",
-        "description": "ratelimit",
-        "isExtraImport": true,
-        "detail": "ratelimit",
-        "documentation": {}
-    },
-    {
-        "label": "sleep_and_retry",
-        "importPath": "ratelimit",
-        "description": "ratelimit",
-        "isExtraImport": true,
-        "detail": "ratelimit",
-        "documentation": {}
-    },
-    {
-        "label": "limits",
-        "importPath": "ratelimit",
-        "description": "ratelimit",
-        "isExtraImport": true,
-        "detail": "ratelimit",
-        "documentation": {}
-    },
-    {
-        "label": "sleep_and_retry",
-        "importPath": "ratelimit",
-        "description": "ratelimit",
-        "isExtraImport": true,
-        "detail": "ratelimit",
-        "documentation": {}
-    },
-    {
         "label": "LsaSummarizer",
         "importPath": "sumy.summarizers.lsa",
         "description": "sumy.summarizers.lsa",
@@ -881,38 +1025,6 @@
         "description": "sumy.summarizers.lsa",
         "isExtraImport": true,
         "detail": "sumy.summarizers.lsa",
-        "documentation": {}
-    },
-    {
-        "label": "edit_distance",
-        "importPath": "nltk.metrics.distance",
-        "description": "nltk.metrics.distance",
-        "isExtraImport": true,
-        "detail": "nltk.metrics.distance",
-        "documentation": {}
-    },
-    {
-        "label": "edit_distance",
-        "importPath": "nltk.metrics.distance",
-        "description": "nltk.metrics.distance",
-        "isExtraImport": true,
-        "detail": "nltk.metrics.distance",
-        "documentation": {}
-    },
-    {
-        "label": "edit_distance",
-        "importPath": "nltk.metrics.distance",
-        "description": "nltk.metrics.distance",
-        "isExtraImport": true,
-        "detail": "nltk.metrics.distance",
-        "documentation": {}
-    },
-    {
-        "label": "edit_distance",
-        "importPath": "nltk.metrics.distance",
-        "description": "nltk.metrics.distance",
-        "isExtraImport": true,
-        "detail": "nltk.metrics.distance",
         "documentation": {}
     },
     {
@@ -1514,6 +1626,438 @@
         "description": "card_point_revision",
         "peekOfCode": "card_deck = df.to_dict('records')\nwith open(\"ppn_deck.json\", \"w\") as write_file:\n    json.dump(card_deck, write_file)\n# %%",
         "detail": "card_point_revision",
+        "documentation": {}
+    },
+    {
+        "label": "add_category",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def add_category(message):\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:\n            categories_file.write(f\"{message}\\n\")\n    else:",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "replacer_censor",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def replacer_censor(definition, phrase, replacements_dict):\n    for pattern in replacements_dict:\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)\n    return phrase, definition\ndef summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    algorithm = LexRankSummarizer()\n    summary = algorithm(parser.document, num_sentences)\n    return summary\ndef parse_definitions(phrase, definition):\n    \"\"\"",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "parse_definitions",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def parse_definitions(phrase, definition):\n    \"\"\"\n    parse_definitions - The function that parses the definitions and removes unnecessary characters, symbols, and words from the definition text. This function is used in the get_random_wiki_entry function. This function is also used in the get_random_wiki_entry function.\n    Example Usage: Definition = \"The flat part of, a &Boat (or ship) that is below the waterline and above the keel.\" Phrase = \"Hull\" Definition = \"The flat part of a boat that is below the waterline and above the keel.\"\n    :param phrase: _description_\n    :type phrase: tuple, strings\n    :param definition: _description_\n    :type definition: tuple, strings\n    :return: _description_ tuple, strings\n    :rtype: tuple, strings",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entry",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\" # base URL\n            categories = random.sample(original_categories, category_sample_size) # sample categories\n            for cat in enumerate(categories): # add categories to URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            activate_loop = True\n            if random.randint(0, 1) == 0 or not activate_loop: # 50% chance of using randomincategory",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_card",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def create_ppn_card():\n    try:\n        random_wiki_entry_dict = get_random_wiki_entry()\n        random_wiki_entry_summary = random_wiki_entry_dict[\"summary\"]\n        random_wiki_entry_title = random_wiki_entry_dict[\"title\"]\n        random_wiki_entry_related = random_wiki_entry_dict[\"related\"]\n        random_wiki_entry_dict = {\n            \"title\": random_wiki_entry_title,\n            \"summary\": random_wiki_entry_summary,\n            \"related\": len(random_wiki_entry_related),",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "replace_definition_start",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def replace_definition_start(definition, title):\n    if isinstance(definition, list):\n        definition = definition[1]\n    else:\n        definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    match = re.search(pattern, definition, re.IGNORECASE)\n    if match:\n        start, end = match.span()\n        new_definition = \"{}This is a {}\".format(definition[:start], definition[end:])",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_deck",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    new_card_exists_flag = False\n    card_titles = [card[\"title\"] for card in card_deck]\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            if temp[\"title\"] not in card_titles:\n                if \"List of\" in temp[\"title\"]:\n                    continue\n                card_summary = (",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate):\n    primary_card_title = primary_card[\"title\"]\n    primary_card_related = primary_card[\"related\"]\n    related_pages = [page for page in primary_card_related]\n    random.shuffle(related_pages)\n    related_pages = [\n        page\n        for page in related_pages\n        if page not in [card[\"title\"] for card in card_deck]\n    ]",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_from_wiki",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def get_page_from_wiki(title):\n    return wikipedia.page(title)\ndef generate_related_deck(\n    primary_card,\n    number_of_cards_to_generate,\n    min_len=100,\n    min_links=5,\n    people=True,\n    locations=True,\n    organizations=True,",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def generate_related_deck(\n    primary_card,\n    number_of_cards_to_generate,\n    min_len=100,\n    min_links=5,\n    people=True,\n    locations=True,\n    organizations=True,\n    events=True,\n    other=False,",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "refine_cards",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card,\n            **{\n                \"summary_short\": \"\".join(\n                    str(sentence)\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\nwith open(\"ppn_deck.json\", \"r\") as read_file:",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "find_similar_words",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    title = title.split()\n    similar_words_list = []\n    for title_word in title:\n        similar_words = [",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "replace_similar_words",
+        "kind": 2,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    for word in similar_words:\n        synonyms = find_synonyms(word)\n        synonyms = list(synonyms)\n        try:\n            synonym = random.choice(synonyms)\n        except IndexError:\n            synonym = word\n        if type(definition) == list:",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "URL",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\nwith open(\"categories.json\", \"r\") as f:\n    categories = json.load(f)\ncategories = [category.strip() for category in categories]\nbase_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "categories = [category.strip() for category in categories]\nbase_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "base_categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "base_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = [",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "meme_categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = [\n    \"Television_characters_introduced_in_{}\".format(str(year))",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "year_categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = [\n    \"Television_characters_introduced_in_{}\".format(str(year))\n    for year in range(1950, 2023)\n]\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\nVideoGames_Categories = [",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "charactersTV",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "charactersTV = [\n    \"Television_characters_introduced_in_{}\".format(str(year))\n    for year in range(1950, 2023)\n]\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\nVideoGames_Categories = [\n    \"{}_video_games\".format(str(year)) for year in range(2012, 2010, 2)\n]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "VideoGames_Categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "VideoGames_Categories = [\n    \"{}_video_games\".format(str(year)) for year in range(2012, 2010, 2)\n]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\ncategories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\ncategories.extend(charactersTV)\nextras = [\"English-language_idioms\", \"British_English_idioms\"]",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "categories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\ncategories.extend(charactersTV)\nextras = [\"English-language_idioms\", \"British_English_idioms\"]\ncategories.extend(extras)\nmost_linkedto_categories = [\"Living_people\"]\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "extras",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "extras = [\"English-language_idioms\", \"British_English_idioms\"]\ncategories.extend(extras)\nmost_linkedto_categories = [\"Living_people\"]\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "most_linkedto_categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "most_linkedto_categories = [\"Living_people\"]\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()\nrandom.shuffle(categories)\ncategories = categories[:20]",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "original_categories = categories.copy()\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nurls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "original_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nurls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "categories = original_categories.copy()\noriginal_categories.sort()\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nurls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nurls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ndef add_category(message):\n    try:\n        wikipedia.WikipediaPage(message).category",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ndef add_category(message):\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    if is_valid_category:",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ndef add_category(message):\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\ndef add_category(message):\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:\n            categories_file.write(f\"{message}\\n\")",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "english_words",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "english_words = words.words()\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 16000:\n    print(len(card_deck))\n    card_deck = create_ppn_deck(16000, card_deck)\n    with open(\"ppn_deck_copy.json\", \"w\") as outfile:\n        json.dump(card_deck, outfile, indent=4)\n    card_deck = [\n        {",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "cleanedup",
+        "description": "cleanedup",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    title = title.split()\n    similar_words_list = []\n    for title_word in title:",
+        "detail": "cleanedup",
+        "documentation": {}
+    },
+    {
+        "label": "balance_the_deck_by_cluster",
+        "kind": 2,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "def balance_the_deck_by_cluster(deck_df, num_clusters):\n    # Find the smallest cluster\n    min_cluster_size = min(df[\"cluster\"].value_counts())\n    # Create a new list to store the new deck of cards\n    new_deck = []\n    # Randomly sample the cards from each cluster\n    for cluster in range(num_clusters):\n        new_deck.extend(random.sample(list(df[df[\"cluster\"] == cluster].to_dict(\"records\")), min_cluster_size))\n    return new_deck # Return the new deck of cards\n# Create a new deck of cards that has the same number of cards in each cluster",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "lemmatizing",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "lemmatizing = False\nstemming = True\nminimum_word_length = 4\n# collect cards and store in a list\nimport re\nimport nltk\nfrom nltk.corpus import stopwords\nfrom nltk.stem import PorterStemmer\nfrom nltk.stem import WordNetLemmatizer\nfrom tqdm import tqdm",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "stemming",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "stemming = True\nminimum_word_length = 4\n# collect cards and store in a list\nimport re\nimport nltk\nfrom nltk.corpus import stopwords\nfrom nltk.stem import PorterStemmer\nfrom nltk.stem import WordNetLemmatizer\nfrom tqdm import tqdm\n# Gather all the cards that you want to include in the deck",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "minimum_word_length",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "minimum_word_length = 4\n# collect cards and store in a list\nimport re\nimport nltk\nfrom nltk.corpus import stopwords\nfrom nltk.stem import PorterStemmer\nfrom nltk.stem import WordNetLemmatizer\nfrom tqdm import tqdm\n# Gather all the cards that you want to include in the deck\n# read in the ppn_deck.json file",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "processed_cards",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "processed_cards = []\n# Initialize the stemmer and stopwords\nstemmer = PorterStemmer()\nstopwords = set(stopwords.words('english'))\nlemmatizer = WordNetLemmatizer()\nfor card in tqdm(cards):\n    # Tokenize the text\n    tokens = nltk.word_tokenize(str(card[\"summary\"]))\n    # lemmatize the tokens\n    if lemmatizing:",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "stemmer",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "stemmer = PorterStemmer()\nstopwords = set(stopwords.words('english'))\nlemmatizer = WordNetLemmatizer()\nfor card in tqdm(cards):\n    # Tokenize the text\n    tokens = nltk.word_tokenize(str(card[\"summary\"]))\n    # lemmatize the tokens\n    if lemmatizing:\n        filtered_tokens = [lemmatizer.lemmatize(t) for t in filtered_tokens]\n    # Remove any non-alphabetic characters",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "stopwords = set(stopwords.words('english'))\nlemmatizer = WordNetLemmatizer()\nfor card in tqdm(cards):\n    # Tokenize the text\n    tokens = nltk.word_tokenize(str(card[\"summary\"]))\n    # lemmatize the tokens\n    if lemmatizing:\n        filtered_tokens = [lemmatizer.lemmatize(t) for t in filtered_tokens]\n    # Remove any non-alphabetic characters\n    filtered_tokens = [re.sub(r'[^a-zA-Z]', '', t) for t in filtered_tokens]",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "lemmatizer",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "lemmatizer = WordNetLemmatizer()\nfor card in tqdm(cards):\n    # Tokenize the text\n    tokens = nltk.word_tokenize(str(card[\"summary\"]))\n    # lemmatize the tokens\n    if lemmatizing:\n        filtered_tokens = [lemmatizer.lemmatize(t) for t in filtered_tokens]\n    # Remove any non-alphabetic characters\n    filtered_tokens = [re.sub(r'[^a-zA-Z]', '', t) for t in filtered_tokens]\n    # Remove words less than 4 characters long",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "documents",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "documents = []\nfor card in processed_cards:\n    documents.append(\" \".join(card[\"summary\"]))\n# print the documents list\nprint(documents[0])\n# Initialize the TfidfVectorizer\nvectorizer = TfidfVectorizer()\n# Use the fit_transform method to calculate the TF-IDF values for each word\ntry:\n    X = vectorizer.fit_transform(documents)",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "vectorizer",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "vectorizer = TfidfVectorizer()\n# Use the fit_transform method to calculate the TF-IDF values for each word\ntry:\n    X = vectorizer.fit_transform(documents)\nexcept ValueError as e:\n    print(\"Error! The vectorizer was unable to process the data\")\n    print(e)\nfrom sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.cluster import KMeans\n# Cluster the documents using K-Means",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "km",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "km = KMeans(n_clusters=10, random_state=0)\nkm.fit(X)\n# Assign each card to a cluster\nclusters = km.labels_.tolist()\nfor i, cluster in enumerate(clusters):\n    cards[i][\"cluster\"] = cluster\n# The cards list now contains the cluster assignment for each card\nprint(cards[0]) # Print the first 10 cards\ndf = pd.DataFrame(cards)\n# # Get the cluster labels for each card",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "clusters",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "clusters = km.labels_.tolist()\nfor i, cluster in enumerate(clusters):\n    cards[i][\"cluster\"] = cluster\n# The cards list now contains the cluster assignment for each card\nprint(cards[0]) # Print the first 10 cards\ndf = pd.DataFrame(cards)\n# # Get the cluster labels for each card\n# cluster_labels = km.labels_\n# # Initialize a list to store the top 10 words for each cluster\n# top_words = []",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "df = pd.DataFrame(cards)\n# # Get the cluster labels for each card\n# cluster_labels = km.labels_\n# # Initialize a list to store the top 10 words for each cluster\n# top_words = []\n# # Iterate over each cluster\n# for i in range(10):\n#     # Get the indices of the cards in this cluster\n#     cluster_indices = [j for j, label in enumerate(cluster_labels) if label == i]\n#     # Get the tf-idf values for each word in this cluster",
+        "detail": "clusters",
+        "documentation": {}
+    },
+    {
+        "label": "balanced_deck",
+        "kind": 5,
+        "importPath": "clusters",
+        "description": "clusters",
+        "peekOfCode": "balanced_deck = balance_the_deck_by_cluster(df,10)\n# save the balanced deck to a json file\nwith open('balanced_deck.json', 'w') as f:\n    json.dump(balanced_deck, f)",
+        "detail": "clusters",
         "documentation": {}
     },
     {

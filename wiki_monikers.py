@@ -312,8 +312,8 @@ def get_random_wiki_entry(category_sample_size=3):
             else:
                 pass
 
-            # once every 30 times use Random article from Wikipedia
-            if random.randint(0, 15) == 0:
+            # once every 60 times use Random article from Wikipedia
+            if random.randint(0, 60) == 0:
                 print("using random article from wikipedia")
                 if random.randint(0, 1) == 0:
                     URL = "https://en.wikipedia.org/wiki/Special:Random"

@@ -29,7 +29,7 @@
 	color: #333;
 	margin-bottom: 20px;
 	flex-grow:1;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 300;
 	align-self: flex-start;
 }
