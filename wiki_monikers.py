@@ -869,7 +869,7 @@ english_words = words.words()
 with open("ppn_deck.json", "r") as read_file:
     card_deck = json.load(read_file)
 
-while len(card_deck) < 15000:
+while len(card_deck) < 500:
     print(len(card_deck))
     # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'
     # #groupme_bot(stringval)
