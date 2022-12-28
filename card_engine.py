@@ -227,7 +227,7 @@ def generate_physical_cards(options, html_template):
         f"Gandalf is automatically adding keywords for the 2018-2022 years to the deck."
     )
 
-    cards_to_generate = options["cards_to_generate"]
+
     profanity = options["profanity"]
     grade_level = options["grade_level"]
     keywords = options["keywords"]
@@ -236,7 +236,7 @@ def generate_physical_cards(options, html_template):
 
     with open("ppn_deck.json", "r") as f:
         card_deck = json.load(f)
-
+    cards_to_generate = len(card_deck)
     card_deck = random.sample(card_deck, cards_to_generate)
 
     for card in tqdm(card_deck):
@@ -418,7 +418,7 @@ def main():
     options = {
         "grade_level": 16,
         "profanity": True,
-        "cards_to_generate": 100,
+        "cards_to_generate": 5000,
         "keywords": keywords,
         "categories": [],
     }

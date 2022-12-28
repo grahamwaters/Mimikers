@@ -1332,7 +1332,7 @@
         "kind": 2,
         "importPath": "card_engine",
         "description": "card_engine",
-        "peekOfCode": "def generate_physical_cards(options, html_template):\n    print(f\"Generating physical cards...\")\n    print(f\"With the following options: {options}\")\n    print(\"--\" * 20)\n    print(\n        f\"Gandalf is automatically adding keywords for the 2018-2022 years to the deck.\"\n    )\n    cards_to_generate = options[\"cards_to_generate\"]\n    profanity = options[\"profanity\"]\n    grade_level = options[\"grade_level\"]",
+        "peekOfCode": "def generate_physical_cards(options, html_template):\n    print(f\"Generating physical cards...\")\n    print(f\"With the following options: {options}\")\n    print(\"--\" * 20)\n    print(\n        f\"Gandalf is automatically adding keywords for the 2018-2022 years to the deck.\"\n    )\n    profanity = options[\"profanity\"]\n    grade_level = options[\"grade_level\"]\n    keywords = options[\"keywords\"]",
         "detail": "card_engine",
         "documentation": {}
     },
@@ -2601,7 +2601,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 2000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(2000, card_deck)\n    # create a copy of the card deck file for safety",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 16000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(16000, card_deck)\n    # create a copy of the card deck file for safety",
         "detail": "wiki_monikers",
         "documentation": {}
     },
