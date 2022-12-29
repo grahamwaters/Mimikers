@@ -57,8 +57,8 @@ def generate_card(
     links_on_wikipedia: str,
     category="Wild Card",
 ):
-    filename = "{}.png".format(title.replace(" ", "_"))
-    if os.path.exists("./card_box/{}".format(filename)) and "Test_Card" not in filename:
+    filename = "{}.png".format(title.replace(" ", "_").lower())
+    if os.path.exists("./new_card_box/{}".format(filename)) and "Test_Card" not in filename:
         print(f"Card {title} already exists, skipping...")
         return
     width_cm = 5.5
@@ -71,18 +71,20 @@ def generate_card(
     points = str(points)
     links_on_wikipedia = str(links_on_wikipedia)
     html = html_template
-    if "(" in title and ")" in title:
-        category = title[title.index("(") + 1 : title.index(")")]
-        title = title.replace("({})".format(category), "")
-        category = category.strip()
+    if category == "Wild Card":
+        if "(" in title and ")" in title:
+            category = title[title.index("(") + 1 : title.index(")")]
+            title = title.replace("({})".format(category), "")
+            category = category.strip()
 
-    elif "[" in title and "]" in title:
-        category = title[title.index("[") + 1 : title.index("]")]
-        title = title.replace("[{}]".format(category), "")
-        category = category.strip()
-    else:
-        if category == "other":
-            category = "Wild Card"
+        elif "[" in title and "]" in title:
+            category = title[title.index("[") + 1 : title.index("]")]
+            title = title.replace("[{}]".format(category), "")
+            category = category.strip()
+        else:
+            if category == "other":
+                category = "Wild Card"
+
 
     if description[0] == "[" or description[0] == "(":
         # then this is a tuple still, and must be extracted from the description. Look for '.' (must include the ') and get the following text to the end of the string. This is the description.
@@ -130,7 +132,9 @@ def generate_card(
         description = description.replace('\t', ' ')
 
     print(description) #note: debug
-
+    if category == None:
+        category = "Wild Card"
+        print("Warning: category is None")
     html = html.replace("CARD_TITLE", title)
     html = html.replace("CARD_DESCRIPTION", description)
     html = html.replace("CARD_CATEGORY", category)
@@ -264,8 +268,16 @@ def generate_physical_cards(options, html_template):
             card["category"] = [keyword for keyword in keywords if keyword in summary][
                 0
             ]
-        except IndexError:
-            card["category"] = "other"
+        except Exception as e:
+            #card["category"] = "other"
+            if "category" not in card.keys():
+                card["category"] = "other"
+            else:
+                #todo predict the category with nltk on title
+                category = str(card["category"]) if card['category'] != None else "Wild Card"
+                pass
+
+
         category = card["category"]
 
         points = card["points_for_card"]

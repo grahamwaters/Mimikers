@@ -1545,7 +1545,7 @@
         "kind": 2,
         "importPath": "card_engine",
         "description": "card_engine",
-        "peekOfCode": "def generate_card(\n    title: str,\n    description: str,\n    points: str,\n    html_template: str,\n    name: str,\n    links_on_wikipedia: str,\n    category=\"Wild Card\",\n):\n    filename = \"{}.png\".format(title.replace(\" \", \"_\"))",
+        "peekOfCode": "def generate_card(\n    title: str,\n    description: str,\n    points: str,\n    html_template: str,\n    name: str,\n    links_on_wikipedia: str,\n    category=\"Wild Card\",\n):\n    filename = \"{}.png\".format(title.replace(\" \", \"_\").lower())",
         "detail": "card_engine",
         "documentation": {}
     },
