@@ -2919,15 +2919,6 @@
         "documentation": {}
     },
     {
-        "label": "check_for_new_messages",
-        "kind": 2,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "def check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"\n    global groupme_api\n    latest_messages = groupme_api.get_latest_messages()\n    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]\n    return new_messages\ndef add_category(message):\n    try:",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
         "label": "add_category",
         "kind": 2,
         "importPath": "wiki_monikers",
@@ -2968,7 +2959,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            activate_loop = True\n            if random.randint(0, 1) == 0 or not activate_loop:",
+        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                 # Update the count for the selected category\n                category_counts[cat[1]] = category_counts.get(cat[1], 0) + 1\n                # Append the category to the URL and the category to the list of categories used\n                categories_used.append(cat[1]) # append the category to the list of categories used",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2996,15 +2987,6 @@
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
         "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    new_card_exists_flag = False\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            if temp[\"title\"] not in [card[\"title\"] for card in card_deck]:\n                if \"List of\" in temp[\"title\"]:\n                    continue\n                card_summary = (\n                    temp[\"summary\"][1]",
-        "detail": "wiki_monikers",
-        "documentation": {}
-    },
-    {
-        "label": "groupme_bot",
-        "kind": 2,
-        "importPath": "wiki_monikers",
-        "description": "wiki_monikers",
-        "peekOfCode": "def groupme_bot(\n    message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\",\n):\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"\n    if type(message_text) != str:\n        message_text = str(message_text)\n    payload = {\"bot_id\": bot_id, \"text\": message_text[0:1000]}\n    response = requests.post(\"https://api.groupme.com/v3/bots/post\", json=payload)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3220,7 +3202,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = original_categories.copy()\noriginal_categories.sort()\nimport random\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nimport wikipedia",
+        "peekOfCode": "categories = original_categories.copy()\noriginal_categories.sort()\nimport random\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nimport wikipedia\ndef add_category(message):",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3229,7 +3211,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nimport wikipedia\ndef check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"\n    global groupme_api",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nimport wikipedia\ndef add_category(message):\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3238,7 +3220,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3247,7 +3229,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3256,7 +3238,25 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories_used",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                 # Update the count for the selected category",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "category_counts",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "category_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                 # Update the count for the selected category\n                category_counts[cat[1]] = category_counts.get(cat[1], 0) + 1",
         "detail": "wiki_monikers",
         "documentation": {}
     },

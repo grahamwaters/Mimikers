@@ -99,25 +99,6 @@ URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
 import wikipedia
 
-
-
-
-
-def check_for_new_messages():
-    with open("./secrets.json") as json_file:
-        secrets = json.load(json_file)
-        bot_id = secrets["
-
-    global groupme_api
-
-    latest_messages = groupme_api.get_latest_messages()
-
-
-    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]
-
-    return new_messages
-
-
 def add_category(message):
 
     try:
@@ -208,6 +189,8 @@ urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]
 
 urls_master = [url for url in urls_master if "wikipedia" in url]
 
+categories_used = []
+category_counts = {} # Dictionary to keep track of how many times each category is used
 
 @sleep_and_retry
 def get_random_wiki_entry(category_sample_size=3):
@@ -217,25 +200,29 @@ def get_random_wiki_entry(category_sample_size=3):
             URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
             categories = random.sample(original_categories, category_sample_size)
             for cat in enumerate(categories):
+                 # Update the count for the selected category
+                category_counts[cat[1]] = category_counts.get(cat[1], 0) + 1
+                # Append the category to the URL and the category to the list of categories used
+                categories_used.append(cat[1]) # append the category to the list of categories used
                 URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
             URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
 
-            activate_loop = True
-            if random.randint(0, 1) == 0 or not activate_loop:
-                try:
-                    URL = random.choice(urls_master)
+            # activate_loop = True
+            # if random.randint(0, 1) == 0 or not activate_loop:
+            #     try:
+            #         URL = random.choice(urls_master)
 
-                    page_title = random.choice(card_deck)["title"]
-                    URL = generate_related_deck(page_title, 10)[
-                        0
-                    ]
+            #         page_title = random.choice(card_deck)["title"]
+            #         URL = generate_related_deck(page_title, 10)[
+            #             0
+            #         ]
 
-                    print("using related page")
-                except Exception as e:
-                    pass
-            else:
-                pass
+            #         print("using related page")
+            #     except Exception as e:
+            #         pass
+            # else:
+            #     pass
 
 
             if random.randint(0, 60) == 0:
@@ -398,40 +385,6 @@ def create_ppn_deck(num_cards=10, card_deck=[]):
 
 
     return card_deck
-
-
-
-
-
-def groupme_bot(
-    message_text="Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.",
-):
-
-
-    with open("./secrets.json") as json_file:
-        secrets = json.load(json_file)
-        bot_id = secrets["
-
-
-    if type(message_text) != str:
-        message_text = str(message_text)
-
-
-    payload = {"bot_id": bot_id, "text": message_text[0:1000]}
-
-
-    response = requests.post("https://api.groupme.com/v3/bots/post", json=payload)
-
-
-    if response.status_code != 202:
-        print(f"Failed to send message: {response.status_code} {response.text}")
-    else:
-
-        pass
-
-
-
-
 
 def generate_related_deck(primary_card, number_of_cards_to_generate):
 
