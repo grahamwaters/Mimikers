@@ -64,6 +64,7 @@ def generate_card(
     width_cm = 5.5
     height_cm = 8.5
     card_color = "green"
+    # card_color = card['card_color']
     width_pixels = int(width_cm * 96)
     height_pixels = int(height_cm * 96)
     points = int(points)

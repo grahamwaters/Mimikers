@@ -190,6 +190,14 @@
         "documentation": {}
     },
     {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -424,6 +432,30 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "sumy.nlp.tokenizers",
+        "description": "sumy.nlp.tokenizers",
+        "isExtraImport": true,
+        "detail": "sumy.nlp.tokenizers",
+        "documentation": {}
+    },
+    {
         "label": "Tokenizer",
         "importPath": "sumy.nlp.tokenizers",
         "description": "sumy.nlp.tokenizers",
@@ -517,6 +549,22 @@
         "description": "sumy.parsers.plaintext",
         "isExtraImport": true,
         "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "PlaintextParser",
+        "importPath": "sumy.parsers.plaintext",
+        "description": "sumy.parsers.plaintext",
+        "isExtraImport": true,
+        "detail": "sumy.parsers.plaintext",
+        "documentation": {}
+    },
+    {
+        "label": "LexRankSummarizer",
+        "importPath": "sumy.summarizers.lex_rank",
+        "description": "sumy.summarizers.lex_rank",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lex_rank",
         "documentation": {}
     },
     {
@@ -816,6 +864,30 @@
         "documentation": {}
     },
     {
+        "label": "words",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "wordnet",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
         "label": "nltk",
         "kind": 6,
         "isExtraImport": true,
@@ -871,6 +943,30 @@
         "description": "nltk.metrics.distance",
         "isExtraImport": true,
         "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "edit_distance",
+        "importPath": "nltk.metrics.distance",
+        "description": "nltk.metrics.distance",
+        "isExtraImport": true,
+        "detail": "nltk.metrics.distance",
+        "documentation": {}
+    },
+    {
+        "label": "sleep_and_retry",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
+        "documentation": {}
+    },
+    {
+        "label": "limits",
+        "importPath": "ratelimit",
+        "description": "ratelimit",
+        "isExtraImport": true,
+        "detail": "ratelimit",
         "documentation": {}
     },
     {
@@ -1004,6 +1100,22 @@
         "documentation": {}
     },
     {
+        "label": "word_tokenize",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "LsaSummarizer",
+        "importPath": "sumy.summarizers.lsa",
+        "description": "sumy.summarizers.lsa",
+        "isExtraImport": true,
+        "detail": "sumy.summarizers.lsa",
+        "documentation": {}
+    },
+    {
         "label": "LsaSummarizer",
         "importPath": "sumy.summarizers.lsa",
         "description": "sumy.summarizers.lsa",
@@ -1042,6 +1154,14 @@
         "importPath": "urllib",
         "description": "urllib",
         "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "base_categories",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -2803,7 +2923,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"#groupme_botid\"]\n    global groupme_api\n    # access the GroupMe API and get the latest messages in the thread\n    latest_messages = groupme_api.get_latest_messages()\n    # filter the messages to get only those that are not from the bot\n    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]\n    return new_messages",
+        "peekOfCode": "def check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"\n    global groupme_api\n    latest_messages = groupme_api.get_latest_messages()\n    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]\n    return new_messages\ndef add_category(message):\n    try:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2812,7 +2932,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def add_category(message):\n    # check if the message is a valid Wikipedia category\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    # if the message is a valid Wikipedia category, add it to the categories text file\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:",
+        "peekOfCode": "def add_category(message):\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:\n            categories_file.write(f\"{message}\\n\")\n    else:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2821,7 +2941,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)\n    return phrase, definition\n# todo\ndef summarize_text(text, num_sentences):\n    \"\"\"",
+        "peekOfCode": "def replacer_censor(definition, phrase, replacements_dict):\n    for pattern in replacements_dict:\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)\n    return phrase, definition\ndef summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2830,7 +2950,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    # create a PlaintextParser object to parse the text\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    # choose a summarization algorithm\n    # algorithm = LsaSummarizer()\n    algorithm = LexRankSummarizer()\n    # summarize the text and return the summary as a list of sentences",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    algorithm = LexRankSummarizer()\n    summary = algorithm(parser.document, num_sentences)\n    return summary\ndef unpack_definitions(phrase, definition):",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2839,7 +2959,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def unpack_definitions(phrase, definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\", \"\")\n    definition = definition.replace(\"]\", \"\")\n    definition = definition.replace(\"'\", \"\")\n    definition = definition.replace('\"', \"\")\n    definition = definition.replace(\"(\", \"\")\n    definition = definition.replace(\")\", \"\")\n    # remove double spaces",
+        "peekOfCode": "def unpack_definitions(phrase, definition):\n    definition = definition.replace(\"[\", \"\")\n    definition = definition.replace(\"]\", \"\")\n    definition = definition.replace(\"'\", \"\")\n    definition = definition.replace('\"', \"\")\n    definition = definition.replace(\"(\", \"\")\n    definition = definition.replace(\")\", \"\")\n    definition = definition.replace(\"  \", \" \")\n    definition = definition.replace(\"..\", \".\")\n    definition = re.sub(r\"[^\\x00-\\x7f]\", r\"\", definition)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2848,7 +2968,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            # either randomly use URL or one of the urls from the urls_master list above",
+        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            activate_loop = True\n            if random.randint(0, 1) == 0 or not activate_loop:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2857,7 +2977,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def create_ppn_card():\n    # create a person/place/thing card\n    # get a random wikipedia entry\n    try:\n        random_wiki_entry_dict = get_random_wiki_entry()\n        # get the summary of the entry\n        random_wiki_entry_summary = random_wiki_entry_dict[\"summary\"]\n        # get the title of the entry\n        random_wiki_entry_title = random_wiki_entry_dict[\"title\"]\n        # get the related pages of the entry",
+        "peekOfCode": "def create_ppn_card():\n    try:\n        random_wiki_entry_dict = get_random_wiki_entry()\n        random_wiki_entry_summary = random_wiki_entry_dict[\"summary\"]\n        random_wiki_entry_title = random_wiki_entry_dict[\"title\"]\n        random_wiki_entry_related = random_wiki_entry_dict[\"related\"]\n        random_wiki_entry_dict = {\n            \"title\": random_wiki_entry_title,\n            \"summary\": random_wiki_entry_summary,\n            \"related\": len(random_wiki_entry_related),",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2866,7 +2986,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def replace_definition_start(definition, title):\n    # Create the pattern to search for\n    if isinstance(definition, list):\n        definition = definition[1]\n    else:\n        definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    # Use the `search` function to find the first occurrence of the pattern\n    match = re.search(\n        pattern, definition, re.IGNORECASE",
+        "peekOfCode": "def replace_definition_start(definition, title):\n    if isinstance(definition, list):\n        definition = definition[1]\n    else:\n        definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    match = re.search(\n        pattern, definition, re.IGNORECASE\n    )\n    if match:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2875,7 +2995,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    # create a deck of person/place/thing cards\n    new_card_exists_flag = False\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            # check if the card is unique\n            if temp[\"title\"] not in [card[\"title\"] for card in card_deck]:\n                # if the title has \"List of\" in it, skip it\n                if \"List of\" in temp[\"title\"]:",
+        "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    new_card_exists_flag = False\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            if temp[\"title\"] not in [card[\"title\"] for card in card_deck]:\n                if \"List of\" in temp[\"title\"]:\n                    continue\n                card_summary = (\n                    temp[\"summary\"][1]",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2884,7 +3004,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def groupme_bot(\n    message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\",\n):\n    # Replace :bot_id with your bot's ID\n    # read bot_id from secrets.json\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"#groupme_botid\"]\n    # if the message is not a single string, convert it to a string\n    if type(message_text) != str:",
+        "peekOfCode": "def groupme_bot(\n    message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\",\n):\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"\n    if type(message_text) != str:\n        message_text = str(message_text)\n    payload = {\"bot_id\": bot_id, \"text\": message_text[0:1000]}\n    response = requests.post(\"https://api.groupme.com/v3/bots/post\", json=payload)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2893,7 +3013,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate):\n    # generate a deck of cards that are related to the primary card\n    # get the title of the primary card\n    primary_card_title = primary_card[\"title\"]\n    # get the related pages of the primary card\n    primary_card_related = primary_card[\"related\"]\n    # create a list of the related pages\n    related_pages = [page for page in primary_card_related]\n    # shuffle the list of related pages\n    random.shuffle(related_pages)",
+        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate):\n    primary_card_title = primary_card[\"title\"]\n    primary_card_related = primary_card[\"related\"]\n    related_pages = [page for page in primary_card_related]\n    random.shuffle(related_pages)\n    related_pages = [\n        page\n        for page in related_pages\n        if page not in [card[\"title\"] for card in card_deck]\n    ]",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2902,7 +3022,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def get_page_from_wiki(title):\n    return wikipedia.page(title)\ndef page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.",
+        "peekOfCode": "def get_page_from_wiki(title):\n    return wikipedia.page(title)\ndef page_is_person(page):\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    if (\n        \"location\" in page.content.lower()",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2911,7 +3031,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()",
+        "peekOfCode": "def page_is_person(page):\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    if (\n        \"location\" in page.content.lower()\n        and \"country\" in page.content.lower()\n        and \"city\" in page.content.lower()",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2920,7 +3040,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()\n        and \"country\" in page.content.lower()\n        and \"city\" in page.content.lower()\n    ):\n        return True\n    elif page.coordinates is not None:\n        return True",
+        "peekOfCode": "def page_is_location(page):\n    if (\n        \"location\" in page.content.lower()\n        and \"country\" in page.content.lower()\n        and \"city\" in page.content.lower()\n    ):\n        return True\n    elif page.coordinates is not None:\n        return True\n    else:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2929,7 +3049,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.\n    if (\n        \"organization\" in page.content.lower()\n        or \"company\" in page.content.lower()\n        and \"business\" in page.content.lower()\n    ):\n        # also cannot be a person or location\n        if not page_is_person(page) and not page_is_location(page):\n            return True",
+        "peekOfCode": "def page_is_organization(page):\n    if (\n        \"organization\" in page.content.lower()\n        or \"company\" in page.content.lower()\n        and \"business\" in page.content.lower()\n    ):\n        if not page_is_person(page) and not page_is_location(page):\n            return True\n        else:\n            return False",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2938,7 +3058,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def page_is_event(page):\n    # event pages have the words \"event\" \"incident\" and \"disaster\" in the article text. We can use this to filter out event pages.\n    if (\n        \"event\" in page.content.lower()\n        and \"date\" in page.content.lower()\n        and \"history\" in page.content.lower()\n    ):\n        if (\n            not page_is_person(page)\n            and not page_is_location(page)",
+        "peekOfCode": "def page_is_event(page):\n    if (\n        \"event\" in page.content.lower()\n        and \"date\" in page.content.lower()\n        and \"history\" in page.content.lower()\n    ):\n        if (\n            not page_is_person(page)\n            and not page_is_location(page)\n            and not page_is_organization(page)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2956,7 +3076,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card,  # merge the card with the new summary\n            **{  # create a new key called summary_short\n                \"summary_short\": \"\".join(  # join the sentences together\n                    str(sentence)  # convert the sentence to a string\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
+        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card,\n            **{\n                \"summary_short\": \"\".join(\n                    str(sentence)\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2965,7 +3085,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\n# open the card deck file",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\nwith open(\"ppn_deck.json\", \"r\") as read_file:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2974,7 +3094,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold\n    # split the title into a list of words",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    title = title.split()\n    similar_words_list = []\n    for title_word in title:\n        similar_words = [",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2983,7 +3103,7 @@
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    # replace each similar word with a synonym\n    for word in similar_words:\n        synonyms = find_synonyms(word)  # find a synonym for the word -> set\n        # extract the synonym from the set\n        synonyms = list(synonyms)\n        # choose a random synonym from the set\n        try:\n            synonym = random.choice(synonyms)",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    for word in similar_words:\n        synonyms = find_synonyms(word)\n        synonyms = list(synonyms)\n        try:\n            synonym = random.choice(synonyms)\n        except IndexError:\n            synonym = word\n        if type(definition) == list:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -2992,7 +3112,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n# hard_mode_categories = [\n#     \"Philosophers_of_ethics_and_morality\",\n#     \"United_States_Supreme_Court_cases\",\n#     \"Political_party_founders\",\n#     \"Classics_educators\",\n# ]\n# obscure_mode_categories = [\"Fictional_inventors\"]\n# profanity_pages = [\n#     \"English_profanity\"",
+        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\nimport pandas as pd\nwith open(\"categories.json\", \"r\") as f:\n    categories = json.load(f)\ncategories = [category.strip() for category in categories]\nbase_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3001,7 +3121,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = [category.strip() for category in categories]\nbase_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [",
+        "peekOfCode": "categories = [category.strip() for category in categories]\nbase_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3010,7 +3130,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "base_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)",
+        "peekOfCode": "base_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3019,7 +3139,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\nwith open(\"charactersTV.json\", \"w\") as f:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3028,7 +3148,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3037,7 +3157,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture",
+        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\ncategories = base_categories\ncategories.extend(meme_categories)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3046,7 +3166,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories",
+        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\ncategories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\ncategories.extend(charactersTV)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3055,7 +3175,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories\n# add charactersTV\ncategories.extend(charactersTV)  # adds some year categories to categories\n# add events_and_culture\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)",
+        "peekOfCode": "categories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\ncategories.extend(charactersTV)\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3064,7 +3184,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "extras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))",
+        "peekOfCode": "extras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3073,7 +3193,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "most_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories",
+        "peekOfCode": "most_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()\nimport random\nrandom.shuffle(categories)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3082,7 +3202,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "original_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories",
+        "peekOfCode": "original_categories = categories.copy()\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()\nimport random\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3091,7 +3211,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "original_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):",
+        "peekOfCode": "original_categories = list(set(categories))\ncategories = original_categories.copy()\noriginal_categories.sort()\nimport random\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nimport wikipedia",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3100,7 +3220,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "peekOfCode": "categories = original_categories.copy()\noriginal_categories.sort()\nimport random\nrandom.shuffle(categories)\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nimport wikipedia",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3109,7 +3229,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe\nimport wikipedia\n# create a GroupMeAPI object\n# groupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\nimport wikipedia\ndef check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"\n    global groupme_api",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3118,7 +3238,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\n# convert to list of urls urls_master.values[0][0]\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3127,7 +3247,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3136,7 +3256,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3145,7 +3265,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 16000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(16000, card_deck)\n    # create a copy of the card deck file for safety",
+        "peekOfCode": "english_words = words.words()\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 16000:\n    print(len(card_deck))\n    card_deck = create_ppn_deck(16000, card_deck)\n    with open(\"ppn_deck_copy.json\", \"w\") as outfile:\n        json.dump(card_deck, outfile, indent=4)\n    card_deck = [\n        {",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3154,8 +3274,368 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    title = title.split()\n    similar_words_list = []\n    for title_word in title:",
         "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_new_messages",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def check_for_new_messages():\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"#groupme_botid\"]\n    global groupme_api\n    # access the GroupMe API and get the latest messages in the thread\n    latest_messages = groupme_api.get_latest_messages()\n    # filter the messages to get only those that are not from the bot\n    new_messages = [message for message in latest_messages if message['sender_id'] != bot_id]\n    return new_messages",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "add_category",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def add_category(message):\n    # check if the message is a valid Wikipedia category\n    try:\n        wikipedia.WikipediaPage(message).category\n        is_valid_category = True\n    except wikipedia.exceptions.PageError:\n        is_valid_category = False\n    # if the message is a valid Wikipedia category, add it to the categories text file\n    if is_valid_category:\n        with open(\"categories.txt\", \"a\") as categories_file:",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "replacer_censor",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def replacer_censor(definition, phrase, replacements_dict):\n    # Iterate over the keys in the replacements dictionary\n    for pattern in replacements_dict:\n        # Use re.sub to replace the occurrences of the pattern with its corresponding value in the phrase and definition strings\n        phrase = re.sub(pattern, replacements_dict[pattern], phrase)\n        definition = re.sub(pattern, replacements_dict[pattern], definition)\n    return phrase, definition\n# todo\ndef summarize_text(text, num_sentences):\n    \"\"\"",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_text",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def summarize_text(text, num_sentences):\n    \"\"\"\n    Summarize the given text using the LSA or LexRank summarization algorithms and return the summary as a list of sentences\n    \"\"\"\n    # create a PlaintextParser object to parse the text\n    parser = PlaintextParser.from_string(text, Tokenizer(\"english\"))\n    # choose a summarization algorithm\n    # algorithm = LsaSummarizer()\n    algorithm = LexRankSummarizer()\n    # summarize the text and return the summary as a list of sentences",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "unpack_definitions",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def unpack_definitions(phrase, definition):\n    # remove the brackets and clean up the definitions\n    # with regex\n    definition = definition.replace(\"[\", \"\")\n    definition = definition.replace(\"]\", \"\")\n    definition = definition.replace(\"'\", \"\")\n    definition = definition.replace('\"', \"\")\n    definition = definition.replace(\"(\", \"\")\n    definition = definition.replace(\")\", \"\")\n    # remove double spaces",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_wiki_entry",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\n            URL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n            # either randomly use URL or one of the urls from the urls_master list above",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_card",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def create_ppn_card():\n    # create a person/place/thing card\n    # get a random wikipedia entry\n    try:\n        random_wiki_entry_dict = get_random_wiki_entry()\n        # get the summary of the entry\n        random_wiki_entry_summary = random_wiki_entry_dict[\"summary\"]\n        # get the title of the entry\n        random_wiki_entry_title = random_wiki_entry_dict[\"title\"]\n        # get the related pages of the entry",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "replace_definition_start",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def replace_definition_start(definition, title):\n    # Create the pattern to search for\n    if isinstance(definition, list):\n        definition = definition[1]\n    else:\n        definition = str(definition)\n    pattern = r\"^{}\\s+(is|was|are|were)\\s+a\\s+\".format(re.escape(title))\n    # Use the `search` function to find the first occurrence of the pattern\n    match = re.search(\n        pattern, definition, re.IGNORECASE",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "create_ppn_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def create_ppn_deck(num_cards=10, card_deck=[]):\n    # create a deck of person/place/thing cards\n    new_card_exists_flag = False\n    while len(card_deck) < num_cards:\n        temp = create_ppn_card()\n        if temp != {}:\n            # check if the card is unique\n            if temp[\"title\"] not in [card[\"title\"] for card in card_deck]:\n                # if the title has \"List of\" in it, skip it\n                if \"List of\" in temp[\"title\"]:",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "groupme_bot",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def groupme_bot(\n    message_text=\"Welcome to the ever expanding world of Generative Monikers! I am your host, Hubert.\",\n):\n    # Replace :bot_id with your bot's ID\n    # read bot_id from secrets.json\n    with open(\"./secrets.json\") as json_file:\n        secrets = json.load(json_file)\n        bot_id = secrets[\"#groupme_botid\"]\n    # if the message is not a single string, convert it to a string\n    if type(message_text) != str:",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def generate_related_deck(primary_card, number_of_cards_to_generate):\n    # generate a deck of cards that are related to the primary card\n    # get the title of the primary card\n    primary_card_title = primary_card[\"title\"]\n    # get the related pages of the primary card\n    primary_card_related = primary_card[\"related\"]\n    # create a list of the related pages\n    related_pages = [page for page in primary_card_related]\n    # shuffle the list of related pages\n    random.shuffle(related_pages)",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "get_page_from_wiki",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def get_page_from_wiki(title):\n    return wikipedia.page(title)\ndef page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_person",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def page_is_person(page):\n    # people pages have the words \"birth\" \"family\" and potentially \"death\" in the article text (birth and death are not always present). We can use this to filter out people pages.\n    if \"birth\" in page.content.lower() and \"family\" in page.content.lower():\n        return True\n    else:\n        return False\ndef page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_location",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def page_is_location(page):\n    # location pages have the words \"location\" \"country\" and \"city\" in the article text. We can use this to filter out location pages.\n    if (\n        \"location\" in page.content.lower()\n        and \"country\" in page.content.lower()\n        and \"city\" in page.content.lower()\n    ):\n        return True\n    elif page.coordinates is not None:\n        return True",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_organization",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def page_is_organization(page):\n    # organization pages have the words \"organization\" \"company\" and \"business\" in the article text. We can use this to filter out organization pages.\n    if (\n        \"organization\" in page.content.lower()\n        or \"company\" in page.content.lower()\n        and \"business\" in page.content.lower()\n    ):\n        # also cannot be a person or location\n        if not page_is_person(page) and not page_is_location(page):\n            return True",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "page_is_event",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def page_is_event(page):\n    # event pages have the words \"event\" \"incident\" and \"disaster\" in the article text. We can use this to filter out event pages.\n    if (\n        \"event\" in page.content.lower()\n        and \"date\" in page.content.lower()\n        and \"history\" in page.content.lower()\n    ):\n        if (\n            not page_is_person(page)\n            and not page_is_location(page)",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "generate_related_deck",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def generate_related_deck(\n    primary_card,\n    number_of_cards_to_generate,\n    min_len=100,\n    min_links=5,\n    people=True,\n    locations=True,\n    organizations=True,\n    events=True,\n    other=False,",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "refine_cards",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def refine_cards(card_deck):\n    sentence_count = 1\n    card_deck = [\n        {\n            **card,  # merge the card with the new summary\n            **{  # create a new key called summary_short\n                \"summary_short\": \"\".join(  # join the sentences together\n                    str(sentence)  # convert the sentence to a string\n                    for sentence in summarize_text(\n                        card[\"summary\"][1], int(sentence_count)",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "find_synonyms",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def find_synonyms(word):\n    synonyms = []\n    lemmatizer = nltk.WordNetLemmatizer()\n    for syn in wordnet.synsets(word):\n        for lemma in syn.lemmas():\n            synonym = lemma.name()\n            if synonym != word and synonym not in synonyms:\n                synonyms.append(synonym)\n    return set(synonyms)\n# open the card deck file",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "find_similar_words",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold\n    # split the title into a list of words",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "replace_similar_words",
+        "kind": 2,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "def replace_similar_words(title, definition, threshold=3):\n    similar_words = find_similar_words(title, definition, threshold)\n    # replace each similar word with a synonym\n    for word in similar_words:\n        synonyms = find_synonyms(word)  # find a synonym for the word -> set\n        # extract the synonym from the set\n        synonyms = list(synonyms)\n        # choose a random synonym from the set\n        try:\n            synonym = random.choice(synonyms)",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "URL",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n# hard_mode_categories = [\n#     \"Philosophers_of_ethics_and_morality\",\n#     \"United_States_Supreme_Court_cases\",\n#     \"Political_party_founders\",\n#     \"Classics_educators\",\n# ]\n# obscure_mode_categories = [\"Fictional_inventors\"]\n# profanity_pages = [\n#     \"English_profanity\"",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "categories = [category.strip() for category in categories]\nbase_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "base_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "base_categories = categories.copy()\n# add meme categories\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "meme_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\n# save the links for meme_categories to a file so we can use them later\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "year_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n# subcats_foryears = ['_in_television']\n# Television_characters_introduced_in_1980 through 2023\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "charactersTV",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# save the links for charactersTV to a file so we can use them later\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\n# Video Games for years 1950 through 2023\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "VideoGames_Categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\n# save the links for VideoGames_Categories to a file so we can use them later\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# create these categories: Extraterrestrial_life_in_popular_culture, Fairies and sprites in popular cuture\ncategories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "categories = base_categories\n# * appending to categories\ncategories.extend(meme_categories)  # add meme categories to categories\n# add year categories\ncategories.extend(year_categories)  # adds some year categories to categories\n# add charactersTV\ncategories.extend(charactersTV)  # adds some year categories to categories\n# add events_and_culture\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "extras",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "extras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "most_linkedto_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "most_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\n# save the categories to a file so we can use them later\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "original_categories = categories.copy()\n# remove duplicates\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "original_categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "original_categories = list(set(categories))\ncategories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "categories = original_categories.copy()\n# sort the categories\noriginal_categories.sort()\nimport random\n# shuffle categories to get a random selection\nrandom.shuffle(categories)\n# select 20 random categories\ncategories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "categories = categories[:20]\nfor cat in enumerate(categories):\n    URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"\nURL += \"&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype=\"\n#^ Dynamic updates through GroupMe\nimport wikipedia\n# create a GroupMeAPI object\n# groupme_api = GroupMeAPI(secrets[\"groupme_token\"])\n# function to check the groupme thread for new messages (that are not from the bot)\ndef check_for_new_messages():",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\n# convert to list of urls urls_master.values[0][0]\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\n# only include urls with wikipedia in them\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "urls_master",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    # Use a while loop to retry the request until a valid page is found.\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size) # get a random sample of categories\n            for cat in enumerate(categories): # add the categories to the URL\n                URL += f\"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}\"",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "english_words",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "english_words = words.words()\n# open the card deck file\nwith open(\"ppn_deck.json\", \"r\") as read_file:\n    card_deck = json.load(read_file)\nwhile len(card_deck) < 16000:\n    print(len(card_deck))\n    # stringval = 'Building the deck...' + str(len(card_deck)), 'cards'\n    # #groupme_bot(stringval)\n    card_deck = create_ppn_deck(16000, card_deck)\n    # create a copy of the card deck file for safety",
+        "detail": "wiki_monikers_archived",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "wiki_monikers_archived",
+        "description": "wiki_monikers_archived",
+        "peekOfCode": "stop_words = nltk.corpus.stopwords.words(\"english\")\ndef find_similar_words(title, definition, threshold=3):\n    # split the definition into a list of words\n    if type(definition) == list:\n        definition = \" \".join(definition)\n    words = definition.split()\n    # remove words less than 3 characters and any english stop words\n    words = [word for word in words if word not in stop_words]\n    words = [word for word in words if len(word) > 3]\n    # use a list comprehension to create a list of words with a Levenshtein distance less than the threshold",
+        "detail": "wiki_monikers_archived",
         "documentation": {}
     }
 ]
