@@ -120,6 +120,20 @@ def generate_card(
     #ic()
     #!assert (len(description) > 0, "There is no Description")
 
+    if category == 'Wild Card':
+        card_color = 'orange'
+    elif category == 'Person':
+        card_color = 'blue'
+    elif category == 'Place':
+        card_color = 'yellow'
+    elif category == 'Thing':
+        card_color = 'red'
+    elif category == 'Event':
+        card_color = 'purple'
+    elif category == 'Other':
+        card_color = 'orange'
+    else:
+        card_color = 'green'
     # if '\n' or '\r' or '\t' or '\v' or '\f' or any special character in description, then replace it with a space and print a warning
     if '\\n' in description:
         print('Warning: \\n in description')
