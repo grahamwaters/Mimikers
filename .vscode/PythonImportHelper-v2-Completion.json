@@ -1,5 +1,41 @@
 [
     {
+        "label": "wikipediaapi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wikipediaapi",
+        "description": "wikipediaapi",
+        "detail": "wikipediaapi",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "aiohttp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiohttp",
+        "description": "aiohttp",
+        "detail": "aiohttp",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
@@ -95,15 +131,6 @@
         "description": "PIL",
         "isExtraImport": true,
         "detail": "PIL",
-        "documentation": {}
-    },
-    {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
         "documentation": {}
     },
     {
@@ -239,33 +266,6 @@
         "importPath": "spacy",
         "description": "spacy",
         "detail": "spacy",
-        "documentation": {}
-    },
-    {
-        "label": "wikipediaapi",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "wikipediaapi",
-        "description": "wikipediaapi",
-        "detail": "wikipediaapi",
-        "documentation": {}
-    },
-    {
-        "label": "aiohttp",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "aiohttp",
-        "description": "aiohttp",
-        "detail": "aiohttp",
-        "documentation": {}
-    },
-    {
-        "label": "asyncio",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "asyncio",
-        "description": "asyncio",
-        "detail": "asyncio",
         "documentation": {}
     },
     {
@@ -661,6 +661,15 @@
         "description": "autocorrect",
         "isExtraImport": true,
         "detail": "autocorrect",
+        "documentation": {}
+    },
+    {
+        "label": "textstat",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "textstat",
+        "description": "textstat",
+        "detail": "textstat",
         "documentation": {}
     },
     {
@@ -1072,15 +1081,6 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "textstat",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "textstat",
-        "description": "textstat",
-        "detail": "textstat",
         "documentation": {}
     },
     {

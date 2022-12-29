@@ -19,7 +19,7 @@ from profanity_check import predict, predict_prob
 from textblob import TextBlob
 #!pip install autocorrect
 from autocorrect import Speller # for spell checking
-
+import textstat
 # constants
 spell_check_flag = False
 # ignore warnings
@@ -114,24 +114,41 @@ def generate_card(
     description = " ".join(stripped_words) # convert the list of words back to a string
     description = description.replace(" - ", " ")
 
+    # skip the british television cards
+    if 'british television' in description.lower():
+        return
+    if 'british television' in title.lower():
+        return
+
+
     while "  " in description:
         description = description.replace("  ", " ")
     description = clean_string(description)
     #ic()
     #!assert (len(description) > 0, "There is no Description")
-
+    if category == None:
+        category = "Wild Card"
     if category == 'Wild Card':
-        card_color = 'orange'
-    elif category == 'Person':
+        card_color = 'red'
+    elif category in ['person', 'people', 'character', 'characters','actor']:
         card_color = 'blue'
     elif category == 'Place':
         card_color = 'yellow'
-    elif category == 'Thing':
-        card_color = 'red'
-    elif category == 'Event':
-        card_color = 'purple'
-    elif category == 'Other':
+    #elif category == r'\d\d\d\d': # if the category is a year (e.g. 1999)
+    elif category.isdigit() or (len(category) == 4 and category.isnumeric()): # if the category is a year (e.g. 1999)
         card_color = 'orange'
+    elif category == 'book':
+        card_color = 'purple'
+    elif category == 'melon':
+        card_color = 'pink'
+    elif category == 'event':
+        card_color = 'brown'
+    elif category == 'movie':
+        card_color = 'teal'
+    elif category == 'animal':
+        card_color = 'navy'
+    elif category == 'die':
+        card_color = 'grey'
     else:
         card_color = 'green'
     # if '\n' or '\r' or '\t' or '\v' or '\f' or any special character in description, then replace it with a space and print a warning
@@ -146,9 +163,7 @@ def generate_card(
         description = description.replace('\t', ' ')
 
     print(description) #note: debug
-    if category == None:
-        category = "Wild Card"
-        print("Warning: category is None")
+
     html = html.replace("CARD_TITLE", title)
     html = html.replace("CARD_DESCRIPTION", description)
     html = html.replace("CARD_CATEGORY", category)
@@ -327,6 +342,12 @@ def gandalf_card_finder(card, keywords, grade_level, profanity):
     profanity = False
 
     grade_level_check = True
+    if 'grade_level' not in card.keys():
+        #grade_level_check = False
+        print(f"Card {card['title']} does not have a grade level!")
+        # calculate the grade level of the summary
+        card['grade_level'] = textstat.flesch_kincaid_grade(full_summary)
+        print(f"Card {card['title']} has a grade level of {card['grade_level']}!")
 
     if float(card["grade_level"]) > float(grade_level):
         grade_level_check = False
@@ -431,7 +452,6 @@ def main():
         "book",
         "movie",
         "funny",
-        "nasa",
         "famous",
         "viral",
         "dog poop",
@@ -439,12 +459,11 @@ def main():
         "therapy",
         "vegetables",
         "melon",
-        "die",
         "embarrassing",
     ]
     options = {
-        "grade_level": 16,
-        "profanity": True,
+        "grade_level": 10,
+        "profanity": False, # set to true to allow profanity
         "cards_to_generate": 5000,
         "keywords": keywords,
         "categories": [],
