@@ -1173,6 +1173,14 @@
         "documentation": {}
     },
     {
+        "label": "category_counts",
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "isExtraImport": true,
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
         "label": "send_cards",
         "kind": 2,
         "importPath": "storage_bin.cards",
@@ -2955,11 +2963,20 @@
         "documentation": {}
     },
     {
+        "label": "sample_categories",
+        "kind": 2,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "def sample_categories(categories, sample_size, category_counts=category_counts):\n    \"\"\"\n    Sample a given number of categories from a list of categories, with a constraint that a category's likelihood of being sampled is inversely proportional to the number of times it has been sampled\n    \"\"\"\n    # Get the categories that have been used the least number of times\n    # what is the lowest key value in the dictionary of category counts? (including 0)\n    min_count = min(category_counts.values()) if category_counts else 0\n    # what are the categories that have been used the least number of times?\n    if min_count == 0:\n        # If the minimum count is 0, then we can sample from all categories",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
         "label": "get_random_wiki_entry",
         "kind": 2,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "def get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                 # Update the count for the selected category\n                category_counts[cat[1]] = category_counts.get(cat[1], 0) + 1\n                # Append the category to the URL and the category to the list of categories used\n                categories_used.append(cat[1]) # append the category to the list of categories used",
+        "peekOfCode": "def get_random_wiki_entry(category_sample_size=1):\n    while True:\n        try:\n            # read the category counts from the csv file\n            #try:\n            #    category_counts = pd.read_csv(\"category_counts.csv\").set_index(\"Category\").to_dict()[\"Count\"]\n            #except FileNotFoundError:\n            #    category_counts = {}\n            # Get the URL for the random page in the category\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3112,7 +3129,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "base_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]",
+        "peekOfCode": "base_categories = categories.copy()\nmeme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n#!charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3121,7 +3138,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\nwith open(\"charactersTV.json\", \"w\") as f:",
+        "peekOfCode": "meme_categories = [\n    \"Internet_memes_introduced_in_{}\".format(str(year)) for year in range(2000, 2023)\n]\nwith open(\"meme_categories.json\", \"w\") as f:\n    json.dump(meme_categories, f)\nyear_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n#!charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# with open(\"charactersTV.json\", \"w\") as f:",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3130,16 +3147,16 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\ncharactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)",
+        "peekOfCode": "year_categories = [\n    \"{}s_in_Internet_culture\".format(str(year)) for year in range(1980, 2020, 10)\n]\n#!charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# with open(\"charactersTV.json\", \"w\") as f:\n#     json.dump(charactersTV, f)\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# remove television characters",
         "detail": "wiki_monikers",
         "documentation": {}
     },
     {
-        "label": "charactersTV",
+        "label": "#!charactersTV",
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\nwith open(\"charactersTV.json\", \"w\") as f:\n    json.dump(charactersTV, f)\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\ncategories = base_categories\ncategories.extend(meme_categories)",
+        "peekOfCode": "#!charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]\n# with open(\"charactersTV.json\", \"w\") as f:\n#     json.dump(charactersTV, f)\nVideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# remove television characters\ncategories = [category for category in categories if 'Television_characters' not in category]\ncategories = base_categories\ncategories.extend(meme_categories)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3148,7 +3165,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\ncategories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\ncategories.extend(charactersTV)",
+        "peekOfCode": "VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]\nwith open(\"VideoGames_Categories.json\", \"w\") as f:\n    json.dump(VideoGames_Categories, f)\n# remove television characters\ncategories = [category for category in categories if 'Television_characters' not in category]\ncategories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\n# categories.extend(charactersTV)\n# remove duplicates",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3157,7 +3174,25 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\ncategories.extend(charactersTV)\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)",
+        "peekOfCode": "categories = [category for category in categories if 'Television_characters' not in category]\ncategories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\n# categories.extend(charactersTV)\n# remove duplicates\ncategories = list(set(categories))\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = base_categories\ncategories.extend(meme_categories)\ncategories.extend(year_categories)\n# categories.extend(charactersTV)\n# remove duplicates\ncategories = list(set(categories))\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)",
+        "detail": "wiki_monikers",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "wiki_monikers",
+        "description": "wiki_monikers",
+        "peekOfCode": "categories = list(set(categories))\nextras = ['English-language_idioms','British_English_idioms']\ncategories.extend(extras)\nmost_linkedto_categories = ['Living_people']\ncategories.extend(most_linkedto_categories)\nwith open(\"categories.json\", \"w\") as f:\n    json.dump(categories, f)\noriginal_categories = categories.copy()\noriginal_categories = list(set(categories))\ncategories = original_categories.copy()",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3220,7 +3255,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"",
+        "peekOfCode": "urls_master = pd.read_csv(\"./peoplelinks.csv\", error_bad_lines=False)\nurls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\ndef sample_categories(categories, sample_size, category_counts=category_counts):\n    \"\"\"\n    Sample a given number of categories from a list of categories, with a constraint that a category's likelihood of being sampled is inversely proportional to the number of times it has been sampled\n    \"\"\"\n    # Get the categories that have been used the least number of times",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3229,7 +3264,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)",
+        "peekOfCode": "urls_master = [urls_master.values[i][0] for i in range(len(urls_master))]\nurls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\ndef sample_categories(categories, sample_size, category_counts=category_counts):\n    \"\"\"\n    Sample a given number of categories from a list of categories, with a constraint that a category's likelihood of being sampled is inversely proportional to the number of times it has been sampled\n    \"\"\"\n    # Get the categories that have been used the least number of times\n    # what is the lowest key value in the dictionary of category counts? (including 0)",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3238,7 +3273,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):",
+        "peekOfCode": "urls_master = [url for url in urls_master if \"wikipedia\" in url]\ncategories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\ndef sample_categories(categories, sample_size, category_counts=category_counts):\n    \"\"\"\n    Sample a given number of categories from a list of categories, with a constraint that a category's likelihood of being sampled is inversely proportional to the number of times it has been sampled\n    \"\"\"\n    # Get the categories that have been used the least number of times\n    # what is the lowest key value in the dictionary of category counts? (including 0)\n    min_count = min(category_counts.values()) if category_counts else 0",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3247,7 +3282,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "categories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                 # Update the count for the selected category",
+        "peekOfCode": "categories_used = []\ncategory_counts = {} # Dictionary to keep track of how many times each category is used\ndef sample_categories(categories, sample_size, category_counts=category_counts):\n    \"\"\"\n    Sample a given number of categories from a list of categories, with a constraint that a category's likelihood of being sampled is inversely proportional to the number of times it has been sampled\n    \"\"\"\n    # Get the categories that have been used the least number of times\n    # what is the lowest key value in the dictionary of category counts? (including 0)\n    min_count = min(category_counts.values()) if category_counts else 0\n    # what are the categories that have been used the least number of times?",
         "detail": "wiki_monikers",
         "documentation": {}
     },
@@ -3256,7 +3291,7 @@
         "kind": 5,
         "importPath": "wiki_monikers",
         "description": "wiki_monikers",
-        "peekOfCode": "category_counts = {} # Dictionary to keep track of how many times each category is used\n@sleep_and_retry\ndef get_random_wiki_entry(category_sample_size=3):\n    while True:\n        try:\n            URL = \"https://randomincategory.toolforge.org/Random_page_in_category?\"\n            categories = random.sample(original_categories, category_sample_size)\n            for cat in enumerate(categories):\n                 # Update the count for the selected category\n                category_counts[cat[1]] = category_counts.get(cat[1], 0) + 1",
+        "peekOfCode": "category_counts = {} # Dictionary to keep track of how many times each category is used\ndef sample_categories(categories, sample_size, category_counts=category_counts):\n    \"\"\"\n    Sample a given number of categories from a list of categories, with a constraint that a category's likelihood of being sampled is inversely proportional to the number of times it has been sampled\n    \"\"\"\n    # Get the categories that have been used the least number of times\n    # what is the lowest key value in the dictionary of category counts? (including 0)\n    min_count = min(category_counts.values()) if category_counts else 0\n    # what are the categories that have been used the least number of times?\n    if min_count == 0:",
         "detail": "wiki_monikers",
         "documentation": {}
     },

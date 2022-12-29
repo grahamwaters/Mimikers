@@ -20,7 +20,7 @@
 	padding-bottom: 0px;
 }
 .card-title {
-   font-size: 20px;
+   font-size: 25px;
    font-weight: bold;
    color: #333;
    margin-bottom: 30px;
@@ -29,7 +29,7 @@
 	color: #333;
 	margin-bottom: 20px;
 	flex-grow:1;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 300;
 	align-self: flex-start;
 }

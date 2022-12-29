@@ -39,11 +39,11 @@ year_categories = [
 
 
 
-charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]
+#!charactersTV = ['Television_characters_introduced_in_{}'.format(str(year)) for year in range(1950,2023)]
 
 
-with open("charactersTV.json", "w") as f:
-    json.dump(charactersTV, f)
+# with open("charactersTV.json", "w") as f:
+#     json.dump(charactersTV, f)
 
 
 VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(2012,2010,2)]
@@ -52,7 +52,8 @@ VideoGames_Categories = ['{}_video_games'.format(str(year)) for year in range(20
 with open("VideoGames_Categories.json", "w") as f:
     json.dump(VideoGames_Categories, f)
 
-
+# remove television characters
+categories = [category for category in categories if 'Television_characters' not in category]
 
 
 categories = base_categories
@@ -62,8 +63,10 @@ categories.extend(meme_categories)
 
 categories.extend(year_categories)
 
-categories.extend(charactersTV)
+# categories.extend(charactersTV)
 
+# remove duplicates
+categories = list(set(categories))
 
 
 extras = ['English-language_idioms','British_English_idioms']
@@ -192,13 +195,53 @@ urls_master = [url for url in urls_master if "wikipedia" in url]
 categories_used = []
 category_counts = {} # Dictionary to keep track of how many times each category is used
 
+
+def sample_categories(categories, sample_size, category_counts=category_counts):
+    """
+    Sample a given number of categories from a list of categories, with a constraint that a category's likelihood of being sampled is inversely proportional to the number of times it has been sampled
+    """
+
+    # Get the categories that have been used the least number of times
+    # what is the lowest key value in the dictionary of category counts? (including 0)
+    min_count = min(category_counts.values()) if category_counts else 0
+    # what are the categories that have been used the least number of times?
+    if min_count == 0:
+        # If the minimum count is 0, then we can sample from all categories
+        categories_to_sample_from = categories
+    else:
+        try:
+            categories_to_sample_from = [cat for cat in categories if category_counts.get(cat, 0) != min_count and 'Television_characters' not in cat]
+        except TypeError:
+            print("categories: ", categories)
+            print("category_counts: ", category_counts)
+            print("min_count: ", min_count)
+            print("categories_to_sample_from: ", categories_to_sample_from)
+            categories_to_sample_from = categories # todo fix this
+        except Exception:
+            categories_to_sample_from = categories
+    # Sample the categories
+    categories_sampled = random.sample(categories_to_sample_from, sample_size)
+    cat_count = pd.DataFrame(list(category_counts.items()), columns=['Category', 'Count'])
+    # save the category counts to a csv file
+    cat_count.to_csv("category_counts.csv", index=False)
+    print(len(category_counts), " categories used ", min_count, " is the max count: ",end='')
+    print("categories sampled: ", categories_sampled)
+    return categories_sampled
+
+
 @sleep_and_retry
-def get_random_wiki_entry(category_sample_size=3):
+def get_random_wiki_entry(category_sample_size=1):
 
     while True:
         try:
+            # read the category counts from the csv file
+            #try:
+            #    category_counts = pd.read_csv("category_counts.csv").set_index("Category").to_dict()["Count"]
+            #except FileNotFoundError:
+            #    category_counts = {}
+            # Get the URL for the random page in the category
             URL = "https://randomincategory.toolforge.org/Random_page_in_category?"
-            categories = random.sample(original_categories, category_sample_size)
+            categories = sample_categories(original_categories, category_sample_size, category_counts=category_counts)
             for cat in enumerate(categories):
                  # Update the count for the selected category
                 category_counts[cat[1]] = category_counts.get(cat[1], 0) + 1
@@ -207,25 +250,9 @@ def get_random_wiki_entry(category_sample_size=3):
                 URL += f"&category{cat[0]}={urllib.parse.quote(str(cat[1]).lower())}"
             URL += "&server=en.wikipedia.org&cmnamespace=0&cmtype=page&returntype="
 
-
-            # activate_loop = True
-            # if random.randint(0, 1) == 0 or not activate_loop:
-            #     try:
-            #         URL = random.choice(urls_master)
-
-            #         page_title = random.choice(card_deck)["title"]
-            #         URL = generate_related_deck(page_title, 10)[
-            #             0
-            #         ]
-
-            #         print("using related page")
-            #     except Exception as e:
-            #         pass
-            # else:
-            #     pass
-
-
             if random.randint(0, 60) == 0:
+                # print the category counts to the console
+                print(category_counts)
                 print("using random article from wikipedia")
                 if random.randint(0, 1) == 0:
                     URL = "https://en.wikipedia.org/wiki/Special:Random"
@@ -266,6 +293,7 @@ def get_random_wiki_entry(category_sample_size=3):
                 "title": title,
                 "summary": unpack_definitions(title, summary),
                 "related": related,
+                "category": cat[1],
             }
 
             return random_wiki_entry_dict
@@ -300,12 +328,14 @@ def create_ppn_card():
             "title": random_wiki_entry_title,
             "summary": random_wiki_entry_summary,
             "related": len(random_wiki_entry_related),
+            "category": random_wiki_entry_dict["category"],
         }
     except:
         random_wiki_entry_dict = {
             "title": "error",
             "summary": "error",
             "related": "error",
+            "category": "error",
         }
 
     return random_wiki_entry_dict
@@ -809,6 +839,7 @@ import nltk
 from nltk.corpus import wordnet
 from tqdm import tqdm
 from main import base_categories
+from wiki_monikers import category_counts
 
 
 def find_synonyms(word):
