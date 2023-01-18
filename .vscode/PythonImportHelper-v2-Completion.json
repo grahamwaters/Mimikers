@@ -192,6 +192,14 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "Tokenizer",
         "importPath": "sumy.nlp.tokenizers",
         "description": "sumy.nlp.tokenizers",
@@ -2612,6 +2620,42 @@
         "description": "storage_bin.test.",
         "peekOfCode": "unique = [word for word in bad_patterns if word not in unique]",
         "detail": "storage_bin.test.",
+        "documentation": {}
+    },
+    {
+        "label": "inner_matcher",
+        "kind": 2,
+        "importPath": "reference_medic",
+        "description": "reference_medic",
+        "peekOfCode": "def inner_matcher(file_ending, folder, line, f, pattern, is_jupyter=False):\n    match = re.search(pattern, line)\n    if match:\n        filename = match.group()\n        new_path = '../{}/{}'.format(folder,filename) if is_jupyter else './config/{}'.format(filename)\n        # replace the path in the line with the new path and add the open statement\n        f.write(line.replace(filename, new_path))\n    else:\n        f.write(line)\ndef update_paths(file_path, is_jupyter=False):",
+        "detail": "reference_medic",
+        "documentation": {}
+    },
+    {
+        "label": "update_paths",
+        "kind": 2,
+        "importPath": "reference_medic",
+        "description": "reference_medic",
+        "peekOfCode": "def update_paths(file_path, is_jupyter=False):\n    try:\n        with open(file_path, 'r') as f:\n            lines = f.readlines()\n    except UnicodeDecodeError:\n        return\n    with open(file_path, 'w') as f:\n        for line in lines: # for each line in the file\n            # if the line is a comment skip it\n            if line.startswith('#'):",
+        "detail": "reference_medic",
+        "documentation": {}
+    },
+    {
+        "label": "scan_folder",
+        "kind": 2,
+        "importPath": "reference_medic",
+        "description": "reference_medic",
+        "peekOfCode": "def scan_folder(folder_path):\n    for dirpath, dirnames, filenames in tqdm(os.walk(folder_path), desc='Scanning folder'):\n        for filename in tqdm(filenames, desc='\\nUpdating file refs'):\n            if filename == 'reference_medic.py':\n                continue # skip this file\n            print('\\nUpdating file: {}  '.format(filename))\n            #time.sleep(0.1)\n            file_path = os.path.join(dirpath, filename)\n            if '.ipynb' in file_path:\n                is_jupyter = True",
+        "detail": "reference_medic",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "reference_medic",
+        "description": "reference_medic",
+        "peekOfCode": "def main():\n    is_jupyter = False\n    scan_folder('./')\nif __name__ == '__main__':\n    main()",
+        "detail": "reference_medic",
         "documentation": {}
     }
 ]
