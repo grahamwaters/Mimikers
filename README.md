@@ -8,4 +8,8 @@ A work in progress card game based on Monikers using Wikipedia articles. An exam
 
 
 <!-- Show a card from new cardbox new_card_box/robert_april-1.png -->
+<div align="center">
+
 ![robert_april-1](new_card_box/robert_april-1.png)
+
+</div>
