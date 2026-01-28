@@ -156,32 +156,32 @@ Update after every major action. See `cursor_master/CURSOR_BRAIN.md` for guideli
 
 ## Layer 3 — ViewModels (State Management)
 
-- [ ] **Implement HomeViewModel**
+- [x] **Implement HomeViewModel**
   - **Assignee**: Agent 3
   - **Dependencies**: DeckLoaderService
   - **Effort**: Med
-  - **Status**: Todo
+  - **Status**: DONE
   - **Notes**: Mimikers/ViewModels/HomeViewModel.swift; deck list, selected deck, start game action; @Published state; load decks on appear
 
-- [ ] **Implement GameViewModel**
+- [x] **Implement GameViewModel**
   - **Assignee**: Agent 3
   - **Dependencies**: GameEngine, Deck, GameSettings
   - **Effort**: High
-  - **Status**: Todo
+  - **Status**: DONE
   - **Notes**: Mimikers/ViewModels/GameViewModel.swift; current card, timer, score, round; start/pause/next; bind to GameEngine
 
-- [ ] **Implement ResultsViewModel**
+- [x] **Implement ResultsViewModel**
   - **Assignee**: Agent 3
   - **Dependencies**: GameEngine or final score state
   - **Effort**: Low
-  - **Status**: Todo
+  - **Status**: DONE
   - **Notes**: Final score, play again action
 
-- [ ] **Implement SettingsViewModel**
+- [x] **Implement SettingsViewModel**
   - **Assignee**: Agent 3
   - **Dependencies**: SettingsService
   - **Effort**: Low
-  - **Status**: Todo
+  - **Status**: DONE
   - **Notes**: Timer, rounds; bind to SettingsService
 
 ---
